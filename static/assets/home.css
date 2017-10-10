@@ -1,0 +1,14 @@
+header .navbar-tabs {
+  justify-content: center;
+}
+
+
+.highlight .highlight-item {
+  height: 616pX; 
+  background:url(/assets/img/banner.jpg)no-repeat center/cover;
+  color:#000000; 
+  display: flex;
+
+}
+
+

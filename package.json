@@ -1,0 +1,11 @@
+{
+  "name": "Clean-Food",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "bonetoo <ben_nana1@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "twig": "^1.10.5"
+  }
+}
