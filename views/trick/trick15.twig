@@ -1,0 +1,351 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+
+{% endblock %}
+
+
+
+
+{% block content %}
+
+  <main>
+ 
+
+
+  <div class="row">
+    <div class="column left" style="background-color:#ffffff;">
+    <font face="TH SarabunPSK">
+      <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>ปีใหม่คนใหม่กับ 10 ทริค ปรับเปลี่ยนพฤติกรรมเพื่อสุขภาพที่ดี</b> </div> <br>
+ <div class="is-size-4">
+   ปี 2018 ใกล้จะหมดวาระเข้าไปทุกที ใครที่ตั้งเป้า ออกกำลังกายเพื่อเปลี่ยนแปลงตัวเองในปีหน้า หากไม่รู้ว่าจะเริ่มต้นตรงไหน เรามีข้อแนะนำดีๆ อย่าง “10 สุดยอดพฤติกรรมคนรักสุขภาพ เพื่อให้คุณฟิตตลอดกาล” “ปีใหม่ คนใหม่ กับ 10 ทริค ปรับเปลี่ยนพฤติกรรมเพื่อสุขภาพที่ดี” เป็นวิธีคิด แนวคิดของคนที่ชอบออกกำลังกาย ที่ใครๆ ก็สามารถนำไปปฎิบัติได้ ลองให้เวลากับมันสักนิด ค่อยๆ ปรับ ค่อยๆ เปลี่ยนพฤติกรรมและแนวคิดในการใช้ชีวิตประจำวันของคุณ และสุขภาพคุณจะดีขึ้นแน่นอน
+  </div>
+ </div>
+ 
+ <br>
+   <center><img src="assets/img/trick/Happy.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+    <br>
+   <div class="is-size-4">
+<b>1. เวลาน้อย เวลาไม่มี ก็ต้องสร้างเวลาออกกำลังกายให้ได้</b>
+  <div style="text-indent: 2.5em;">แม้ตารางเวลาจะแน่นขนัดแค่ไหน มีเวลาจำกัดแค่ 30 นาที 15 นาที คนที่รักกการออกกำลังกายก็จะพยายามสร้างเวลาในการออกกำลังกายให้จงได้ ในช่วงเวลา 15 นาที สามารถฝึก Body weight training แบบ Short interval สั้นๆ ได้ หรือแค่ 7 นาทีก็สามารถทำได้เช่นกัน เหงื่อแตกท่วมตัวแน่นนอน ตัวอย่างการใช้แอพในการฝึกเวลาสั้นๆ เช่น…. 
+  </div>
+  <br>
+   <center><img src="assets/img/trick/ตัวอย่างการใช้แอพ.png" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+<b>2. ผสมผสานการออกกำลังกาย</b>
+  <div style="text-indent: 2.5em;">ถ้าเป็นนักวิ่งก็อย่าคิดว่าจะวิ่งอยู่ท่าเดียวตลอด ทดลองฝึกวิ่งขึ้นเนิน วิ่ง interval หรือจะทดลองผสมผสานการฝึกกล้ามเนื้อ การเข้าโรงยิมยกเวท หรือจะเล่นโยคะ ว่ายน้ำ เพราะการทำอะไรซ้ำไปมา ต้องมีอาการเบื่อเกิดขึ้น ส่งผลให้ Motivation เราลดหายลงจนเบื่อไม่อยากออกกำลังกาย
+  การผสมผสานรูปแบบการออกกำลังกาย จะช่วยรักษาระดับ Motivation ของเรา ลดอาการเบื่อหน่าย ที่สำคัญยังช่วยให้เราได้ใช้กล้ามเนื้อส่วนอื่นๆ ด้วย
+  </div>
+<b>3. สู้กับด้านมืดของตัวเอง</b>
+  <div style="text-indent: 2.5em;">ฝึกออกกำลังกายทุกครั้งไม่ได้หมายความว่ามันจะสนุกเสมอไป มีบ้างที่มีอาการท้อ มีอาการขี้เกียจ แต่เราก็ต้องทำ..วิธีที่นำเสนออย่างแรกคือ การทำตารางฝึกซ้อม การขีดเขียนตารางออกมาให้ชัดเจนจะช่วยให้เราจัดการกับเวลาได้อย่างมีประสิทธิภาพ สามารถให้จัดลำดับความสำคัญ สิ่งที่ต้องทำก่อนหลังได้ดี ลดการตัดสินใจที่อิ้งกับอารมณ์ความรู้สึกมากขึ้น
+  อย่างที่สองคือ การจินตนการถึงผลลัทธ์ที่จะได้ อาการขี้เกียจ อาการเบื่อหน่ายเป็นเหมือนด้านลบ หากเรายอม skip workout บ่อยๆ เข้าเสียงด้านลบก้จะดังขึ้นเรื่อยๆ ดังนั้นต้องจินตนาการถึงผลลัพธืที่จะได้ จินตนาการความรู้สึกเวลาเหงื่อออกท่วมตัวมันสุดยอดแค่ไหน ใช้พลังด้านบวกให้มากๆ แล้วเสียงด้านลบจะค่อยเบาและหายไป
+  </div>
+  <br>
+   <center><img src="assets/img/trick/runnnn.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+<b>4. ทุกวันคือการออกกำลังกาย</b>
+  <div style="text-indent: 2.5em;">อย่ารอฤกษ์ออกกำลังกาย เราจะออกกำลังกายพรุ่งนี้ รอวันปีใหม่แล้วเราจะเป็นคนใหม่ การทำอย่างนี้เป็นการผลัดวันประกันพรุ่ง อยากจะบอกว่า ช่วงเวลาที่ดีที่สุดคือ ณ เวลานี้ Now, right now!
+  เราควรปรับความคิดว่าการออกกำลังกายเป็นส่วนหนึ่งของกิจวัตรประจำวัน ไม่ใช้งานที่ต้องทำ มันคือส่วนหนึ่งในการใช้ชีวิต การฝึกออกกำลังกายแต่เนินๆ มีผลดีต่อเรามาก อย่างเช่น การโดนนัดไปงานแต่งงานภายในสองสัปดาห์ หากจังหวะนั้นเราอ้วน มีรอบเอวมาก หวังจะลดน้ำหนักลงมาในเวลา 2 สัปดาห์ให้ได้รอบเอวสัก 2-3 นิ้วไหวมั้ย เป้าหมายอย่างนี้เรียกว่า Unrealistic มาก เป็นไปไม่ได้เลย ดังนั้นจึงควรออกกำลังกายดูแลร่างกายแต่เนินๆ ซะดีกว่า
+  </div>
+  <br>
+   <center><img src="assets/img/trick/What.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+<b>5. เลือกกิน กินเป็น</b>
+  <div style="text-indent: 2.5em;">พยายามหลีกเลี่ยงอาหารที่ผ่านกรรมวิธีปรุงแต่ง อย่าง อาหารกระป๋อง เนื้อบดไส้กรอก เป็นต้นเพราะจะมีไขมัน เกลือ ผงชูรสมาก พยายามาเลือกอาหารสด ผักผลไม้ตามฤดูกาล ถ้าสามารถทำอาหารด้วยตัวเองจะดีมาก เราจะควบคุมปริมาณเครื่องปรุง อย่าง น้ำตาล เกลือได้
+  พวกขนมคบเคี้ยว ของหวาน ชากาแฟ มีน้ำตาลเยอะ ทุกครั้งที่รับเข้าไป ก็เอาแต่พอประมาณ กินกลางๆ พยายามบาลานซ์กับอาหารที่เราเลือกเพื่อสุขภาพ การทำอะไรสุดโต่ง อย่างไม่กินของหวาน ไม่กินชากาแฟเลย กินแต่อาหารคลีน บางทีก็สะสมความเครียดได้โดยไม่รู้ตัว หนักบางเบาบาง ไม่งั้นชีวิตไม่มีสีสรรนะ
+  </div>
+  <br>
+   <center><img src="assets/img/trick/j4_2.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+<b>6. เหล้าเบียร์ เบาๆ นะ</b>
+  <div style="text-indent: 2.5em;">เรื่องปกติที่ทุกคืนวันศุกร์หรือเสาร์จะออกไปปาร์ตี้กับเพื่อนๆ เครื่องดื่มที่มี Alcohol จะให้พลังงานแคลอรี่มาก ดังนั้นผู้ดื่มควรพึงระวังไว้ด้วย รับมากน้อยแค่ไหนให้เลือกเอาเอง (รับมากก็ต้องเบริ์นออกเยอะนะ) แนะนำให้ดื่มน้อยที่สุด ค่อยๆ จิบเรื่อยๆ ไม่ต้องรีบ
+  </div>
+<b>7. ออกกำลังกายได้ทุกที่</b>
+  <div style="text-indent: 2.5em;">การออกกำลังกายไม่จำเป็นว่าต้องเข้าโรงยิมหรือเข้าสวนสาธารณะเสมอไป บ้าน ที่ทำงานสามารถใช้เป็นที่ออกกำลังกายก็ได้ อย่างเช่น การเปิดยูทูป แอพออกกำลังบนมือถือ โฟมรองพื้น ปูบนพื้นบ้านแค่นี้ก็โอเคแล้ว หรือจะใช้บันไดตึกที่ทำงานเป็นที่ฝึกซ้อมวิ่งก็ได้ สายนักวิ่งเทรลนิยมซ้อมวิ่งขึ้นตึกนักแล
+  </div>
+  <br>
+   <center><img src="assets/img/trick/summer-2391.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+<b>8. นอนหลับพักผ่อนให้พอ</b>
+  <div style="text-indent: 2.5em;">ยิ่งฝึกมากเท่าไหร เวลาในการพักฟื้นยิ่งมากตามไปด้วย การพักผ่อนเป็นส่วนสำคัญในกระบวนการซ้อมแซ่มร่างกาย และเป็นช่วยเวลาที่ร่างกายใช้ไขมันด้วยนะ
+  การเข้านอนเป็นเวลา จะช่วยให้คุณตื่นเช้าขึ้น มีเวลาประกอบกิจกรรมได้มากกว่าที่เคย
+  </div>
+<b>9. ตื่นเช้า</b>
+  <div style="text-indent: 2.5em;">เมื่อเข้านอนเป็นเวล่า สิ่งที่ตามมาคือการตื่นเช้า การออกกำลังกายช่วงเช้านอกจากจะได้สังเคราะห์วิตามิน D ที่ได้จากแสงดวงอาทิตย์ ยังเป็นตัวการกระตุ้นให้ระบบเมตาบอลิซึมทำงานตลอดทั้งวันได้อย่างดี คุณจะรู้สึกกระปรี้กระเปร่าตลอดวัน
+  </div>
+<b>10. โฟกัสที่รูปร่างมากกว่าน้ำหนัก</b>
+    <div style="text-indent: 2.5em;">น้ำหนักที่ขึ้นบนตราชั่งน้ำหนักไม่ได้บอกเราทุกอย่าง การออกกำลังกายไม่ใช่แค่ร่างกายจะเผาผลาญไขมันแล้วทำให้น้ำหนักลดเหมือนที่คนทั่วไปคิด แต่การออกกำลังกาย ยังกระตุ้นในเกิดการสร้างกล้ามเนื้อ ซึ่งอาจจะทำให้เราหนักขึ้น แต่ขณะเดียวกันร่างกายกับเข้ารูป ดูมีสมส่วน
+    </div>
+    <br>
+   <center><img src="assets/img/trick/เบเบ้ 3.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+    <div style="text-indent: 2.5em;">สิ่งสำคัญคือ Body composition ต้องดูว่าร่างกายมีมวลไขมัน มวลกล้ามเนื้อ มวลน้ำและมวลกระดูก อยู่ในเกณฑ์มาตรฐานหรือไม่ ถ้าอยากตั้งเป้าจะลดน้ำหนักอย่างเดียวจริงๆ ละก็ ให้ควบคุมอาหารการกิน จะดีที่สุด แต่ถ้าอยากใช้ชีวิตที่มีสุขภาพที่ดี คุณต้องออกกำลังกายควบคู่ไปด้วย
+    จะช่วยฆ่าเชื้อแบคทีเรียในลำไส้ ล้างสารพิษ ทำให้เจริญอาหารและทำให้ระบบขับถ่ายทำงานเป็นปกติ ช่วงนี้ถ้าใครท้องผูก มึนหัว ผิวหมอง หน้าไม่ผ่อง เป็นอาการว่ามีสารพิษในร่างกาย ลองเอาไปใช้กัน
+    </div>
+      
+    
+   </div>
+  </div>
+  <div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>TRICK</div>
+    <div class=is-size-5>เคล็บลับ แต่ไม่ลับ</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick5">
+      <img src="assets/img/trick/5.0.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc"><h4>9 อาหารช่วยดีท็อกซ์ ขับสารพิษได้อย่างดีเยี่ยม</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick6">
+      <img src="assets/img/trick/6.0.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc"><h4>7 วิธีออกกำลังสมอง...ต้านอัลไซเมอร์</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick7">
+      <img src="assets/img/trick/7.0.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>11 เทคนิคกินอย่างพอเพียง</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick8">
+      <img src="assets/img/trick/8.0.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>5 วิธีกินอาหารเพื่อผิวสวยใสจากภายใน</h4></div>
+    <br>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

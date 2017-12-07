@@ -1,0 +1,322 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+{% endblock %}
+
+{% block content %}
+
+  <main>  
+<div class="row">
+    <div class="column left" style="background-color:#ffffff;">
+
+   <font face="TH SarabunPSK">
+    <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>7 วิธีออกกำลังสมอง...ต้านอัลไซเมอร์</b></div>
+
+ <br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/6.0.jpg" alt="" width="450" height="auto">
+  </div>
+
+
+<br>
+<div class="is-size-4">
+&emsp;&emsp;&emsp;การออกกำลังกายไม่ได้จำกัดเฉพาะออกกำลังกล้ามเนื้อส่วนต่างๆ หรือออกกำลังให้ร่างกายแข็งแรงเท่านั้น
+<br>
+<br>&emsp;&emsp;&emsp;เราอาจไม่รู้ว่าจริงๆ การออกกำลัง “สมอง” ก็เป็นสิ่งสำคัญเหมือนกัน เพราะสมองเป็นส่วนควบคุมส่วนต่างๆ ของร่างกาย ดังนั้นก็ควรบริหารสมองเพื่อให้สมองสามารถทำงานได้คล่องแคล่ว ฉับไว คิดได้เร็ว มีความจำดี และยังเป็นการต้านอัลไซเมอร์อีกด้วย
+ <br>
+<br>&emsp;&emsp;&emsp;การออกกำลังสมอง หรือที่เรียกว่า Neurobics Exercise เป็นการออกกำลังกายที่ช่วยชะลอความเสื่อมของสมองได้ เพราะเมื่อสมองได้รับการฝึกออกกำลังบ่อยๆ จะหลั่งสารที่เรียกว่า นิวโรโทรฟินส์ (Neurotrophins) ที่เปรียบเหมือน "อาหารสมอง" ที่เชื่อมระหว่างเซลล์ประสาททำงานดีขึ้น จึงเป็นส่วนสำคัญที่ทำให้เนื้อเซลล์เจริญเติบโต และเซลล์สมองแข็งแรง เพราะสมองก็เหมือนกล้ามเนื้อ ที่หากได้รับการกระตุ้น ก็จะช่วยให้ประสาทสัมผัสทั้ง 5 (Sensory Organs) ซึ่งได้แก่ การได้ยิน การมองเห็น การได้กลิ่น การลิ้มรส และการสัมผัส รวมไปถึงส่วนที่ 6 คือ อารมณ์ (Emotional Sense) ได้ทำงานเชื่อมโยงกันมากขึ้น ซึ่งเราสามารถเริ่มได้ง่ายๆ จากการใช้ชีวิตประจำวันของเรา
+ <br>
+<br>1. ปิดตาทำกิจกรรม เช่น ปิดตาอาบน้ำ ปิดตาดูทีวี เพื่อเปลี่ยนความเคยชินในการรับข้อมูลจากประสาทสัมผัสเดิมๆ 
+ 
+<br>2. พยายามเดินถอยหลัง เพื่อให้สมองได้รับรู้ถึงความไม่จำเจ
+ 
+<br>3. สลับกิจกรรมที่เคยทำเป็นประจำ เช่น จากที่อาบน้ำก่อนกินข้าวก็เปลี่ยนเป็นกินข้าวก่อนอาบน้ำ ทำให้สมองใช้พลังงานในการทำสิ่งใหม่ๆ
+ 
+<br>4. นับเลขถอยหลัง เพื่อกระตุ้นให้สมองทั้ง 2 ซีกให้ทำงานดีขึ้น
+ 
+<br>5. เปลี่ยนวิธีการเดินทางใหม่ๆ เพราะสิ่งรอบข้างของเส้นทางใหม่ จะช่วยกระตุ้นให้สมองสร้างแผนที่เส้นทางชุดใหม่ และเป็นการเพิ่มการทำงานของสมองให้มากกว่าปกติด้วย
+ 
+<br>6. เปลี่ยนตำแหน่งของบนโต๊ะทำงาน เพื่อสร้างภาพใหม่ๆ ที่สมองไม่คุ้นเคย จะช่วยเพิ่มการทำงานของสมองให้เรียนรู้มากขึ้น
+ 
+<br>7. หากิจกรรมสนุกๆ ทำ เพื่อการพัฒนาสมองทั้งซีกขวาและซีกซ้าย
+ <br> <div class="has-text-centered"> 
+<br>การบริหารสมองสามารถทำได้ตั้งแต่เดี๋ยวตอนนี้ โดยไม่ต้องรอให้อายุมากก่อน 
+<br>เพราะยิ่งบริหารบ่อยเท่าไหร่ การทำงานของสมองก็จะเสื่อมช้าลง ทำให้ลดความเสี่ยง
+<br>ของการเป็นโรคสมองเสื่อม หรือโรคอัลไซเมอร์ได้
+
+
+
+
+
+</div>
+</div></div>
+
+
+</div>
+
+  <div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>TRICK</div>
+    <div class=is-size-5>เคล็บลับ แต่ไม่ลับ</div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick9">
+      <img src="assets/img/trick/9.0.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>9 อาหารสู้แดด กินแล้วป้องกันผิวคล้ำเสีย</h4></div>
+    
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick10">
+      <img src="assets/img/trick/10.2.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>สุดยอด 20 อาหารล้างพิษ</h4></div>
+   
+  </div>
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick11">
+      <img src="assets/img/trick/11.0.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>12 ทริคสุขภาพสุดแปลกที่รับรองว่าทำแล้วเริด</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick12">
+      <img src="assets/img/trick/12.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>5 กินอาหารตามกรุ๊ปเลือด ลดน้ำหนักและความอ้วนได้</h4></div>
+    
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

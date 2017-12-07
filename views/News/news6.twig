@@ -1,0 +1,323 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+ 	
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+{% endblock %}
+
+{% block content %}
+
+  <main>
+
+  
+
+  <div class="row">
+  <div class="column left" style="background-color:#ffffff;">
+    <font face="TH SarabunPSK">
+    <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>5 อาหารเพื่อสุขภาพ แค่ทานก่อนนอน ก็ช่วยให้หลับสบาย</b><br>
+ <div class="is-size-4">
+  </div>
+  </div>
+   <div class="is-size-4">
+ เมื่อมีอาการนอนไม่หลับ ก็คงต้องหาโอกาสดีๆ เพื่อช่วยให้นอนหลับสบายยิ่งขึ้นและตัวช่วยที่ดีที่สุด ก็คืออาหาร 5 ชนิด ที่จะช่วยให้เกิดความผ่อนคลาย พร้อมกระตุ้นการหลั่งฮอร์โมนเมลาโทนินที่จะทำหน้าที่ในการผ่อนคลายประสาท ลดความเครียด และทำให้สมองปลอดโปร่งพร้อมสำหรับการนอนหลับนั่นเอง ซึ่งจะมีอาหารอะไรบ้างนั้น มาดูกันเลย</div>
+
+     <div class="is-size-4">
+  <br>
+         <center><img src="assets/img/News/6.1.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+   <center><img src="assets/img/News/6.2.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+   <br>
+ <b>1.อัลมอนด์</b>
+          <div style="text-indent: 2.5em;">หลายคนบอกว่า การทานถั่วก่อนนอนจะทำให้รู้สึกอึดอัด แน่นท้องและนอนไม่หลับได้ แต่อัลมอนด์ต่างออกไป เพราะถั่วอัลมอนด์อุดมไปด้วยแร่แมกนีเซียมและกรดอะมิโน tryptophan ซึ่งจะช่วยควบคุมระดับน้ำตาลในขณะหลับให้มีความสม่ำเสมอมากขึ้น และสามารถผ่อนคลายกล้ามเนื้อได้เป็นอย่างดี จึงทำให้การนอนหลับเป็นไปอย่างประสิทธิภาพ หมดกังวลเรื่องนอนไม่หลับไปได้เลย
+          </div><br>
+     <center><img src="assets/img/News/6.3.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+   <br>
+ <b>2.น้ำผึ้ง</b>
+          <div style="text-indent: 2.5em;">น้ำผึ้ง มีส่วนช่วยในการยับยั้งการทำงานของสารสื่อประสาทในสมอง ที่เป็นตัวการทำให้ร่างกายตื่นตัวจนนอนไม่หลับ โดยจะทำให้เกิดความรู้สึกผ่อนคลายและง่วงนอนมากขึ้น โดยให้ผสมน้ำผึ้งเล็กน้อยลงในน้ำอุ่น ประมาณไม่เกิน 1 ช้อนชา จิบเรื่อยๆ ก่อนนอน รับรองคืนนี้หลับสบายแน่นอน
+          </div><br>
+       <center><img src="assets/img/News/6.4.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+   <br>
+ <b>3.กล้วย</b>
+          <div style="text-indent: 2.5em;">ผลไม้ที่ขึ้นชื่อในเรื่องของการเป็นยานอนหลับอย่างดี เพราะกล้วยอุดมไปด้วยโปรแตสเซียมและแมกนีเซียม ที่มีส่วนช่วยในการคลายกล้ามเนื้อ และสร้างสารสื่อประสาทเซโรโทนิน ซึ่งจะทำให้นอนหลับสบายยิ่งขึ้น ใครที่นอนไม่หลับบ่อยๆ ลองหากล้วยมาไว้ทานก่อนนอนดูสิ
+          </div><br>
+               <center><img src="assets/img/News/6.5.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+   <br>
+ <b>4.เชอร์รี่</b>
+          <div style="text-indent: 2.5em;">เชอร์รี่ผลไม้ที่มีรสชาติหวานๆ เปรี้ยวๆ แต่ในขณะเดียวกันก็อุดมไปด้วยธาตุอาหารที่สามารถสังเคราะห์ฮอร์โมนเมลาโทนิน ที่เป็นตัวช่วยในการนอนหลับได้ดี แค่ทานก่อนนอนประมาณ 1 ชั่วโมง ก็จะทำให้คุณนอนหลับสนิทยาวนานตลอดคืนแน่นอน
+          </div><br>
+               <center><img src="assets/img/News/6.6.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+   <br>
+ <b>5.เมล็ดแฟลกซ์</b>
+          <div style="text-indent: 2.5em;">และสุดท้ายที่ให้ผลดีไม่แพ้กัน ก็คือ เมล็ดแฟลกซ์ นิยมนำมาผสมกับเมล็ดป่าน ใส่ลงในข้าวโอ๊ตปรุงสุก ทานก่อนนอนก็จะทำให้นอนหลับสบาย แก้ปัญหาการนอนไม่หลับได้อย่างดีเยี่ยม นอกจากนี้ยังอุดมไปด้วยโอเมก้า 3 ที่ต้องบอกเลยว่าใครที่ไม่ชอบทานเนื้อปลา สามารถทานเมล็ดแฟลกซ์แทนได้แบบสบายๆ รสชาติก็อร่อยโดนใจอีกด้วย
+          </div>
+          <div style="text-indent: 2.5em;">นอนไม่หลับ อาหารเหล่านี้ช่วยได้ แต่ขอบอกก่อนเลยว่า ต้องทานก่อนนอนอย่างน้อยประมาณ 1 ชั่วโมง เพื่อให้อาหารย่อยพอดี เพราะหากท้องอิ่มเกินไป ก็จะทำให้รู้สึกอึดอัด ไม่สบายตัว จนนอนไม่หลับได้เหมือนกัน นอกจากนี้ก่อนนอนอาจดื่มนมอุ่นๆ สักแก้ว ก็จะทำให้นอนหลับฝันดีมากขึ้น ใครที่มีปัญหานอนไม่หลับ ลองดูนะได้ผลแน่นอน
+          </div>      
+           
+
+</div>
+</div>
+</div>
+
+
+<div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>NEWS</div>
+    <div class=is-size-5>ข่าวสารที่คุณไม่ควรพลาด</div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="news9">
+      <img src="assets/img/news/9.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>ผู้ชายที่ชอบกินผัก-ผลไม้ มี“กลิ่นกาย” ดึงดูดใจผู้หญิงได้มากกว่า</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news10">
+      <img src="assets/img/news/10.2.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>สาวกระชับหุ่นเร่งด่วนด้วย "อาหารคลีน"</h4></div>
+   
+  </div>
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news11">
+      <img src="assets/img/news/11.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>“น้ำผึ้ง” ดีกับผู้ชายยังไง ?</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news12">
+      <img src="assets/img/news/12.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>5 เคล็ดลับการกินเพื่อสร้างกล้าม โดยไม่ต้องพึ่งอาหารเสริม</h4></div>
+    
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+  </main>
+
+
+{% endblock %}

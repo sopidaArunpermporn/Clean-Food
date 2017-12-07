@@ -1,0 +1,335 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+{% endblock %}
+
+{% block content %}
+
+  <main>  
+<div class="row">
+    <div class="column left" style="background-color:#ffffff;">
+      <font face="TH SarabunPSK">
+<div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>10 วิธีสำหรับเตรียมตัวทานอาหารคลีน เพื่อลดความอ้วน!</b></div>
+
+ <br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/2.0.jpg" alt="" width="450" height="auto">
+  </div>
+
+
+<br>
+<div class="is-size-4">
+&emsp;&emsp;&emsp;สำหรับคนที่กำลังลดน้ำหนักคงเคยได้ยินมาบ้างเกี่ยวกับอาหารสุขภาพแนวใหม่ที่กำลังเป็นที่พูดถึงกันอยู่นั่นก็คือ “อาหารคลีน” หลายคนอาจจะไม่รู้ว่ามันคืออะไร คลีนในที่นี้คือสะอาดหมายถึงกินเกลี้ยงจนจาดสะอาดหรือไม่ หรือกินแล้วมีประโยชน์อย่างไร วันนี้มาหาคำตอบกัน
+
+<br><br>
+
+&emsp;&emsp;&emsp;อาหารคลีน (Clean Food) คืออาหารที่สด สะอาด เน้นความเป็นธรรมชาติของวัตถุดิบ โดยไม่ผ่านกระบวนการปรุงแต่ง ดัดแปลง ขัดแต่งสีด้วยสารเคมีต่างๆ หรือการถนอมอาหารเช่นการหมักดอง หรือแปรเป็นอาหารสำเร็จรูป เพื่อให้ได้รับสารอาหารอย่างครบถ้วน ตัวอย่างเช่น การทานผัก ผลไม้สดๆ ธัญพืชหรืออาหารที่ไม่ผ่านการขัดสี อาหารที่ไม่มีการปรุงมากมายให้มีรสจัด ซึ่งจะว่าไปแล้วก็คล้ายๆ กับการทานสลัดผัก สลัดผลไม้ หรือทานอาหารจีนที่มีรสชาติจืดๆ แค่นำมาต้มใส่เกลือ หรือผัดใส่น้ำมันง่ายๆ ก็สามารถนำมาทานได้แล้ว
+<br>
+ <br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/2.1.jpg" alt="" width="450" height="auto">
+  </div>
+
+<br>&emsp;&emsp;&emsp;เมื่อรู้จักกันไปแล้ว หากต้องการทานอาหารคลีนควรจะเตรียมตัวอย่างไร
+<br>
+&emsp;&emsp;&emsp;1. ปรับตัวให้เข้ากับการทานอาหารคลีน หมายถึงการปรับตนเองให้ไม่ยึดติดกับรสชาติอาหารแบบเดิมๆ ที่เคยทาน หรือลดปริมาณความจัดจ้านของรสชาติให้น้อยลงไปเรื่อยๆ โดยใหม่ๆ อาจจะรู้สึกอึดอัด ไม่ถูกปากกับรสชาติ แต่หากทานไปสักระยะจะเริ่มชิน และอร่อยกับการกินคลีน
+<br>
+&emsp;&emsp;&emsp;2. เลือกอาหารที่สดใหม่อยู่เสมอ คือควรซื้อสดๆ มาจากตลาดหรือซูเปอร์มาร์เก็ตแล้วรีบนำมาปรุงรับประทานเลย ไม่ควรเก็บไว้ในตู้เย็นหลายๆ วันแล้วค่อยนำมาทำอาหารทาน จึงแนะนำให้ซื้อน้อยๆ และซื้อเป็นมื้อๆ หรือต่อวัน เพื่อให้ได้สารอาหารที่ครบถ้วน ใหม่สดของวัตถุดิบตามหลักของอาหารคลีน
+<br>
+<br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/2.2.jpg" alt="" width="450" height="auto">
+  </div>
+
+ <br>
+ &emsp;&emsp;&emsp;3. เวลาเลือกซื้อสินค้า หรือวัตถุดิบควรเดินดูให้ทั่วก่อน แล้วค่อยตัดสินใจซื้อ เพราะบางครั้งการที่เรารีบซื้อก่อนที่จะเดินดูให้ทั่วทั้งหมด อาจทำให้เราซื้อมากเกินความจำเป็น กลายเป็นซื้อเก็บแล้วค่อยนำมาทาน การเดินสำรวจให้ทั่วจึงเป็นการช่วยกรอง และเกิดการวางแผน ตัดสินใจว่าอยากจะทานอะไรมากที่สุด ไม่ใช่เห็นอะไรก็อยากทาน อยากซื้อไว้ทั้งหมด สุดท้ายนอกจากจะทานไม่หมดแล้ว ยังอาจเหลือทิ้งอีกด้วย
+<br>
+&emsp;&emsp;&emsp;4. ลดปริมาณน้ำตาลลง คงทราบกันดีแล้วว่าน้ำตาลมีอันตรายต่อร่างกายมากแค่ไหน ดังนั้นเมนูอาหารคลีนที่ใส่ใจในเรื่องความปลอดภัยสุขภาพจึงไม่เน้นการปรุงแต่งรสชาติด้วยน้ำตาล หากจำเป็นต้องใส่ควรใส่ในปริมาณที่น้อย หรือใช้น้ำตาลปี๊บแทนน้ำตาลทรายได้ จะดีต่อสุขภาพมากกว่า
+<br>
+&emsp;&emsp;&emsp;5. เน้นการดื่มน้ำเปล่าให้เพียงพอ เพราะร่างกายของคนเรามีน้ำเป็นส่วนประกอบถึง 70% ดังนั้นระบบร่างกายของคนเราจึงจำเป็นต้องมีน้ำเป็นตัวหล่อลื่นและเพิ่มความคล่องตัวในการไหลเวียน หมุนเวียน หากจะให้ดี ควรดื่มน้ำเมื่อท้องว่างจะดีที่สุด
+<br>
+&emsp;&emsp;&emsp;6. ชวนเพื่อนๆ หรือคนในครอบครัวมาทานอาหารคลีนด้วยกัน เพื่อแลกเปลี่ยนความคิดเห็นกัน ช่วยกันหาข้อมูลเรื่องอาหารคลีน ช่วยกันสรรหาเมนูมาลองทำทานให้เกิดความหลากหลาย ทานกันอย่างสนุกสนาน ป้องกันการเบื่อจนต้องเลิกทานคลีนไปซะก่อนที่จะมีสุขภาพดี 
+<br>
+
+&emsp;&emsp;&emsp;7. จัดอาหารที่ทานให้มีความสมดุล โดยแบ่งมื้ออาหารให้เป็นมื้อย่อยๆ 4 หรือ 6 มื้อต่อวัน โดยไม่ควรพลาดอาหารเช้า เพราะเป็นมื้อที่สำคัญที่สุด สำหรับการทานอาหารหลายมื้อย่อยๆ ในปริมาณที่เหมาะสมย้อมดีกว่าการทานน้อยมื้อแต่ทานในปริมาณมาก ซึ่งทำให้ขนาดกระเพาะขยายใหญ่ขึ้น จนต้องทานปริมาณมากๆ ในทุกมื้อจนเป็นนิสัย
+<br>
+&emsp;&emsp;&emsp;8. เลือกทานแป้งได้ตามเหมาะสม โดยหันมาใช้แป้งข้าวกล้อง แป้งข้าวโอ๊ต เป็นทางเลือกแทนแป้งสาลีเพื่อหลีกเลี่ยงสารกลูเตน (Gluten) ที่เป็นอันตรายกับคนที่แพ้สารตัวนี้ที่มักพบในแป้งสาลี และแป้งอื่นๆ
+<br>
+&emsp;&emsp;&emsp;9. รู้จักสังเกตส่วนผสมให้มากขึ้น ควรอ่านฉลากว่ามีส่วนผสมอะไรบ้างเพื่อดูว่าเครื่องปรุงที่นำมาใช้ปรุงอาหารคลีนนั้นสกัดจากธรรมชาติ 100% หรือไม่ หรือหากต้องซื้ออาหารคลีนที่ขายตามห้าง ควรสังเกตุว่ามีส่วนผสมอะไรบ้าง เพื่อจะได้เลือกทานได้เหมาะสมกับความต้องการ และเป็นประโยชน์ต่อสุขภาพ
+<br>
+&emsp;&emsp;&emsp;10. อย่าเน้นไปที่การคำนวณแคลอรี่ ควรเลือกทานอาหารให้ครบตามที่ร่างกายต้องการให้ครบ 5 หมู่ตามหลักโภชนาการมากกว่าการคำนวณแคลอรี่ของอาหารที่ทาน
+<br><br>
+<div class="has-text-centered"> 
+<br>ดังที่ได้กล่าวไปข้างต้น เป็นวิธีการเริ่มต้นทานอาหารคลีนเพื่อสุขภาพ 
+<br>และค่อนข้างมีผลอย่างมากสำหรับคนต้องการลดน้ำหนักอย่างจริงจัง ฉะนั้นหากใครที่กำลังมองหาวิธีลดความอ้วน
+<br>อยู่การทานอาหารคลีนถือเป็นวิธีที่ดีกว่าการอดอาหาร ยิ่งควบคู่ไปกับการออกกำลังกายด้วยแล้วจะยิ่งเพิ่ม
+<br>ประสิทธิภาพมากยิ่งขึ้น แล้วความผอมจะไม่ใช่เรื่องยากเลย หากใครยังไม่รู้ว่าจะเริ่มออกกำลังกายแบบไหน 
+<br>ลองดู “แค่ขยับ = ออกกำลังกาย” สิ ไม่ยากแน่นอน</div>
+</div></div>
+
+
+</div>
+
+  <div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>TRICK</div>
+    <div class=is-size-5>เคล็บลับ แต่ไม่ลับ</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick5">
+      <img src="assets/img/trick/5.0.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc"><h4>9 อาหารช่วยดีท็อกซ์ ขับสารพิษได้อย่างดีเยี่ยม</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick6">
+      <img src="assets/img/trick/6.0.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc"><h4>7 วิธีออกกำลังสมอง...ต้านอัลไซเมอร์</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick7">
+      <img src="assets/img/trick/7.0.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>11 เทคนิคกินอย่างพอเพียง</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick8">
+      <img src="assets/img/trick/8.0.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>5 วิธีกินอาหารเพื่อผิวสวยใสจากภายใน</h4></div>
+    <br>
+  </div>
+</div>
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

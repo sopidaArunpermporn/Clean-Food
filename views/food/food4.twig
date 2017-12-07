@@ -1,0 +1,205 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+ 	
+{% endblock %}
+
+{% block content %}
+
+  <main>
+ <font face="TH SarabunPSK">
+<div class="is-size-3">
+        <div class="has-text-centered">
+          <div style="color:#000000;">    <b>พาสต้าเส้นซูกินี  
+<br>
+            <div class="is-size-4">
+  Parmesan Zucchini Noodles Pasta Recipe</b></div>
+      </div>
+  </div>
+</div>
+<body>
+
+
+
+
+
+  <div class="row">
+
+  <font face="TH SarabunPSK">
+  <div class="column left" style="background-color:#ffffff;">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="assets/img/FOOD/4.1.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="assets/img/FOOD/4.3.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="assets/img/FOOD/4.4.jpg" style="width:100%">
+
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+      <video width="700" controls>
+  <source src="assets/img/FOOD/4.1.mp4" type="video/mp4">
+</video>
+  <img src="assets/img/FOOD/4.2.jpg"  alt="Trolltunga Norway" width="auto" height="auto">
+
+  </div>
+
+
+  <div class="column middle" style="background-color:#ffffff;">
+
+    <div class="is-size-4">
+ เย็นนี้มาทำเมนูเส้นคลีน ๆ กินทั้งครอบครัวดีไหม ขอนำเสนอเมนูพาสต้าเส้นซูกินี ใส่มะเขือเทศกับใบโหระพา ผัดจนนุ่มตามชอบ 
+ <br>
+
+<b>ส่วนผสม พาสต้าเส้นซูกินี</b><br>
+    <div style="text-indent: 2.5em;"> • ซูกินี 4 ลูก </div>
+    <div style="text-indent: 2.5em;"> • น้ำมันมะกอก 3 ช้อนโต๊ะ</div>
+    <div style="text-indent: 2.5em;"> • กระเทียมสับ 1 ช้อนโต๊ะ</div>
+    <div style="text-indent: 2.5em;"> • พริกป่น 1/4-1/2 ช้อนชา</div>
+    <div style="text-indent: 2.5em;"> • มะเขือเทศหั่นเต๋า 2 ลูก</div>
+    <div style="text-indent: 2.5em;"> • พาร์มีซานชีสขูด 1/2 ถ้วย</div>
+    <div style="text-indent: 2.5em;"> • ใบโหระพา 1 ถ้วย</div>
+    <div style="text-indent: 2.5em;"> • แป้งข้าวโพด 1 ช้อนชา</div>
+    <div style="text-indent: 2.5em;"> • น้ำเย็น 2 ช้อนชา</div>
+    <div style="text-indent: 2.5em;"> • เกลือป่น</div>
+<b> วิธีทำพาสต้าเส้นซูกินี</b>
+ <div style="text-indent: 2.5em;">1. หั่นซูกินีเป็นเส้นยาว เตรียมไว้</div>
+   <div style="text-indent: 2.5em;"> 2. ตั้งกระทะใส่น้ำมัน กระเทียม และพริกป่น ใช้ไฟปานกลางผัดจนน้ำมันเดือด ใส่เส้นซูกินีลงไป ผัดประมาณ 5-7 นาที</div>
+    <div style="text-indent: 2.5em;"> 3. ใส่มะเขือเทศ ใบโหระพา และชีส ผัดประมาณ 1 นาที เทแป้งข้าวโพดผสมน้ำเย็นลงไป ผัดประมาณ 1 นาที ปรุงรสด้วยเกลือ จัดใส่จาน</div>
+</div>
+  </div>
+   <font face="TH SarabunPSK">
+  <div class="column right" style="background-color:#ffffff;">
+
+         <div class="column right" style="background-color:#ffffff;">
+         <div class="sidenav">
+           <h1><b> Recipe key</b></h1>
+           <h4><a href="food-1"><b>ไม่มีกุ้ง</b></a>
+           <a href="food-2"><b>ไม่มีถั่ว</b></a>
+           <a href="food-3"><b>ไม่มีเนื้อสัตว์</b></a>
+           <a href="food-4"><b>ไม่มีไข่</b></a></h4>
+         </div>
+       </div>
+ 
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="food5">
+      <img src="assets/img/food/5.2.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc"><h4>สปาเกตตีผัดผักโขมมะเขือเทศ</h4></div>
+
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="food6">
+      <img src="assets/img/food/6.4.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc"><h4>สลัดก๋วยเตี๋ยวเนยถั่ว</h4></div>
+
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="food7">
+      <img src="assets/img/food/7.6.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>สลัดก๋วยเตี๋ยวเวียดนาม</h4></div>
+
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="food8">
+      <img src="assets/img/food/8.4.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>พิซซ่าเมล็ดเจียดอกกะหล่ำ</h4></div>
+ 
+  </div>
+</div>
+
+
+<div class="clearfix"></div>
+  </div>
+
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

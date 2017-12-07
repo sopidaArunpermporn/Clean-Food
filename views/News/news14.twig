@@ -1,0 +1,371 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+ 	
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+{% endblock %}
+
+{% block content %}
+
+  <main>
+  
+
+ 
+  <div class="row">
+  <div class="column left" style="background-color:#ffffff;">
+    <font face="TH SarabunPSK">
+    <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>กินอยู่อย่างเฮลธ์ตี้ ใช้ชีวิตแบบคลีน ๆ ถึงเงินไม่มากก็ทำได้นะ !</b><br>
+ <div class="is-size-4">
+   <b>    อาหารคลีน อาหารลดน้ำหนัก อาหารเพื่อสุขภาพ คุณก็สามารถทานอาหารแบบนี้ได้บ่อย ๆ <br>โดยไม่จำเป็นต้องควักเงินจ่ายจนกระเป๋าแห้ง ขอบอกว่าเด็ดมาก
+
+</b>
+  </div>
+  </div>
+</div>
+  <br>
+   <div class="is-size-4">
+ ยุคนี้คำว่า "เพื่อสุขภาพ" เป็นอะไรที่มาแรงมาก ๆ ค่ะ เพราะคนไทยหันมาใส่ใจสุขภาพของตัวเองมากขึ้น เลยเกิดกระแสทานอาหารเพื่อสุขภาพอย่างที่เรียกว่า "อาหารคลีน" ตามกันมา แต่เอ๊ะ...หลายคนคงกำลังตั้งคำถามอยู่ในใจว่า การจะทานอาหารเพื่อสุขภาพแบบนี้ต้องมีเงินถุงเงินถังหรือเปล่า เพราะส่วนประกอบอาหารหรือเครื่องปรุงก็มีราคาสูงกว่าอาหารปกติอยู่พอตัวเชียว ใครคิดแบบนี้อยู่ คุณ สมาชิกหมายเลข 1738453 สมาชิกเว็บไซต์พันทิปดอทคอม ก็ขอตอบคำถามนี้ด้วยกระทู้ "กินอยู่อย่างเฮลธ์ตี้ แต่ใช้เงินไม่มาก ทำได้นะ !" ซึ่งคอนเฟิร์มว่าจริง ๆ แล้ว เราสามารถประหยัดแคลอรีพ่วงกับการประหยัดตังค์ได้ ใครว่าต้องจ่ายแพงเพื่อทานอาหารเฮลธ์ตี้ล่ะ ลองอ่านแล้วทำตามไอเดียดี ๆ ข้างล่างนี้ได้เลยค่ะ
+</div>
+
+     <div class="is-size-4">
+  <br>
+   <center><img src="assets/img/News/14.1.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+   <br>
+          <div style="text-indent: 2.5em;">   วันนี้จะมานำเสนอ การกินอยู่แบบเฮลธ์ตี้ คลีน ๆ ที่ไม่จำเป็นต้องแพงอย่างที่หลาย ๆ คนคิดกัน  แต่เราสามารถกินอาหารเพื่อสุขภาพได้ โดยซื้อตามกำลังที่เรามีจ่าย ทำอาหารทานเองอุ่นใจด้วย เพราะสะอาด รู้ว่าเราใส่อะไร และปรับให้เข้ากับเป้าหมายของเรา เช่น ลดน้ำหนักหรือเพิ่มน้ำหนัก 
+          </div>
+          <div style="text-indent: 2.5em;">   แต่ขอออกตัวไว้ก่อนว่าคำว่า "healthy" เนี่ย อาจไม่สุดโต่งถึงขั้นซื้อไก่ออแกนิกส์ ผักปลอดสารพิษ ปลาแซลมอนจากนอร์เวย์ที่ว่ายน้ำทวนคลื่น และมีไขมันโอเมก้า 3 ระดับท็อปคลาส ไข่ free range ที่แม่ไก่วิ่งหัวเราะเล่นมีความสุข หรือเนื้อสัตว์ไร้ฮอร์โมนต่าง ๆ นานา สุดจะบรรยาย เพราะไม่ใช่ทุกคนที่จะมีกำลังซื้อของพวกนั้นได้
+นาดไหน
+          </div>
+            <div style="text-indent: 2.5em;">    เอาเป็นว่าแค่ทานอาหารแปรรูปให้น้อยที่สุด และในปริมาณที่เหมาะสม = นิยามคำว่า Healthy ของกระทู้นี้แล้วกันนะคะ เนื่องจาก จขกท. เป็นผู้หญิงร่าง (ไม่) บอบบาง (เท่าใดนัก) ปริมาณอาหารก็จะเป็นของผู้หญิง ซึ่งถ้าคุณเป็นผู้ชายก็คงต้องเพิ่มและจ่ายแพงกว่า ขึ้นอยู่กับว่าจะลดน้ำหนักหรือเพิ่ม หรือแค่อยากกินเฮลธ์ตี้</div>
+          <br>
+             <div style="text-indent: 2.5em;">การช้อปครั้งนี้จะอยู่ได้ 1 อาทิตย์ คำนวณคร่าว ๆ ก็ประมาน 20 มื้อ บวก ลบ เพราะคงไม่มีใครทำกับข้าวทานเองทุกมื้อใช่มั้ยคะ มันต้องมีไปกินกับเพื่อนหรือครอบครัวบ้างสิ !</div>
+             <b>ขอแบ่งเป็นหมวดหมู่</b>
+                    <div style="text-indent: 2.5em;1. เนื้อสัตว์ (โปรตีน) ประกอบไปด้วย ไก่และปลาเป็นหลัก (สามารถเปลี่ยนเป็นอย่างอื่นได้ทุกอาทิตย์)</div>
+                           <div style="text-indent: 2.5em;">2. แป้ง (คาร์โบไฮเดรต) ได้แก่ ข้าว (ขัดสีหรือไม่ขัดสีก็ได้) และผลไม้</div>
+                                  <div style="text-indent: 2.5em;">3. ผักหลากหลายชนิด สำหรับใยอาหารสุดแสนจะจำเป็น</div>
+                                  <b>เริ่มด้วยโปรตีน</b>
+
+          <br><br>
+<center><img src="assets/img/News/14.2.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+<br>
+<div style="text-indent: 2.5em;"> "ไก่" ราคาประมาณ 100 บาท/กก. ซื้อมาเลย 2 กก. ใช้ครั้งละประมาณ 150 กรัม สำหรับผู้หญิงอิ่มชัวร์ 
+ก็จะได้ประมาณ 12 มื้อละ</div>
+          <div style="text-indent: 2.5em;">"ปลา" ปลานิลถูกมากกกก ทานมื้อละครึ่งตัว คงอยู่ท้องนะ เพราะกินกับอย่างอื่นด้วย ซื้อมา 4 ตัวก็จะได้ 8 มื้อเดี๊ยวจะบอกว่าเอาไปทำอะไรทานดี</div><br>
+<center><img src="assets/img/News/14.3.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+<br>
+<b>ต่อมาเป็น แป้ง !</b>
+          <div style="text-indent: 2.5em;">   ซื้อมาเลยถุงใหญ่ที่เขาขายกันทั่วไปเพราะคุ้มสุด จะเป็นข้าวขาวหรือข้าวไม่ขัดสีก็ได้ค่ะ เพราะตอนนี้ที่ศึกษาอยู่มีข้อน่าคิดจากนักวิทยาศาสตร์ ว่าที่จริงแล้วข้าวขาวอาจจะดีกว่าข้าวไม่ขัดสีในเรื่องของแบคทีเรียที่ใช้ย่อยในลำไส้ของเรา (แต่จะยังไม่ถกเถียงเรื่องนี้ 555)
+</div>
+
+<div style="text-indent: 2.5em;"> "ผลไม้" ใคร ๆ ก็รู้ว่าผลไม้มีประโยชน์ เพราะฉะนั้นเลือกมาเลยสัก 3 ชนิด และเปลี่ยนไปเรื่อย ๆ ทุกอาทิตย์เพื่อความหลากหลาย</div><br>
+<center><img src="assets/img/News/14.4.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+<br>
+<b> "ผัก ๆๆๆ ใบเขียว"</b>
+          <div style="text-indent: 2.5em;">   อาง่ายที่สุดแบบไม่ต้องผ่านการปรุงหรือกรรมวิธีใด ๆ ทั้งสิ้น ขอให้ท่านตรงไปที่สลัดบาร์ในซูเปอร์มาร์เกตค่ะ ไม่ว่าจะเป็น ท็อปส์ของเซ็นทรัล กรูเม่ตามเดอะมอลล์ ฟู้ดแลนด์ หรือ Fuji supermarket สำหรับชาวกรุง ขีดละประมาณ 25 บาท ก็จัดมาเลยเอาตามความชอบกินผัก
+
+</div>
+<b> TIPS : </b>
+<div style="text-indent: 2.5em;">1. เลือกแต่ผักสลัดที่เบา ๆ ผักใบเขียว ใบสีแดง อย่าไปตักพวกหนัก ๆ เช่น ฟักทองหรือมันฝรั่ง แค่นี้ก็ไม่แพงแล้วค่ะ ถูกกว่าซื้อเป็นห่อสำเร็จรูป</div>
+<div style="text-indent: 2.5em;">2. เลือกใส่ถุง แทนใส่กล่อง เพราะเบากว่าและยังได้ช่วยลดโลกร้อนนิดหน่อย (คิดเข้าข้างตัวเอง) "มะเขือเทศ" ซื้อมาสัก 4-5 ลูก ไว้หั่นใส่สลัดเพื่อเพิ่มรสชาติ
+</div>
+<b> แหล่งช้อป : </b>
+<div style="text-indent: 2.5em;">ใกล้อันไหน ไปอันนั้น Lotus & BigC - เนื้อสัตว์, ไข่ไก่, ผลไม้ Tops, Foodland, Fuji - สลัดบาร์ หรือ !จะไปตลาดสดก็ตามสะดวกเลยค่ะ</div>
+<div style="text-indent: 2.5em;">   ท๊าด๊าาาา และแล้วก็มาถึงไอเดียว่าเราจะเอาอาหารที่เราซื้อมาทำอะไรรับประทานได้บ้าง มีไอเดียสำหรับ 9 มื้อซึ่งสามารถสลับกินได้ในหนึ่งอาทิตย์
+</div>
+<div style="text-indent: 2.5em;"> Theme : คือ ง่าย ๆ ไม่ต้องปรุงแต่งมาก ประหยัดเวลา เอาเข้าเตาอบปุ๊บเสร็จ หรือลงกระทะปุ๊บ ตักขึ้นได้ทันทีไม่ต้องมานั่งรอตุ๋นกันเป็นชาติ เพราะเวลาของท่านมีค่า (จะได้ไปนั่งดูซีรีส์ต่อ --” hahaha)</div>
+<div style="text-indent: 2.5em;">  แต่ก่อนจะทำอาหาร แน่นอนมันต้องมีเครื่องปรุงบ้างอะไรบ้าง ก็ลงทุนสักร้อยบาทนิด ๆ แต่อยู่ได้นานนนนน
+</div>
+<b> สิ่งที่สำคัญก็มีตามนี้ค่ะ</b><br>
+<center><img src="assets/img/News/14.5.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+<br>
+          <div style="text-indent: 2.5em;">   "สเปรย์น้ำมัน" อันนี้แพงหน่อยแต่ใช้ได้นาน ข้อดีคือประหยัดแคลอรี เช่น ปกติ ไข่ดาวทอดที่ใช้น้ำมัน มี 150 kcal แต่ถ้าใช้เจ้านี่ก็จะเหลือแค่ 70 kcal ลดไปเกินครึ่ง (สำหรับคนกำลังลดน้ำหนักมันมีความหมายนะ) แต่คนที่ไม่ได้จะลดน้ำหนักจะใช้น้ำมันปกติก็ได้ค่ะ</div>
+          <div style="text-indent: 2.5em;">   "น้ำปลา หรือ ซีอิ๊ว" ชอบอันไหนก็เลือกอันนั้น แต่ถ้าเลือกไม่ได้ก็ซื้อมันเลยทั้งสองอัน เดี๋ยวนี้เขามีแบบ Low sodium แล้ว เหมาะสำหรับคนที่ความดันสูงน้ำหนักเกิน และคนที่ไม่ออกกำลังกาย เพราะคนออกกำลังก็จะต้องการโซเดียมมากกว่าคนทั่วไป อย่างไรก็ตาม ถ้าไม่ใช้มากเกินไปก็ไม่มีปัญหาค่ะ</div>
+          <div style="text-indent: 2.5em;">   ""เกลือ" เพิ่มความกลมกล่อมให้อาหาร</div>
+          <div style="text-indent: 2.5em;">    "กระเทียม" เผื่อจะผัดนู่นนี่ เพิ่มรสชาติ</div>
+          <div style="text-indent: 2.5em;">   "พริก" สำหรับคนไทยเป็นอะไรที่ขาดบ่ด้าย </div><br>
+<center><img src="assets/img/News/14.6.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+<br>
+<b>เครื่องครัวที่ต้องมีก็คือ</b>
+          <div style="text-indent: 2.5em;">  เตา</div>
+          <div style="text-indent: 2.5em;">  กระทะ + ตะหลิว</div>
+          <div style="text-indent: 2.5em;"> หม้อ สำหรับต้ม (แต่ถ้าไม่ได้ทำแกงจืด ลวกเฉย ๆ ที่จริงแล้วใช้กระทะใส่น้ำก็ได้นะ)</div>
+          <div style="text-indent: 2.5em;">  เตาอบ สำหรับคนที่อยู่คอนโดคนเดียวแนะนำให้ซื้อเตาอบแบบในรูป เพราะราคาย่อมเยาและสามารถอบ ย่างได้ทุกอย่าง ของคาว ของหวาน ข้อเสียคือมันเล็ก จึงใส่อาหารได้ไม่มากแค่นั้นเองค่ะ</div><br>
+<center><img src="assets/img/News/14.7.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+<br>
+          <center> มื้อแรก ปลาลวกหรืออบหรือย่าง แค่เอาเข้าเตาอบ 20 นาที แล้วไปอาบน้ำหรือทำอะไรก็ได้ เสร็จปุ๊บพร้อมทาน หรือจะแพ็กไปทานระหว่างวันก็เลิศ</center><br>
+          <center><img src="assets/img/News/14.8.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+<br>
+          <div style="text-indent: 2.5em;">   ต่อมาไก่ เอาไปหมักไว้ในตู้เย็นทีละเยอะ ๆ พอจะทานก็นำมาย่าง 10 นาทีเสร็จ ตักข้าว ทาน ส่วนสูตรหมักเดี๋ยวขอเวลา 1 วันจะมาโพสต์บอกนะคะ</div>
+          <div style="text-indent: 2.5em;">    ด้านขวาเป็นอกไก่นึ่ง ที่จะกินเปล่า ๆ คงจืด เลยไปขอซื้อน้ำจิ้มร้านข้าวมันไก่มาโรย อร่อยเลย (เน้นว่าไม่ได้คลีนสุดโต่ง สายกลาง ๆ นะคะ ชีวิตจะดี) แต่ถ้าใครแอดวานซ์ชอบกินกับซีอิ๊วหรือน้ำปลาก็สบ๊าย</div> <br>
+           <center><img src="assets/img/News/14.9.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+<br>
+          <div style="text-indent: 2.5em;">   ต อันนี้เป็นเมนูไข่ ๆๆๆ จะกินไข่ทีละหลาย ๆ ฟองก็ได้ไม่มีใครว่า คอเลสเตอรอลไม่ได้มาจากพวกไข่แดง หรืออาหารทะเลนะคะ มันมาจากแป้ง น้ำตาลและไลฟ์สไตล์การกินที่มากเกินไป เพราะฉะนั้นกินไข่ได้มีประโยชน์มาก ชอบแบบไหนก็เลือกแบบนั้น มีสเปรย์น้ำมันแล้วไม่ต้องห่วงเรื่องแคลอรีด้วย ตักข้าวร้อน ๆ เหยาะซอส = ฟิน !</div><br>
+           <center><img src="assets/img/News/14.10.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+<br>
+          <div style="text-indent: 2.5em;">   ต่อมาเป็นเมนูสลัดที่ทำให้เราทานผักได้เยอะขึ้น หรือสำหรับคนที่ลดแป้ง เพิ่มโปรตีนด้วยการทานกับไข่ต้ม หรือไก่ย่าง จะได้ความกลมกล่อมจากไก่ย่างที่หมักมาแล้วโดยไม่ต้องใช้สลัดเดรสซิ่งเพิ่ม (รอสูตรหมักไก่แพร้พส์)</div>
+          <div style="text-indent: 2.5em;">   สุดท้าย คือเมนูข้าวผัด หั่นกระเทียม ฉีดสเปรย์น้ำมัน ใส่ไข่ ผัดข้าว ปรุงรสตามชอบ จะเพิ่มไก่ด้วยก็แล้วแต่  
+ที่สำคัญอย่าลืมทานคู่กับผักนะคะ ใช้สเปรย์น้ำมันประหยัดแคลอรีไปได้ประมาณ 150-200 kcal ต่อจานเลยน้า</div>
+
+
+</div>
+</div>
+ 
+<div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>NEWS</div>
+    <div class=is-size-5>ข่าวสารที่คุณไม่ควรพลาด</div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="news1">
+      <img src="assets/img/news/1.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>โรคคลั่งกินคลีน อาการป่วยทางจิตของคนเสพติดอาหารคลีนเกินไป</h4></div>
+
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news2">
+      <img src="assets/img/news/2.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>ลดน้ำหนักต้องรู้จัก 4 เทรนด์มาแรงในแบบฉบับคลีนฟู้ด</h4></div>
+   
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news3">
+      <img src="assets/img/news/3.2.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>ล้วงความลับ ดาราตัวเด็ดดังรักสุขภาพ พร้อมวิธีทำคลีนฟู้ดง่าย ๆ</h4> </div>
+    
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news4">
+      <img src="assets/img/news/4.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>หมกมุ่นกับเมนูอาหารเพื่อสุขภาพมากเกินไป ใช่ว่าจะดี</h4></div>
+
+  
+</div>
+</div>
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+  </main>
+
+
+{% endblock %}

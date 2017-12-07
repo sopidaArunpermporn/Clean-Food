@@ -1,0 +1,350 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+
+{% endblock %}
+
+
+
+
+{% block content %}
+
+  <main>
+ 
+
+  <div class="row">
+    <div class="column left" style="background-color:#ffffff;">
+    <font face="TH SarabunPSK">
+      <div class="is-size-3">
+
+        <div class="has-text-centered ">
+           <b>12 ทริคสุขภาพสุดแปลกที่รับรองว่าทำแล้วเริด</b>  
+           <br>
+           <div class="is-size-4">
+            <b> พบกับทริคสุดแปลกเกี่ยวกับสุขภาพ ลองทำดูแล้วจะรู้ว่าได้ผลดีเยี่ยม</b>
+           </div>
+        </div> </div>
+     <br>
+     <div class="is-size-4">
+      คนเรามักจะสรรหากลเม็ดเคล็ดลับต่าง ๆ มาใช้ดูแลสุขภาพของตนเอง ไม่ว่าจะเป็นวิธีที่ดูปกติ หรือเป็นวิธีที่แปลกประหลาดจนไม่น่าเชื่อว่ามันจะสามารถช่วยทำให้สุขภาพของเราแข็งแรงได้ วันนี้เลยนำเคล็ดลับสุขภาพดีที่แปลก แต่ช่วยทำให้สุขภาพของคุณแข็งแรงได้ จากเว็บไซต์ health.com มาบอกกัน หนุ่ม ๆ สาว ๆ ที่รักสุขภาพต้องรีบอ่านด่วน
+      <br>
+      <br>
+       <center><img src="assets/img/trick/trick550.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+        <br>
+ 
+          <b> 1. ดื่มกาแฟทำให้งีบหลับได้ดีขึ้น</b>
+            <div style="text-indent: 2.5em;"> การศึกษาในญี่ปุ่นได้ทำการวิจัยถึงวิธีการนอนหลับว่าวิธีใดจะได้ประสิทธิภาพมากที่สุด   ซึ่งพบว่าผู้ที่บริโภคคาเฟอีน 200 มิลลิกรัมก่อนนอนและงีบหลับทันที 20 นาที จะมีการตื่นตัว และสามารถทำบททดสอบในคอมพิวเตอร์ได้ดีกว่าผู้ที่งีบหลับโดยไม่ดื่มกาแฟ นั่นก็เป็นเพราะว่าคาเฟอีนจะยังไม่ออกฤทธิ์ตอนที่เรางีบหลับแต่จะเริ่มออกฤทธิ์หลังจากที่เราตื่น ซึ่งคาเฟอีนจะช่วยขจัดสารชนิดหนึ่งที่เรียกว่าอะดีโนซีน (adenosine)ซึ่งเป็นสารที่เมื่อมีในสมองมากขึ้น
+            ก็จะทำให้เกิดอาการอ่อนล้า และการนอนหลับคือการขจัดสารชนิดนี้ได้และ
+            ถ้าหากยิ่งดื่มกาแฟเข้าไปด้วยละก็จะยิ่งทำให้สมองปลอดโปร่ง
+            </div>
+          <br>
+           <center><img src="assets/img/trick/แปรงฟัน.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+          <br>
+        <b> 2.ไม่ควรแปรงฟันหลังรับประทานอาหาร </b>
+          <div style="text-indent: 2.5em;"> ที่เป็นเช่นนั้นก็เพราะว่า การแปรงฟันจะเป็นตัวเร่งให้กรดที่อยู่ในอาหารทำลายผิวเคลือบฟันและกัดเซาะเข้าไปใต้ผิวฟันได้ ดังนั้นเพื่อให้ฟันของเรายังแข็งแรง หลังจากรับประทานอาหารจึงควรทิ้งระยะเวลา 30 - 60 นาที ก่อนที่จะแปรงฟันนะคะ
+          </div>
+        <br>
+       <b> 3. กล้ามเนื้อและไขมันที่เท่ากันจะมีปริมาตรที่ต่างกัน </b>
+         <div style="text-indent: 2.5em;"> เคยสงสัยกันไหมคะว่าทำไมคนสองคนน้ำหนักเท่ากันแต่ขนาดตัวต่างกัน คนหนึ่งอาจจะดูอ้วน แต่อีกคนอาจจะดูผอม นั่นก็เป็นเพราะว่าในร่างกายของพวกเขาสองคนมีปริมาตรกล้ามเนื้อและไขมันต่างกัน ซึ่งมีการศึกษาพบว่าไขมันและกล้ามเนื้อที่มีน้ำหนักเท่ากันกลับมีปริมาตรที่ต่างกันอย่างสิ้นเชิง ทำให้คนที่ออกกำลังกายเป็นประจำถึงแม้จะมีน้ำหนักเยอะแต่ก็จะดูตัวเล็กกว่าคนที่มีน้ำหนักเท่ากันแต่ไม่ค่อยออกกำลังกาย
+         </div>
+      <br>
+       <b> 4. อยากลดความอ้วน ต้องกินให้เยอะขึ้น </b>
+          <div style="text-indent: 2.5em;">แม้ว่าอาจจะดูขัดแย้งกับความรู้สึกไปเสียหน่อย แต่ในการลดความอ้วน หากเราลดการรับประทานคาร์โบไฮเดรตแต่ไม่หาอะไรมาเสริมส่วนที่ขาด ก็จะทำให้คุณรู้สึกหิวบ่อยขึ้น ดังนั้นเมื่อเราลดคาร์โบไฮเดรตแล้วก็ควรจะรับประทานโปรตีนและไขมันเพิ่มเติมให้เพียงพอต่อร่างกาย อย่างเช่น แทนที่คุณจะรับประทานขนมกับเนยถั่ว ก็เปลี่ยนมารับประทานเนยถั่วกับแอปเปิลแทน เพราะไขมันที่มีประโยชน์และโปรตีนจะช่วยทำให้คุณอิ่มและอยู่ท้องนานขึ้นค่ะ
+          </div>
+       <br>
+        <b> 5. อย่าดื่มเครื่องดื่มชูกำลังถ้าคุณรู้สึกเหนื่อย  </b>
+          <div style="text-indent: 2.5em;">  เครื่องดื่มชูกำลังที่จริงแล้วนั้นให้ปริมาณคาเฟอีนมากกว่ากาแฟถึง 5 เท่า ถึงแม้ว่าจะช่วยกระตุ้นให้รู้สึกตื่นตัวได้ แต่ผลข้างเคียงที่ตามมานั้นดูจะไม่ค่อยน่าภิรมย์เท่าไร เพราะมันจะทำให้รู้สึกหงุดหงิด ฉุนเฉียว และหัวใจเต้นเร็วขึ้น นอกจากนี้ เครื่องดื่มชูกำลังยังมีปริมาณของทอรีน (Taurine) ซึ่งเป็นสารกระตุ้นระบบประสาทส่วนกลาง และยังมีปริมาณน้ำตาลถึง 50 กรัม หรือเทียบเท่ากับน้ำตาล 13 ช้อนชา ! ความหวานขนาดนี้สามารถทำให้ระดับน้ำตาลในเลือดเกิดการแปรปรวนได้ ถึงแม้ว่าจะทำให้คุณสดชื่นได้ แต่ก็แค่เพียงชั่วคราวและหลังจากนั้นมันจะทำให้คุณซึม และทำให้คุณรู้สึกเบลอ ๆ ฉะนั้นหลีกเลี่ยงเครื่องดื่มชูกำลังดีกว่าค่ะ
+          </div>
+      <br>
+        <b> 6. ดื่มน้ำเยอะ ๆ เวลาท้องอืด</b>
+          <div style="text-indent: 2.5em;"> นอกจากการรับประทานอาหารที่มีไฟเบอร์สูงจะช่วยลดอาการท้องอืดได้แล้ว การดื่มน้ำก็เป็นอีกวิธีหนึ่งที่ช่วยให้คุณหายรู้สึกอึดอัดในท้องได้ นั่นก็เป็นเพราะว่าเมื่อคนเรารับประทานอาหารจำพวกไฟเบอร์เข้าไปแล้ว คนเราจะต้องการน้ำจำนวนมากไปช่วยทำให้ไฟเบอร์ที่ละลายน้ำกลายเป็นเจลและทำงานอย่างมีประสิทธิภาพ โดยเจลเหล่านั้นจะไปช่วยทำให้ระบบทางเดินอาหารทำงานได้ดีขึ้น แถมยังช่วยลดอาการท้องอืดจากอาการขาดน้ำได้อีกด้วย
+          </div>
+       <br>
+        <b> 7. งดน้ำอัดลมไดเอตเวลาลดน้ำหนัก</b>
+          <div style="text-indent: 2.5em;"> ใครที่คิดว่าน้ำอัดลมไดเอตดีสำหรับการลดน้ำหนักละก็ คุณคิดผิดค่ะ เพราะว่าจริง ๆ แล้วในน้ำอัดลมไดเอตนั้นมีปริมาณสารที่ให้ความหวานสูง ซึ่งสารเหล่านี้นี่ล่ะที่จะยิ่งทำให้อ้วน โดยมีการวิจัยพบว่าคนที่ดื่มน้ำอัดลมมีแนวโน้มที่จะมีรอบเอวเพิ่มขึ้นถึง 70% เมื่อเทียบกับคนที่ไม่ได้ดื่มน้ำอัดลมมาตลอด 10 ปี
+          </div>
+      <br>
+        <b> 8. ดื่มเครื่องดื่มร้อน ๆ เพื่อให้เย็นลง </b>
+          <div style="text-indent: 2.5em;"> เวลาที่เรารู้สึกร้อน ก็มักจะมองหาเครื่องดื่มเย็น ๆ เพื่อคลายร้อนกันใช่ไหมคะ แต่รู้หรือเปล่าการดื่มเครื่องดื่มร้อน ๆ สามารถทำให้เราคลายร้อนได้เหมือนกัน นั่นก็เป็นเพราะว่าเมื่อเรารู้สึกร้อน แล้วเราดื่มเครื่องดื่มร้อนเข้าไป จะทำให้อุณหภูมิในร่างกายเปลี่ยนแปลงและไปกระตุ้นกระบวนการผลิตเหงื่อในร่างกาย และเมื่อเหงื่อไหลออกมาก็จะทำให้ร่างกายของเราเย็นลงโดยธรรมชาติเลยล่ะค่ะ
+          </div>
+      <br>
+        <b> 9. เมื่อรู้สึกเหนื่อย ออกกำลังกายสิ </b>
+          <div style="text-indent: 2.5em;"> หลังจากวันแห่งการทำงานที่ยาวนานและเหน็ดเหนื่อย การออกกำลังกายคงเป็นสิ่งสุดท้ายที่ทุกคนคงอยากจะทำ แต่รู้หรือไม่ว่าการออกกำลังกายจะช่วยทำให้คุณสดชื่นและหายเหนื่อยได้เป็นปลิดทิ้งเลยล่ะค่ะ เพราะว่าการออกกำลังกายอย่างเข้มข้นเพียง 30 นาที จะช่วยให้คุณเหงื่อออก และยังช่วยทำให้ร่างกายของคุณทำงานได้อย่างมีประสิทธิภาพเพิ่มขึ้น เมื่อร่างกายของคุณทำงานได้ดีขึ้นแล้ว บรรดาความเหน็ดเหนื่อยก็จะหายไป นอกจากนี้ยังลดอาการเมื่อยล้าและภาวะซึมเศร้าได้อีกด้วย
+          </div>
+      <br>
+        <b>  10. การเขียนโน้ตด้วยมือช่วยสร้างเสริมพลังสมอง</b>
+          <div style="text-indent: 2.5em;">แม้ว่าการพิมพ์จะช่วยประหยัดกระดาษแต่ว่ามันจะทำให้คุณลืมได้ง่ายกว่าการเขียนด้วยมือของคุณเอง นั่นก็เป็นเพราะว่าสมองของคุณไม่ได้ทำการประมวลข้อมูลที่ได้รับเหล่านั้น อย่างที่มีงานวิจัยจากมหาวิทยาลัยอินเดียน่าเปิดเผยว่า เมื่อคนเราเรียนรู้บางสิ่ง คนเราก็จะจำเป็นที่จะต้องประมวลผลของข้อมูลเหล่านั้นด้วย ซึ่งวิธีหนึ่งที่คนเราใช้ในการประมวลข้อมูลที่ได้รับมาก็คือการเขียน เมื่อเราเขียนก็จะทำให้สมองได้ทบทวนสิ่งที่ได้รับรู้มาด้วย ทำให้เราสามารถจดจำมันได้ง่ายนั่นเอง  
+          </div>
+      <br>
+        <b> 11. อยากให้ความสัมพันธ์ดีขึ้น ควรใช้เวลาด้วยกันให้น้อยลง </b>
+          <div style="text-indent: 2.5em;">  หลายครั้งสาเหตุของการทะเลาะเบาะแว้งหรือการเลิกราก็เกิดจากการที่ใช้เวลาด้วยกันมากเกินไป เพราะการที่ใช้เวลาด้วยกันมากเกินไปจะทำให้เรามองข้ามบางสิ่งอย่างที่เกี่ยวข้องกับความสัมพันธ์ ทำให้ความสัมพันธ์ถูกบั่นทอนลงถึงแม้ว่าจะอยู่ด้วยกันก็ตาม ซึ่งมีการศึกษาพบว่า การใช้เวลากับตัวเองให้มากขึ้นจะช่วยทำให้คุณเป็นผู้ให้และผู้รับที่ดีมากขึ้นแถมยังช่วยลดความเครียดและความวิตกกังวลได้อีกด้วย ดังนั้นถ้าอยากให้ความสัมพันธ์ของคุณกับคนใกล้ตัวดีอยู่เสมอละก็ อยู่ห่างกันบ้างก็น่าจะดีนะคะ
+          </div>
+      <br>
+      <center><img src="assets/img/trick/ล้างมือ.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+      <br>
+        <b>  12. เลิกใช้สบู่ฆ่าเชื้อแบคทีเรีย  </b>
+          <div style="text-indent: 2.5em;">  หลายคนอาจจะคิดว่าการใช้สบู่ฆ่าเชื้อแบคทีเรียจะช่วยทำให้เราปลอดภัยจากโรคภัยได้ แต่จริง ๆ แล้วเจ้าสบู่ที่ติดฉลากว่าต่อต้านเชื้อแบคทีเรียนี่ล่ะค่ะคือจอมวายร้ายเลย เพราะในสบู่เหล่านี้มีสารไตรโคลซาน (Triclosan) ซื้อเป็นสารต่อต้านเชื้อโรคแทบจะทุกชนิด ซึ่งการใช้สบู่ที่มีสารเหล่านี้บ่อย ๆ จะทำให้เชื้อโรคเกิดอาการดื้อและทำให้เกิดความเปลี่ยนแปลงทางฮอร์โมนอย่างคาดไม่ถึง ซึ่งในปัจจุบัน FDA หรือ องค์การอาหารและยาของสหรัฐได้สั่งห้ามใช้สานไตรโคลซาน (Triclosan) ซึ่งจะมีเริ่มมีผลอย่างเต็มรูปแบในปี 2560
+          </div>
+      <br>
+          <div style="text-indent: 2.5em;">  สุขภาพเป็นสิ่งที่มองข้ามไม่ได้ ดังนั้นเราจึงต้องหมั่นดูแลรักษาสุขภาพอยู่เสมอ และอย่าให้ตนเองเข้าไปอยู่ในความเสี่ยงของโรคภัยต่าง ๆ จะดีที่สุด เพราะไม่อย่างนั้น นอกจากจะเสียเงินเสียทองแล้วยังต้องเสียเวลา เสียสุขภาพอีกด้วยนะคะ 
+          </div>
+     </div> </div>
+
+ 
+
+
+
+  <div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>TRICK</div>
+    <div class=is-size-5>เคล็บลับ แต่ไม่ลับ</div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick17">
+      <img src="assets/img/trick/17.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>ปรับเปลี่ยนการกินเพื่อสุขภาพที่ดีได้ไม่ยาก</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick18">
+      <img src="assets/img/trick/18.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>แนะนำแอพลิเคชั่น สุขภาพ ที่คุณควรมีติดมือถือ</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick19">
+      <img src="assets/img/trick/19.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>10 ทริคเพื่อสุขภาพประจำวัน รู้ไว้ได้ใช้แน่นอน</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick20">
+      <img src="assets/img/trick/20.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>8 วิธีทําให้อายุยืนสุขภาพดี</h4></div>
+   
+  </div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

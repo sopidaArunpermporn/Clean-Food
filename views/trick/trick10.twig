@@ -1,0 +1,420 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+
+{% endblock %}
+
+
+
+
+{% block content %}
+
+  <main>
+ 
+
+ <div class="row">
+    <div class="column left" style="background-color:#ffffff;">
+      <font face="TH SarabunPSK">
+        <div class="is-size-3">
+          
+          <div class="has-text-centered ">
+           <b>สุดยอด 20 อาหารล้างพิษ</b>  </div>
+             <div class="is-size-4">
+               คนโบราณและนักโภชนาการมักกล่าวว่า ”อาหาร” เป็นยาที่วิเศษที่สุด  เพราะเป็นแหล่งรวมของสารอาหารที่มีประโยชน์ต่อร่างกาย แต่ใช่ว่าต้องเป็นอาหารที่มีราคาแพงอย่างเป๋าฮื้อ หูฉลาม รังนก หรือของหายากอย่างดีหมีเท่านั้น ถึงจะให้คุณประโยชน์ต่อร่างกายได้ เพราะจากการศึกษาแล้วพบว่าอาหารที่เราหาได้ตามท้องตลาดในชีวิตประจำวันก็มี ประโยชน์ในตัวไม่ใช่น้อยที่สำคัญอาหารเหล่านี้ยังช่วยล้างพิษให้แก่อวัยวะต่างๆในร่างกาย เช่น ตับ ลำไส้ ไต ผิวหนังช่วยป้องกันการจับตัวของสารพิษ รวมถึงช่วยขับของเสียออกจากร่างกาย ซึ่งสารพิษต่างๆที่สะสมอยู่ในร่างกายอาจมาจากควันพิษในอากาศ สารเจือปนในอาหาร เช่น สีผสมอาหาร สารกันเสีย ยาฆ่าแมลง ปรุงรส เป็นต้น   
+             </div>
+          </div>
+          <br>
+          <center><img src="assets/img/trick/10.0.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+          <br>
+          <div class="is-size-4">
+          <b>  1. หัวหอม </b>
+            <div style="text-indent: 2.5em;"> ประกอบ ไปด้วยสารต่อต้านมะเร็งหลายชนิด และมีสารต้านอนุมูลอิสระสูง ช่วยทำความสะอาดเลือด ช่วยลดระดับคอเลสเตอรอล LD ซึ่งไม่ดีเพราะเป็นตัวการก่อให้เกิดโรคหัวใจ นอกจากนี้ยังช่วยทำให้ระบบทางเดินหายใจทำงานดีขึ้น ช่วยรักษาโรคหอบ โรคทางเดินหายใจ โรคภูมิแพ้ และที่สำคัญคือช่วยรักษาโรคเบาหวานโดยช่วยให้ระดับน้ำตาลคงที่
+            </div>
+          <br>
+          <center><img src="assets/img/trick/10.1.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+          <br> 
+          <b>2. มะนาว</b> 
+            <div style="text-indent: 2.5em;">เป็นสุดยอดอาหารที่ช่วยทำความสะอาดตับ มีวิตามินซีสูง น้ำมะนาวสดเมื่อนำมาผสมกับน้ำอุ่นแล้วดื่มตอนเช้าหลังตื่นนอนจะช่วยล้างพิษ และทำให้เลือดสะอาดขึ้น แต่ถ้านำน้ำมะนาวสดผสมกับโยเกิร์ตและน้ำผึ้ง ก็จะเป็นอาหารที่ช่วยล้างพิษในลำไส้และป้องกันอาการท้องผูกได้อีกด้วย
+            </div>
+          <br>
+          <center><img src="assets/img/trick/10.2.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+          <br>
+          <b>3. เมล็ดแฟลกซ์</b>
+           <div style="text-indent: 2.5em;">ประกอบไปด้วยกรดไขมันที่จำเป็นอย่างโอเมกา 3 ซึ่งมีประโยชน์ต่อสมอง ช่วยบำรุงความจำ 
+             และมีผลดีต่อหัวใจเพราะช่วยลดระดับคอเลสเตอรอล นอกจากนี้ยังมีสารอื่นที่ช่วยทำให้ภูมิคุ้มกันร่างการแข็งแรงขึ้น
+            </div>
+          <br>
+          <center><img src="assets/img/trick/10.3.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+          <br>
+          <b>4. กระเจี๊ยบ</b>
+          <div style="text-indent: 2.5em;">น้ำกระเจี๊ยบมีคุณสมบัติช่วยทำความสะอาดแบคทีเรียและไวรัสออกจากระบบทางเดิน ปัสสาวะ 
+            ซึ่งมักก่อให้เกิดการติดเชื้อ ทำให้มีอาการปัสสาวะไม่ออกหรือมีเลือดปน หรือมีอาการปวดท้องอย่างรุนแรง ซึ่งสารในกระเจี๊ยบสามารถฆ่าเชื้อแบคทีเรียและไวรัสเหล่านั้นได้
+           </div>
+          <br>
+          <center><img src="assets/img/trick/10.4.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+          <br>
+          <b>5. ทับทิม</b>
+             <div style="text-indent: 2.5em;">ตำราแพทย์แผนโบราณของชาวเอเชียกล่าวไว้ว่า การดื่มน้ำทับทิมสามารถรักษาอาการอักเสบและลดความปวดได้ เนื่องจากในผลทับทิมมีสารแอสไพรินซึ่งเป็นสารชนิดเดียวกันกับแอสไพรินในยา แก้ปวด ช่วยล้างพิษ ลดการติดเชื้อของเชื้อโรคที่เข้าสู่ร่างกาย และลดอาการอักเสบ
+            </div>
+          <br>
+          <center><img src="assets/img/trick/10.5.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+          <br>
+          <b>6. พืชตระกูลถั่ว (เช่น ถั่วแดง ถั่วเขียว ถั่วเหลือง และถั่วขาว)</b> 
+              <div style="text-indent: 2.5em;">จากการศึกษาพบว่าผู้ที่กินถั่วเป็นประจำมีระดับคอเลสเตอรอลน้อยกว่าผู้ที่ ไม่ได้กิน และลดอัตราความเสียงต่อการเกิดโรคหัวใจด้วย พืชตระกูลถั่วนี้ประกอบด้วยไฟเบอร์สูง ซึ่งช่วยลดระดับคอเลสเตอรอล ทำความสะอาดลำไส้ ลดการสะสมของสารพิษในลำไส้ และช่วยควบคุมระดับน้ำตาลในเลือดให้คงที่ อีกทั้งช่วยป้องกันการเกิดมะเร็งลำไส้และมะเร็งต่อมลูกหมากด้วย
+              </div>
+          <br>
+          <center><img src="assets/img/trick/10.6.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+          <br>
+          <b> 7. ขึ้นฉ่าย</b>
+               <div style="text-indent: 2.5em;">ถือว่าเป็นสุดยอดอาหารในการทำความสะอาดเลือดและช่วยลดความดันโลหิต สำหรับผู้ที่มีความดันโลหิตสูงควรกินขึ้นฉ่ายเป็นประจำ หรือถ้าจะให้ดีควรดื่มน้ำคั้นจากขึ้นฉ่ายสดในตอนเช้า เพื่อช่วยควบคุมระดับแรงดันเลือดให้คงที่ ในขึ้นฉ่ายยังประกอบไปด้วยสารต้านการเกิดมะเร็ง และสารที่ช่วยขับของเสียจากบุหรี่ในคนที่สูบบุหรี่หรือผู้ที่ได้รับควัน บุหรี่ด้วย
+               </div>
+          <br>
+          <center><img src="assets/img/trick/Feature-52.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+          <br>
+          <b>8. แครอท</b> 
+            <div style="text-indent: 2.5em;">เต็มไปด้วยสารอัลฟาและเบตาแคโรทีน ( Alpha and Beta-carotene ) ซึ่งเป็นส่วนหนึ่งของวิตามินเอ และถือว่าเป็นสารต้านอนุมูลอิสระที่ดีเยี่ยมช่วยปกป้องร่างกายจากสารพิษใน สิ่งแวดล้อม โดยเฉพาะช่วยระบบทางเดินประสาท สายตา ผิวหนัง ที่ต้องสัมผัสแสงแดดเป็นประจำ และจากการวิจัยพบว่าสารในแครอทช่วยลดการเกิดมะเร็ง และช่วยทำให้ระบบทางเดินหายใจและหัวใจแข็งแรงขึ้น
+            </div>
+          <br>
+          <center><img src="assets/img/trick/health-(1)_53.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+          <br>
+          <b> 9. มะเขือพวง</b> 
+             <div style="text-indent: 2.5em;">มะเขือพวงเป็นผักที่เต็มไปด้วยไฟเบอร์ ซึ่งสามารถช่วยดูดซึมไขมันในอาหาร โดยเฉพาะอย่างยิ่งช่วยจับไขมันอิ่มตัว (ไขมันอันตราย) และขับออกจากร่างกายโดยระบบขับถ่าย ทั้งยังมีวิตามินซีและสารต้านอนุมูลอิสระสูง จึงช่วยกำจัดของเสียออกจากระบบทางเดินอาหารได้เร็วขึ้นและลดการสะสมของเสีย
+             </div>
+          <br>
+          <center><img src="assets/img/trick/ส้มโอ3.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+          <br>
+          <b>10. ส้มโอ หรือ เกรปฟรุต </b>
+            <div style="text-indent: 2.5em;">เพราะเป็นผลไม้รสชาติดีจึงได้รับความนิยมในอาหารมื้อเช้าของชาวตะวันตก สารเพกตินซึ่งเป็นไฟเบอร์ประเภทหนึ่งในเกรปฟรุต สามารถช่วยลดระดับคอเลสเตอรอลในเส้นเลือด ก่อนที่จะจับตัวเป็นก้อนและขวางทางเดินในหลอดเลือด นอกจากนี้เพกตินยังสามารถช่วยป้องกันไม่ให้โลหะหนักเหล่านี้ทำอันตรายต่อ ร่างกาย ส่วนเกรปฟรุตช่วยต่อต้านการเกิดมะเร็ง โดยเฉพาะอย่างยิ่งมะเร็งกระเพราะอาหารและมะเร็งตับอ่อน สารต้านอนุมูลอิสระในเกรปฟรุตช่วยปกป้องสารพิษที่เป็นอันตรายต่อร่างกาย
+            </div>
+          <br>
+          <center><img src="assets/img/trick/iStock-471175766_M.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+          <br>
+          <b> 11. กระเทียม </b>
+              <div style="text-indent: 2.5em;">จากหลายการศึกษาให้ผลตรงกันถึงคุณสมบัติของกระเทียมในการทำความสะอาดร่างกาย นั่นคือ การกินกระเทียมเพื่อฆ่าเชื้อแบคทีเรีย ขับและฆ่าพยาธิในทางเดินอาหาร และฆ่าเชื้อไวรัส โดยเฉพาะทำความสะอาดเลือดและระบบลำไส้ ทำให้เส้นเลือดมีความยืดหยุ่นและลดแรงดันโลหิต นอกจากนี้ยังต่อต้านการเกิดมะเร็งและทำให้ระบบทางเดินหายใจดีขึ้น แต่ก็ควรระวังเรื่องการกินกระเทียมมากเกินไป ซึ่งก่อให้เกิดลมหายใจที่มีกลิ่นกระเทียมไปด้วย
+              </div>
+          <br>
+          <center><img src="assets/img/trick/490658971-1.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+          <br>
+          <b>12. บลูเบอร์รี่ </b>
+              <div style="text-indent: 2.5em;">เป็นผลไม้ที่มีค่าแอนติออกซิแดนต์สูงมากชนิดหนึ่งและถือเป็นหนึ่งในสุดยอด อาหารรักษาโรค เนื่องจากในบลูเบอร์รี่มีสารแอสไพรินตามธรรมชาติ ซึ่งช่วยลดการระคายเคือง สารที่มีในบลูเบอร์รี่สามารถเข้าไปขัดขวางแบคทีเรียในทางเดินปัสสาวะ ส่งผลให้ลดการติดเชื้อในทางเดินปัสสาวะ
+              </div>
+          <br>
+          <center><img src="assets/img/trick/cabbage.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+          <br>
+          <b>13. กะหล่ำ </b>
+             <div style="text-indent: 2.5em;">เต็มไปด้วยสารต่อต้านมะเร็งและอนุมูลอิสระ ( Antioxidant ) และช่วยตับขับฮอร์โมนที่มากเกินไป ซึ่งอาจเป็นฮอร์โมนความเครียดที่มีผลเสียต่อร่างกาย ทั้งยังช่วยทำความสะอาดระบบย่อยอาหาร รักษาและปกป้องกระเพราะอาหารจากแบคทีเรียและไวรัสต่างๆ พืชตระกูลกะหล่ำ ได้แก่ กะหล่ำปลี กะหล่ำดอก บรอกโคลี และกะหล่ำปม ผักเหล่านี้ช่วยทำความสะอาดร่างกายและช่วยกำจัดของเสียจากสิ่งแวดล้อม เช่น ของเสียจากควันบุหรี่ ควันจากท่อไอเสีย และช่วยให้ตับผลิตเอนไซม์ออกมาให้เพียงพอในการกำจัดของเสีย
+             </div>
+          <br>
+          <center><img src="assets/img/trick/บีทรูทรักษาผมร่วง.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+          <br>
+          <b>14. บีตรูต </b>
+             <div style="text-indent: 2.5em;">ผักสีแดงที่นิยมใส่ในสลัดนี้นับเป็นผักมหัศจรรย์ซึ่งเประกอบไปด้วยไฟโตเคมี คอล ( Phytochemical ) วิตามินและเกลือแร่หลายชนิด ซึ่งทำให้บีตรูตมีคุณสมบัติต่อต้านชื้อโรค ทำความสะอาดเลือด ตับ และระบบน้ำเหลือง อีกทั้งมีคุณสมบัติช่วยให้ร่างกายรับออกซิเจนได้มากขึ้น จึงช่วยกำจัดของเสียได้ง่ายและเร็วขึ้น ซึ่งจากกการศึกษาเมื่อไม่นานมานี้พบว่าบีตรูตช่วยปรับระดับกรด-ด่างในเลือด ให้สมดุลด้วย
+             </div>
+          <br>
+          <center><img src="assets/img/trick/Avocados.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+          <br>
+          <b> 15. อะโวคาโด</b> 
+             <div style="text-indent: 2.5em;">อาจยังไม่เป็นที่รู้จักมากนัก แต่ปัจจุบันเราก็สามารถหาซื้ออะโวคาโดได้จากตลาดทั่วไป ในอะโวคาโดมีสารกลูตาไทโอน(Glutathione ) ที่สามารถช่วยลดคอเลสเตอรอลและป้องกันหลอดเลือดอุดตัน ทำให้หลอดเลือดมีความยืดหยุ่น ทั้งช่วยจับสารพิษที่เป็นตัวก่อให้เกิดมะเร็งกว่า 30 ชนิด และขณะเดียวกันก็ช่วยให้ตับกำจัดของเสียจำพวกสารเคมีและโลหะหนัก ซึ่งนักวิจัยจากมหาวิทยาลัยมิชิแกน ( University of Michigan ) พบว่าผู้สูงอายุซึ่งกินอาหารที่มีสารกลูตาไทโอนสูงจะมีสุขภาพดีกว่าคนที่ไม่ ได้กิน และมีอัตราการเกิดโรคหัวใจน้อยกว่า 30 เปอร์เซ็นต์
+             </div>
+          <br>
+          <center><img src="assets/img/trick/ivy-gourd-2.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+          <br>
+          <b> 16. ตำลึง </b>
+            <div style="text-indent: 2.5em;"> ผักใบเขียวที่ขึ้นข้างรั้วหาง่าย และราคาไม่แพงนี้ ในสมัยก่อนเรามักนำมาทำแกงจืดตำลึงโดยใสเนื้อสัตว์น้อยๆ แต่ปัจจุบันดูเหมือนว่าแกงจืดตำลึงจะมีตำลึงอยู่ไม่กี่ใบ และมีหมูสับเต็มไปหมด ซึ่งตำลึงมีคุณสมบัติ ช่วยผลิตน้ำดีที่จะทำให้ลำไส้ขับสารพิษออกจากร่างกายได้ดีขึ้น นอกจากนี้สารที่มีอยู่ในตำลึงยังช่วยให้ตับสลายไขมันในร่างกายด้วย
+            </div>
+          <br>
+          <center><img src="assets/img/trick/apple03.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+          <br>
+          <b> 17. แอปเปิ้ล </b>
+            <div style="text-indent: 2.5em;">ประกอบไปด้วยเพกตินสูง เพกตินเป็นไฟเบอร์ชนิดหนึ่งที่ช่วยจับคอเลสเตอรอลและโลหะหนักในร่างกายที่ ปะปนมากับอาหาร เช่น ปรอท ตะกั่ว ซึ่งทำลายเซลล์สมอง นี่คือเหตุผลที่เราควรจะกินแอปเบิลเพื่อล้างสารพิษออกจากร่างกาย นอกจากนี้ยังมีคุณประโยชน์ช่วยต่อต้านการเกิดมะเร็ง ฆ่าเชื้อแบคทีเรียและเชื้อไวรัส จากการศึกษาทดลองยังพบว่าแอปเปิลช่วยขับสารเคมีที่ปนเปื้อนในอาหาร ซึ่งก่อให้เกิดอาการแพ้ในเด็ก และทำให้เกิดไมเกรนในผู้ใหญ่ได้
+            </div>
+          <br>
+          <center><img src="assets/img/trick/almondsnutrition.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+          <br>
+          <b>18. อัลมอนด์ </b>
+            <div style="text-indent: 2.5em;">เป็นถั่วที่มีใยอาหารสูง มีแคลเซียมและโปรตีนที่ดีต่อร่างกาย แม้จะมีไขมัน แต่ก็เป็นไขมันที่ดีและจำเป็นต่อร่างกาย ในระหว่างที่เราทำการล้างพิษจึงควรกินอัลมอนด์ นอกจากนี้อัลมอนด์ยังช่วยควบคุมระดับน้ำตาลในเลือด ซึ่งถ้าระดับน้ำตาลในเลือดสูงก็จะเกิดอาการไฮเปอร์ไกลซีเมีย ( Hyperglycemia ) ทำให้รู้สึกหิวน้ำมากกว่าปกติ หายใจไม่ออก ไม่สามารถควบคุมตัวเองได้ และหากน้ำตาลในเลือดต่ำที่เรียกว่า ไฮโปไกลซีเมีย( Hypoglycemia )จะทำให้เกิดอาการหน้ามืด เป็นลม ใจสั่น ไม่มีแรง คิดอะไรไม่ออก
+            </div>
+          <br>
+          <center><img src="assets/img/trick/mSQWlZdCq5b6ZLkt4pxN4YIWJOnKu4Ad.jpg.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+          <br>
+          <b> 19. กล้วย </b>
+            <div style="text-indent: 2.5em;">มีคุณสมบัติในการบำรุงและสร้างความแข็งแรงแก่กระเพาะอาหาร ในขณะเดียวกันก็ให้เกลือแร่ที่จำเป็นแก่ร่างกาย เช่น โพแทสเซียม ฟอสฟอรัส โพแทสเซียมช่วยควบคุมระดับของเหลวในร่างกายโดยช่วยขับของเหลว หรือสารพิษส่วนเกินออกจากร่างกาย การกินกล้วยเป็นประจำยังช่วยป้องกันท้องผูก ทำให้ระบบขับถ่ายเป็นปกติอีกด้วย
+            </div>
+          <br>
+          <center><img src="assets/img/trick/1308113253.jpg" alt="Trolltunga Norway" width="500" height="auto"></center>
+          <br>
+          <b> 20. สาหร่าย</b>
+            <div style="text-indent: 2.5em;"> พืชสีเขียวในทะเลที่หลายคนมองข้ามคุณประโยชน์ แต่จากการศึกษาของ Mcgill University ที่ Montreal แสดงผลว่าสาหร่ายสามารถจับของเสียจากรังสีที่สะสมในร่างกาย ในปัจจุบันเราไม่สามารถหลีกเลี่ยงรังสีต่างๆจากคลื่นวิทยุ คลื่นโทรศัพท์ คลื่นแม่เหล็กไฟฟ้า และคลื่นไมโครเวฟทั้ง หลายได้ ซึ่งพลังงานความร้อนเหล่านี้เป็นอันตรายต่อร่างกาย ก่อให้เกิดมะเร็งได้ ซึ่งสาหร่ายจะช่วยดูดซึมคลื่นรังสีเหล่านั้น และสามารถจับกับพวกโลหะหนักได้ด้วย นอกจากนี้ยังเต็มไปด้วยโปรตีนและเกลือแร่ในปริมาณมาก
+            </div>
+          <br>
+            <div style="text-indent: 2.5em;">ที่มา นิตยสาร Women's Health
+            </div>
+        
+        </div>
+   
+  </div>
+
+ 
+
+
+
+  <div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>TRICK</div>
+    <div class=is-size-5>เคล็บลับ แต่ไม่ลับ</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick5">
+      <img src="assets/img/trick/5.0.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc"><h4>9 อาหารช่วยดีท็อกซ์ ขับสารพิษได้อย่างดีเยี่ยม</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick6">
+      <img src="assets/img/trick/6.0.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc"><h4>7 วิธีออกกำลังสมอง...ต้านอัลไซเมอร์</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick7">
+      <img src="assets/img/trick/7.0.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>11 เทคนิคกินอย่างพอเพียง</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick8">
+      <img src="assets/img/trick/8.0.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>5 วิธีกินอาหารเพื่อผิวสวยใสจากภายใน</h4></div>
+    <br>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

@@ -1,0 +1,210 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+ 	
+{% endblock %}
+
+{% block content %}
+
+  <main>
+ <font face="TH SarabunPSK">
+<div class="is-size-3">
+        <div class="has-text-centered">
+          <div style="color:#000000;">    <b> สลัดอกไก่สไตล์ไทย   
+
+            <div class="is-size-4">
+    Thai Chicken Salad </b></div>
+      </div>
+  </div>
+</div>
+<body>
+
+
+
+
+
+  <div class="row">
+
+  <font face="TH SarabunPSK">
+  <div class="column left" style="background-color:#ffffff;">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="assets/img/FOOD/18.1.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="assets/img/FOOD/18.2.jpg" style="width:100%">
+
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+  </div>
+
+
+  <div class="column middle" style="background-color:#ffffff;">
+
+    <div class="is-size-4">
+    ปิดท้ายกันด้วยเมนูสลัดอกไก่สไตล์ไทย สูตรนี้ใส่โหระพากลิ่นหอม โรยต้นหอมและผักชีหน่อย เพิ่มความกรุบด้วยเม็ดมะม่วงหิมพานต์ สุดท้ายราดน้ำสลัดมะนาว     <br>
+
+<b>ส่วนผสม สลัดอกไก่สไตล์ไทย</b><br>
+
+
+     <div style="text-indent: 2.5em;"> • น้ำมันมะพร้าว 1 ช้อนโต๊ะ </div>
+       <div style="text-indent: 2.5em;">   • หอมแดงสับ 1 หัว</div>
+       <div style="text-indent: 2.5em;">   • กระเทียมสับ 1 ช้อนชา</div>
+       <div style="text-indent: 2.5em;">   • อกไก่ 1 ปอนด์ (ประมาณ 454 กรัม)</div>
+       <div style="text-indent: 2.5em;">   • ผักกาดขาว (หั่นเส้น) 4 ถ้วย</div>
+       <div style="text-indent: 2.5em;">   • พริกหวานสีแดง (หั่นเต๋า) 1 ลูก</div>
+       <div style="text-indent: 2.5em;">   • แครอทขูดเส้น 3 หัว</div>
+       <div style="text-indent: 2.5em;">   • ต้นหอมซอย 2 ต้น</div>
+       <div style="text-indent: 2.5em;">   • โหระพาซอย 1/4 ถ้วย</div>
+       <div style="text-indent: 2.5em;">   • ผักชีซอย 1/4 ถ้วย</div>
+       <div style="text-indent: 2.5em;">   • เม็ดมะม่วงหิมพานต์คั่วสับ 1/4 ถ้วย</div>
+
+<b> ส่วนผสม น้ำสลัดมะนาว </b>
+
+      <div style="text-indent: 2.5em;">• น้ำมะนาว 4 ช้อนโต๊ะ</div>
+         <div style="text-indent: 2.5em;"> • น้ำปลา 3 ช้อนโต๊ะ</div>
+         <div style="text-indent: 2.5em;"> • ขิงขูด 1 ช้อนโต๊ะ</div>
+         <div style="text-indent: 2.5em;"> • พริกป่น 2 ช้อนชา</div>
+         <div style="text-indent: 2.5em;"> • น้ำผึ้งตามชอบ</div>
+         <div style="text-indent: 2.5em;"> • น้ำมันมะกอก 3 ช้อนโต๊ะ</div>
+
+
+<b>วิธีทำสลัดอกไก่สไตล์ไทย</b>
+
+     <div style="text-indent: 2.5em;"> 1. ทำอกไก่ย่าง โดยตั้งกระทะใช้ไฟปานกลางค่อนข้างแรง ใส่น้ำมันมะพร้าวลงไป พอร้อนใส่หอมแดงผัดกับกระเทียมจนหอม ใส่ไก่ลงไปย่างจนสุก นำขึ้นมาพักจนเย็นแล้วฉีกเป็นเส้น</div>
+        <div style="text-indent: 2.5em;">  2. ทำน้ำสลัดมะนาว โดยคนผสมน้ำมะนาว น้ำปลา ขิง และพริกป่นจนเข้ากัน เติมน้ำมันมะกอกและน้ำผึ้ง</div>
+        <div style="text-indent: 2.5em;">  3. ใส่ผักกาดขาวลงในชามเสิร์ฟ ตามด้วยพริกหวาน แครอท ต้นหอม โหระพา ผักชี และไก่ ราดน้ำสลัดมะนาว โรยเม็ดมะม่วงหิมพานต์</div>
+</div>
+  </div>
+
+  <font face="TH SarabunPSK">
+  <div class="column right" style="background-color:#ffffff;">
+
+         
+       <div class="column right" style="background-color:#ffffff;">
+         <div class="sidenav">
+           <h1><b> Recipe key</b></h1>
+           <h4><a href="food-1"><b>ไม่มีกุ้ง</b></b></a>
+           <a href="food-2"><b>ไม่มีถั่ว</b></a>
+           <a href="food-3"><b>ไม่มีเนื้อสัตว์</b></a>
+           <a href="food-4"><b>ไม่มีไข่</b></a></h4>
+         </div>
+       </div>
+ 
+ 
+
+
+      <div class="responsive">
+  <div class="gallery">
+    <a href="food1">
+      <img src="assets/img/food/1.4.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>สลัดอะโวคาโดอกไก่สไตล์เม็กซิกัน </h4></div>
+
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="food2">
+      <img src="assets/img/food/2.5.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>สลัดอกไก่อะโวคาโดเบคอน</h4></div>
+   
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="food3">
+      <img src="assets/img/food/3.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>สลัดอกไก่สูตรเฮลธ์ตี้ </h4> </div>
+    
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="food4">
+      <img src="assets/img/food/4.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>พาสต้าเส้นซูกินี</h4></div>
+
+  
+</div>
+</div>
+
+<div class="clearfix"></div>
+  </div>
+
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+  </main>
+
+
+{% endblock %}

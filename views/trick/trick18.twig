@@ -1,0 +1,354 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+
+{% endblock %}
+
+
+
+
+{% block content %}
+
+  <main>
+ 
+
+
+  <div class="row">
+    <div class="column left" style="background-color:#ffffff;">
+    <font face="TH SarabunPSK">
+      <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>แนะนำแอพลิเคชั่น สุขภาพ ที่คุณควรมีติดมือถือ</b> </div>  <br>
+ <div class="is-size-4">
+  <b>แอพพลิเคชั่นเหล่านี้ก็จะช่วยให้การดูแลสุขภาพเป็นไปอย่างง่ายดายมากขึ้น </b>
+   <br>เนื่องด้วยเทรนต์สุขภาพกำลังมาแรง จึงมีแอพพลิเคชั่นเพื่อสุขภาพเกิดขึ้นมากมายเพื่อเพิ่มความสะดวกสบายแก่ผู้ใช้งานมากขึ้น และสามารถช่วยดูแลสุขภาพได้อย่างมีประสิทธิภาพอีกด้วย โดยในปัจจุบันก็มี App สุขภาพที่กำลังอินเทรนต์ประจำปี 2017 หลายแอพด้วยกัน ซึ่งแต่ละแอพก็มีจุดเด่นและการใช้งานดังนี้ สาย track แคลอรี่ เป็นแอพที่จะช่วยในการขจัดแคลอรี่ส่วนเกินและช่วยฟิตหุ่นให้ดูกระชับสวยเป๊ะมากขึ้น โดยจะเน้นไปที่การควบคุมอาหารและการนับแคลอรีเป็นหลัก ซึ่งมีแอพฯที่น่าสนใจดังนี้
+  </div>
+ </div>
+
+  <br>
+   <center><img src="assets/img/trick/PicsArt_12-05-08.53.17.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+   <div class="is-size-4">
+  <b>1. Calorie Counter by FatSecre</b>
+ <div style="text-indent: 2.5em;"> แอพเพื่อสุขภาพที่ครบครันไปด้วยการควบคุมการออกกำลังกายติดตามการรับประทานอาหารช่วยวางแผนการลดน้ำหนักและติดตามผลอย่างต่อเนื่องจึงสามารถช่วยในการลดน้ำหนักและดูแลสุขภาพได้เป็นอย่างดีซึ่งจุดเด่นของแอพพลิเคชั่นตัวนี้ คือ
+นับแคลอรีของอาหารที่ทานในแต่ละมื้อ แต่ละวันทำให้ทราบว่าในหนึ่งวันได้รับปริมาณแคลอรีมากเท่าไหร่และอยู่ในระดับที่เหมาะสมหรือไม่
+กำหนดการออกกำลังกายในแต่ละวันโดยคำนวณจากแคลอรีที่ได้รับในวันนั้นๆ เพื่อให้เกิดความสมดุลที่สุด
+วางแผนการทานอาหารและแคลอรีที่ควรได้รับในแต่ละวันสำหรับผู้ที่ต้องการลดน้ำหนักพร้อมติดตามผลการเปลี่ยนแปลงของน้ำหนักด้วย
+มีการจัดหมวดหมู่อย่างเป็นระเบียบ จึงทำให้ง่ายต่อการใช้งานและมีการสรุปผลที่เข้าใจง่าย
+</div>
+<b>2. Diet Point Weight Loss</b>
+ <div style="text-indent: 2.5em;"> แอพพลิเคชั่นสำหรับผู้ที่ต้องการไดเอทโดยภายในแอพจะมีแผนการควบคุมน้ำหนักที่หลากหลายสามารถเลือกแบบแผนที่ชอบได้ตามสะดวกซึ่งแต่ละแผนนั้นก็จะมีรายการอาหารที่จัดขึ้นมาอย่างเหมาะสม
+ซึ่งมีการคำนวณแคลอรีไว้อย่างเสร็จสรรพแค่มีวินัยในตนเองและสามารถทานอาหารตามรายการที่ App กำหนดได้อย่างเคร่งครัด ก็จะทำให้การไดเอทประสบความสำเร็จได้อย่างแน่นอนนอกจากนี้ก็สามารถคำนวณออกมาคร่าวๆ ได้อีกด้วยว่าภายในระยะเวลาที่กำหนดจะสามารถลดน้ำหนักได้เท่าไหร่จึงสามารถสร้างแรงจูงใจในการลดน้ำหนักได้เป็นอย่างดี
+</div>
+  <br>
+   <center><img src="assets/img/trick/PicsArt_12-05-08.56.54.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+<b>3. สูตรลดความอ้วน วิธีลดน้ำหนัก</b>
+ <div style="text-indent: 2.5em;"> อีกหนึ่งแอพฯ ที่รวบรวมสูตรลดความอ้วนไว้อย่างมากมายโดยแต่ละสูตรก็ได้รับการการันตีแล้วว่าให้ผลลัพธ์ดีจริง แถมลดได้ทุกสัดส่วนไม่ว่าจะเป็นหน้าท้อง ต้นแขน ต้นขาหรือสะโพกอีกด้วย นอกจากนี้ก็มีฟังก์ชั่นการคำนวณดัชนีมวลกายที่ทำให้ทราบว่าตนเองอ้วนมากแค่ไหนหรือแค่อยู่ในระดับท้วมอย่างไรก็ตามแอพเพื่อสุขภาพดีๆ แอพฯนี้ไม่ทำให้คนอยากมีหุ่นสวยผิดหวังแน่นอน 
+</div>
+<br>
+<br>
+ <div style="text-indent: 2.5em;"><b> สายวิ่ง/ออกกำลังกาย แอพพลิเคชั่นที่จะช่วยให้การออกกำลังกายและการวิ่งเป็นเรื่องสนุกมากขึ้นแถมยังให้คำแนะนำในการออกกำลังกายได้อย่างเหมาะสมโดยมีแอพที่น่าสนใจดังนี้</b></div>
+  <br>
+   <center><img src="assets/img/trick/7-minute-workout.png" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+<b>1. 7 Minutes</b>
+ <div style="text-indent: 2.5em;"> แอพพลิเคชั่นเพื่อการออกกำลังกาย สำหรับผู้ที่มีเวลาออกกำลังกายน้อยซึ่งจะใช้เวลาออกกำลังกายแค่ 7 นาทีต่อวันเท่านั้น แต่ให้ผลลัพธ์ที่น่าทึ่งสุดๆเพราะท่าออกกำลังกายแต่ละท่าล้วนเป็นท่าที่มีความหนักหน่วง สามารถเผาผลาญไขมันในร่างกายได้เป็นอย่างดี เพียงทำเป็นประจำทุกวันรูปร่างจะกลับมาผอมเพรียวดั่งใจต้องการแน่นอน นอกจากนี้ App ก็สามารถใช้งานได้ง่ายไม่ยุ่งยากและมีเสียงช่วยแนะนำระหว่างการออกกำลังกายอีกด้วย
+</div><br>
+   <center><img src="assets/img/trick/Nike-Running-4.6-for-iOS-iPhone-screenshot-001.png" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+<b>2. Nike+ Running</b>
+ <div style="text-indent: 2.5em;"> แอพฯ ที่นักวิ่งส่วนใหญ่ให้ความนิยม ซึ่งจะมี Tracking GPS ทำหน้าที่ในการบันทึกการวิ่ง มีระบบ Community ที่สามารถติดตามการวิ่งของเพื่อนๆ ได้ และมี Nike+ Coach ที่เป็นระบบเทรนเนอร์ส่วนตัว ที่จะช่วยแนะนำโปรแกรมการวิ่งต่างๆที่เหมาะกับตัวผู้ใช้งานเอง แถมสามารถสร้าง Challenges ที่จะชวนเพื่อนๆมาร่วมเล่นเพื่อความสนุกได้อีกด้วย เป็นแอพที่น่าสนใจไม่น้อยเลยทีเดียว
+</div>
+<br>
+<br>
+ <div style="text-indent: 2.5em;"> <b>สายดู performance แอพฯเพื่อสุขภาพ เน้นการดูการหาข้อมูลเพื่อตรวจเช็คสุขภาพของตนเองเป็นหลักดังตัวอย่างแอพฯ ต่อไปนี้</b></div>
+<br>
+   <center><img src="assets/img/trick/PicsArt_12-05-09.04.40.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+<b>1. Cardiograph</b>
+ <div style="text-indent: 2.5em;"> Cardiograph แอพฯที่จะช่วยตรวจสอบการเต้นของหัวใจและสามารถนำมาเปรียบเทียบกันได้ในแต่ละช่วงเวลา ทำให้ทราบว่าอัตราการเต้นของหัวใจเป็นปกติหรือไม่ซึ่งแอพพลิเคชั่นนี้ก็มีความแม่นยำสูงมากทีเดียวหรือหากใครที่ไม่มั่นใจว่าการเต้นของหัวใจตนเองถือว่าอยู่ในระดับที่ปกติหรือเป็นอันตราย ก็สามารถนำผลการเปรียบเทียบอัตราการเต้นแต่ละครั้ง ไปปรึกษาแพทย์เพื่อให้แพทย์วินิจฉัยจากผลดังกล่าวได้อีกด้วย
+</div>
+  <br>
+   <center><img src="assets/img/trick/392x696bb.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+<b>2. iTriage</b>
+ <div style="text-indent: 2.5em;"> แอพฯ ที่ให้ข้อมูลและความรู้เกี่ยวกับอาการเจ็บป่วยที่เกิดขึ้นซึ่งจะบอกว่าอาการเจ็บป่วยดังกล่าวเสี่ยงเป็นโรคอะไรได้บ้าง วิธีการรักษามีกี่วิธีพร้อมแนะนำสถานที่ตรวจรักษาโรคที่ใกล้ที่สุด ที่สำคัญคือ iTriageมีฐานข้อมูลเกี่ยวกับโรคมากถึง 1,000แบบเลยทีเดียวและมีความแม่นยำในการวินิจฉัยโรคสูงมาก จึงเป็น Appที่ควรโหลดมาติดมือถือไว้ รับรองว่าคุ้มค่ากับการใช้งานแน่นอน
+</div><br>
+   <center><img src="assets/img/trick/img18/33c9a262f2b2e483433ee95f42ea5565--personal-trainer-trainers.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+<b>3. FITSTAR PERSONAL TRAINER</b>
+ <div style="text-indent: 2.5em;"> แอพพลิเคชั่นใหม่จาก Fitbit ที่รวมท่าออกกำลังกายไว้มากกว่า 100 ท่าให้สามารถดูและออกกำลังกายตามได้อย่างง่ายดายและสามารถแนะนำรูปแบบการออกกำลังกายที่เหมาะสมให้กับผู้ใช้งานได้อีกด้วยเป็นแอพฯที่น่าสนใจและให้ผลลัพธ์ที่ดีต่อสุขภาพได้มากทีเดียว
+</div>
+ <div style="text-indent: 2.5em;"> <b>สายอาหารเพื่อสุขภาพ  แอพพลิเคชั่นที่รวบรวมเมนูอาหารเพื่อสุขภาพ พร้อมวิธีการทำอย่างเสร็จสรรพให้สามารถทำตามได้อย่างง่ายดายเหมาะกับคนที่ชอบทำอาหารและอยากทำเมนูสุขภาพเป็นที่สุดโดยมีแอพฯที่อยากแนะนำคือ</b>
+ </div>
+ <br>
+   <center><img src="assets/img/trick/BlogPost_MainImage_final.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+<b>Foodily Recipes</b>
+ <div style="text-indent: 2.5em;">แอพที่รวบรวมอาหารดีมีประโยชน์พร้อมวิธีการทำที่จะทำให้ผู้ใช้งานสามารถปรุงอาหารเหล่านี้ได้เองโดยไม่ต้องไปหาซื้อทานที่ไหนแถมการันตีรสชาติความอร่อยด้วยสูตรลับจากตำราเด็ดของเหล่าเชฟชื่อดังทั่วโลกนอกจากนี้เมื่อปรุงอาหารเรียบร้อยแล้ว Foodily Recipesก็มีฟังก์ชั่นที่สามารถถ่ายรูปอาหารและแชร์ผ่านแอพฯ ได้อีกด้วย Appเพื่อสุขภาพดีๆ มีประโยชน์แบบนี้ ใครที่ชอบทำอาหารขอบอกเลยว่าห้ามพลาดแถมแต่ละเมนูก็เป็นเมนูที่คัดสรรมาเพื่อสุขภาพโดยเฉพาะไม่ทำให้อ้วนและไม่ส่งผลเสียต่อสุขภาพแน่นอน
+</div>
+
+   </div>
+  </div>
+
+
+
+  <div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>TRICK</div>
+    <div class=is-size-5>เคล็บลับ แต่ไม่ลับ</div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick1">
+      <img src="assets/img/trick/1.0.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>เด็กวัยคิดส์กินอาหารคลีนได้ไหม เด็กกินอาหารคลีนอย่างไร</h4></div>
+
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick2">
+      <img src="assets/img/trick/2.0.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>10 วิธีสำหรับเตรียมตัวทานอาหารคลีน เพื่อลดความอ้วน!</h4></div>
+   
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick3">
+      <img src="assets/img/trick/3.0.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>5 ข้อหลักที่คนกิน อาหารคลีน อาจไม่รู้</h4> </div>
+    
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick4">
+      <img src="assets/img/trick/4.0.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>เทคนิคฝึกทานอาหารคลีนแบบง่ายๆ เริ่มต้นด้วยการเปลี่ยนพฤติกรรม</h4></div>
+
+  
+</div>
+</div>
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

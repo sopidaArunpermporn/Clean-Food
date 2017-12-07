@@ -1,0 +1,312 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+ 	
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+{% endblock %}
+
+{% block content %}
+
+  <main>
+
+  
+
+  <div class="row">
+  <div class="column left" style="background-color:#ffffff;">
+    <font face="TH SarabunPSK">
+    <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>10 ประโยชน์ดีๆ จากต้นหอม อาหารเพื่อสุขภาพ</b><br>
+ <div class="is-size-4">
+  </div>
+  </div>
+   <div class="is-size-4">
+ ต้นหอม เรียกได้ว่าเป็น ผักพื้นบ้านที่อยู่คู่กับคนไทยมาเนิ่นนาน ส่วนใหญ่มักนำต้นหอมมาเป็นเครื่องเคียงและโรยหน้าอาหาร เช่น โจ๊ก แกงจืด หรือจะเป็นอาหารจานเดียว เช่น พวกข้าวหมูแดงหมูกรอบ ต้นหอมช่วยให้อาหารจานนั้นมีกลิ่นหอมและดูดี แต่ต้นหอมมีประโยชน์มากกว่าแค่เรื่องความหอมนะ เพราะมันมีประโยชน์ต่อร่างกายเราไม่น้อยเลยล่ะ จะมีประโยชน์อะไรบ้างตามมาดูกันเลย</div>
+
+     <div class="is-size-4">
+  <br>
+   <center><img src="assets/img/News/5.1.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+   <br>
+ <b>10 ประโยชน์ดีๆ จากต้นหอม </b>
+          <div style="text-indent: 2.5em;">1. วิตามินเอจากต้นหอม  ช่วยบำรุงสายตาและสมอง         
+          </div>
+           <div style="text-indent: 2.5em;"> 2. ต้นหอมมีสารชนิดหนึ่งชื่อว่า “สารฟลาโวนอยด์และสารเคอร์ซิติน” สามารถช่วยยับยั้งการเกิดเซลล์มะเร็ง ช่วยป้องกันการอักเสบและป้องกันโรคภูมิแพ้ได้ด้วยเช่นกัน
+          </div>
+           <div style="text-indent: 2.5em;">3. น้ำมันหอมระเหยจากต้นหอม ช่วยแก้หวัด คัดจมูก ลดไข้
+          </div>
+           <div style="text-indent: 2.5em;">4. ป้องกันอาการท้องผูก หากทานต้นหอมบ่อยๆ เนื่องจากต้นหอมมีเส้นใยอาหารมาก
+          </div>
+           <div style="text-indent: 2.5em;">5. นำต้นหอมมาตำ แล้วพอกบริเวณที่โดนแมลงสัตว์กัดต่อย จะสามารถช่วยบรรเทาอาการอักเสบได้
+          </div>
+           <div style="text-indent: 2.5em;">6. มีแคลเซียมและฟอสฟอรัส สามารถช่วยป้องกันโรคกระดูกพรุนได้
+          </div>
+           <div style="text-indent: 2.5em;">7. มีสารช่วยต้านอนุมูลอิสระและกระตุ้นภูมิคุ้มกันให้ทำงานได้อย่างมีประสิทธิภาพ
+          </div>
+           <div style="text-indent: 2.5em;">8. ป้องกันโรคโลหิตจาง ใครที่มีปัญหาเกี่ยวกับเลือด ควรทานอย่างยิ่ง
+          </div>
+           <div style="text-indent: 2.5em;">9. ช่วยเพิ่มน้ำนมให้กับคุณแม่หลังคลอด คุณแม่คนไหนที่มีปริมาณน้ำนมน้อย ลองทานต้นหอมดูช่วยได้มากเลยนะ
+          </div>
+           <div style="text-indent: 2.5em;">10. ป้องกันอาการเลือดกำเดาไหล
+          </div>
+
+</div>
+</div>
+</div>
+
+
+<div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>NEWS</div>
+    <div class=is-size-5>ข่าวสารที่คุณไม่ควรพลาด</div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="news1">
+      <img src="assets/img/news/1.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>โรคคลั่งกินคลีน อาการป่วยทางจิตของคนเสพติดอาหารคลีนเกินไป</h4></div>
+
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news2">
+      <img src="assets/img/news/2.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>ลดน้ำหนักต้องรู้จัก 4 เทรนด์มาแรงในแบบฉบับคลีนฟู้ด</h4></div>
+   
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news3">
+      <img src="assets/img/news/3.2.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>ล้วงความลับ ดาราตัวเด็ดดังรักสุขภาพ พร้อมวิธีทำคลีนฟู้ดง่าย ๆ</h4> </div>
+    
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news4">
+      <img src="assets/img/news/4.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>หมกมุ่นกับเมนูอาหารเพื่อสุขภาพมากเกินไป ใช่ว่าจะดี</h4></div>
+
+  
+</div>
+</div>
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

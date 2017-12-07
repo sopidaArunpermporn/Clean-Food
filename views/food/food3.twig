@@ -1,0 +1,198 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+ 	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+{% endblock %}
+
+{% block content %}
+
+  <main>
+<font face="TH SarabunPSK">
+<div class="is-size-3">
+        <div class="has-text-centered">
+          <div style="color:#000000;">    <b> สลัดอกไก่สูตรเฮลธ์ตี้ 
+
+            <div class="is-size-4">
+   Healthy Chicken Salad Recipe</b></div>
+      </div>
+  </div>
+</div>
+<body>
+
+
+
+
+
+  <div class="row">
+
+  <font face="TH SarabunPSK">
+  <div class="column left" style="background-color:#ffffff;">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="assets/img/FOOD/3.1.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="assets/img/FOOD/3.2.jpg" style="width:100%">
+
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+      <video width="700" controls>
+  <source src="assets/img/FOOD/3.1.mp4" type="video/mp4">
+</video>
+  <img src="assets/img/FOOD/3.2.jpg"  alt="Trolltunga Norway" width="auto" height="auto">
+
+  </div>
+
+
+  <div class="column middle" style="background-color:#ffffff;">
+
+    <div class="is-size-4">
+   ใครขี้เกียจทำน้ำสลัดก็ใช้โยเกิร์ตแทนได้เหมือนสลัดอกไก่สูตรนี้ พบกับสลัดอกไก่สูตรเฮลธ์ตี้ ใส่กระเทียมกับเซเลอรี่กลิ่นหอมแรง ตามด้วยอกไก่กับองุ่นแล้วเคล้ากับโยเกิร์ต   <br>
+
+<b>ส่วนผสม สลัดอกไก่สูตรเฮลธ์ตี้</b><br>
+
+     <div style="text-indent: 2.5em;"> • โยเกิร์ตรสธรรมชาติ 1 ถ้วย </div>
+     <div style="text-indent: 2.5em;"> • ดิจองมัสตาร์ด 2 ช้อนโต๊ะ</div>
+     <div style="text-indent: 2.5em;"> • อกไก่ย่างฉีก 1 ถ้วย</div>
+     <div style="text-indent: 2.5em;"> • องุ่นผ่าครึ่ง 1/2 ถ้วย</div>
+     <div style="text-indent: 2.5em;"> • เซเลอรี่สับ 1/2 ถ้วย</div>
+     <div style="text-indent: 2.5em;"> • ถั่วพีแคน 1/2 ถ้วย</div>
+     <div style="text-indent: 2.5em;"> • กระเทียมสับ 1/2 ช้อนชา</div>
+     <div style="text-indent: 2.5em;"> • เกลือและพริกไทย 1/4 ช้อนชา</div>
+
+
+<b> วิธีทำสลัดอกไก่สูตรเฮลธ์ตี้</b>
+ <div style="text-indent: 2.5em;">• ผสมส่วนผสมทุกอย่างจนเข้ากัน จัดใส่จาน พร้อมเสิร์ฟ</div>
+</div>
+  </div>
+   <font face="TH SarabunPSK">
+  <div class="column right" style="background-color:#ffffff;">
+
+       <div class="column right" style="background-color:#ffffff;">
+         <div class="sidenav">
+           <h1><b> Recipe key</b></h1>
+           <h4><a href="food-1"><b>ไม่มีกุ้ง</b></b></a>
+           <a href="food-2"><b>ไม่มีถั่ว</b></a>
+           <a href="food-3"><b>ไม่มีเนื้อสัตว์</b></a>
+           <a href="food-4"><b>ไม่มีไข่</b></a></h4>
+         </div>
+       </div>
+ 
+
+
+     <div class="responsive">
+  <div class="gallery">
+    <a href="food9">
+      <img src="assets/img/food/9.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>พิซซ่าเมล็ดเจียมังสวิรัต</h4></div>
+ 
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="food10">
+      <img src="assets/img/food/10.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>พิซซ่าเมล็ดเจียสูตรไขมันต่ำ</h4></div>
+ 
+  </div>
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="food11">
+      <img src="assets/img/food/11.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>สลัดอะโวคาโดอกไก่</h4></div>
+ 
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="food12">
+      <img src="assets/img/food/12.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>พิซซ่าไข่</h4></div>
+
+  </div>
+</div>
+<div class="clearfix"></div>
+  </div>
+
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+  </main>
+
+
+{% endblock %}

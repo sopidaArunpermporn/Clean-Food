@@ -1,0 +1,205 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+ 	
+{% endblock %}
+
+{% block content %}
+
+  <main>
+  <font face="TH SarabunPSK">
+<div class="is-size-3">
+        <div class="has-text-centered">
+          <div style="color:#000000;">    <b>สปาเกตตีผัดผักโขมมะเขือเทศ
+<br>
+            <div class="is-size-4">
+ Tomato Spinach Chicken Spaghetti</b></div>
+      </div>
+  </div>
+</div>
+<body>
+
+
+
+
+
+  <div class="row">
+
+  <font face="TH SarabunPSK">
+  <div class="column left" style="background-color:#ffffff;">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="assets/img/FOOD/5.1.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="assets/img/FOOD/5.3.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="assets/img/FOOD/5.4.jpg" style="width:100%">
+
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+  <img src="assets/img/FOOD/5.2.jpg"  alt="Trolltunga Norway" width="auto" height="auto">
+
+  </div>
+
+
+  <div class="column middle" style="background-color:#ffffff;">
+
+    <div class="is-size-4">
+ เมนูเส้นคลีน ๆ ผัดกับมะเขือเทศก็อร่อย แต่ถ้าลองเพิ่มผักโขมลงไปคงฟินกว่าเดิม ขอนำเสนอเมนูสปาเกตตีผัดผักโขมมะเขือเทศ สูตรนี้ใส่เนื้อไก่ลงไปด้วย เพิ่มความเผ็ดด้วยพริกป่น
+
+ <br>
+
+<b>ส่วนผสม สปาเกตตีผัดผักโขมมะเขือเทศ</b><br>
+ <div style="text-indent: 2.5em;">• มะเขือเทศอบแห้งสับ 1/4 ถ้วย</div>
+   <div style="text-indent: 2.5em;">  • น้ำมันมะกอก 2 ช้อนโต๊ะ (จากน้ำมันที่แช่มะเขือเทศอบแห้ง)</div>
+    <div style="text-indent: 2.5em;"> • เนื้อไก่ (เอาหนังออก) 1/2 ปอนด์ (ประมาณ 227 กรัม)</div>
+   <div style="text-indent: 2.5em;">  • พริกป่น 1/4 ช้อนชา</div>
+    <div style="text-indent: 2.5em;"> • เกลือป่น 1/4 ช้อนชา</div>
+    <div style="text-indent: 2.5em;"> • มะเขือเทศหั่นเต๋า 4 ลูก</div>
+    <div style="text-indent: 2.5em;"> • ใบโหระพาซอย 1/4 ถ้วย</div>
+    <div style="text-indent: 2.5em;"> • ผักโขม 8 ออนซ์ (ประมาณ 224 กรัม)</div>
+    <div style="text-indent: 2.5em;"> • กระเทียมสับ 3 กลีบ</div>
+    <div style="text-indent: 2.5em;"> • สปาเกตตี 6 ออนซ์ (ประมาณ 168 กรัม)</div>
+    <div style="text-indent: 2.5em;"> • น้ำมันมะกอก 3 ช้อนโต๊ะ (หรือน้ำมันที่แช่มะเขือเทศอบแห้ง)</div>
+<b> วิธีทำสปาเกตตีผัดผักโขมมะเขือเทศ </b>
+
+ <div style="text-indent: 2.5em;">1. ตั้งกระทะใส่มะเขือเทศอบแห้งและน้ำมันมะกอก 2 ช้อนโต๊ะ ใช้ไฟปานกลางค่อนข้างต่ำ ผัดสักครู่ ใส่เนื้อไก่ พริกป่น และเกลือลงไปผัดจนไก่สุก </div>
+    <div style="text-indent: 2.5em;"> 2. ใส่มะเขือเทศ ใบโหระพา ผักโขม และกระเทียม ผัดประมาณ 3-5 นาทีหรือจนผักสลดและมะเขือเทศคายน้ำ ปิดไฟ</div>
+    <div style="text-indent: 2.5em;"> 3. เอาเส้นพาสต้าไปต้มตามวิธีทำที่ระบุไว้ข้างซอง พอเสร็จแล้วเทลงไปผัดกับส่วนผสมไก่ ใช้ไฟต่ำ ผัดจนเข้ากัน ชิมรสตามชอบ ปิดไฟ เติมน้ำมันมะกอก 3 ช้อนโต๊ะลงไปคลุกพอเข้ากัน ตักใส่จาน</div>
+  </div>
+</div>
+   <font face="TH SarabunPSK">
+  <div class="column right" style="background-color:#ffffff;">
+
+         
+       <div class="column right" style="background-color:#ffffff;">
+         <div class="sidenav">
+           <h1><b> Recipe key</b></h1>
+           <h4><a href="food-1"><b>ไม่มีกุ้ง</b></b></a>
+           <a href="food-2"><b>ไม่มีถั่ว</b></a>
+           <a href="food-3"><b>ไม่มีเนื้อสัตว์</b></a>
+           <a href="food-4"><b>ไม่มีไข่</b></a></h4>
+         </div>
+       </div>
+ 
+ 
+
+
+      <div class="responsive">
+  <div class="gallery">
+    <a href="food1">
+      <img src="assets/img/food/1.4.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>สลัดอะโวคาโดอกไก่สไตล์เม็กซิกัน </h4></div>
+
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="food2">
+      <img src="assets/img/food/2.5.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>สลัดอกไก่อะโวคาโดเบคอน</h4></div>
+   
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="food3">
+      <img src="assets/img/food/3.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>สลัดอกไก่สูตรเฮลธ์ตี้ </h4> </div>
+    
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="food4">
+      <img src="assets/img/food/4.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>พาสต้าเส้นซูกินี</h4></div>
+
+  
+</div>
+</div>
+
+<div class="clearfix"></div>
+  </div>
+
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+  </main>
+
+
+{% endblock %}

@@ -1,0 +1,355 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+
+{% endblock %}
+
+
+
+
+{% block content %}
+
+  <main>
+ 
+
+ 
+
+  <div class="row">
+    <div class="column left" style="background-color:#ffffff;">
+    <font face="TH SarabunPSK">
+      <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>10 ทริคเพื่อสุขภาพประจำวัน รู้ไว้ได้ใช้แน่นอน</b> </div> <br>
+ </div>
+
+  <br>
+   <center><img src="assets/img/trick/01.คนจาม.jpg" alt="Trolltunga Norway" width="800" height="auto"></center>
+    <br>
+   <div class="is-size-4">
+  <b>1. ทริคช่วยหยุดจาม</b>
+ <div style="text-indent: 2.5em;">ไม่ว่าจะเป็นการจามเพราะเป็นหวัด หรือเนื่องมาจากอาการภูมิแพ้ สิ่งที่ทำให้คุณคันจมูกจนอยากจาม เป็นเพราะมีสิ่งแปลกปลอมหลุดไปในโพรงจมูก รู้สึกยุบยิบจนร่างกายใช้การจามเพื่อขับดันมันออกมา แต่หากจามเกินบ่อยไปจนแม้แต่เจ้าตัวก็ยังรำคาญ ลองจุ่มจมูกลงในน้ำสัก 2-3 วินาที น้ำจะช่วยชะเอาสิ่งแปลกปลอมนั้นออกมาได้ หรือถ้าจะให้ดี ลองใช้น้ำเกลือก็จะช่วยละลายน้ำมูกหรือเมือกในจมูกได้ด้วย แต่หากคุณอยู่ในที่ที่ไม่สามารถจะจุ่มจมูกลงไปในน้ำได้ ลองใช้ผ้าชุบน้ำชุ่ม ๆ เช็ดในจมูกดู หรืออย่างน้อยที่สุดให้หายใจออกเร็ว ๆ สั้น ๆ 5 วินาทีติดต่อกัน ก็จะช่วยขับสิ่งแปลกปลอมออกมาได้เหมือนกัน 
+</div>
+<br>
+   <center><img src="assets/img/trick/02.ห้องน้ำ.jpg" alt="Trolltunga Norway" width="800" height="auto"></center>
+    <br>
+<b>2. หยุดอาการอยากเข้าห้องน้ำบ่อย </b>
+<div style="text-indent: 2.5em;"> บางคนเป็นคนประเภทฉี่กะปริดกะปรอย ปวดฉี่บ่อย แต่พอเข้าห้องน้ำแล้วฉี่ออกมาแค่นิดเดียว นิสัยเช่นนี้หากติดออกไปเมื่ออยู่ข้างนอกจะทำให้ลำบากในการหาห้องน้ำในบางสถานการณ์ คุณจึงควรฝึกอั้นความรู้สึกอยากห้องน้ำเกินจำเป็นให้ได้ โดยการเบนความสนใจของตัวเองไปหาสิ่งอื่น เช่น เล่นโทรศัพท์มือถือ ดูคลิปวิดีโอ (แต่ต้องไม่ใช่วิดีโอที่ชวนขำ เพราะอาจทำให้คุณสูญเสียการควบคุม และเผลอปลดปล่อยออกมาได้) หรือชวนเพื่อคุย ถกปัญหา ในระหว่างนั้นให้นั่งไขว่ห้างไปด้วย สิ่งเหล่านี้จะช่วยอั้น และเบนความสนใจไปจากอาการอยากเข้าห้องน้ำของคุณได้  
+</div>
+<br>
+   <center><img src="assets/img/trick/03.ประจำเดือน.jpg" alt="Trolltunga Norway" width="800" height="auto"></center>
+    <br>
+<b>3. ประจำเดือนมาไว ไม่ได้เตรียมผ้าอนามัย ทำไงดี?</b>
+ <div style="text-indent: 2.5em;">เมื่อตั้งใจเข้าไปปลดทุกข์เบาในห้องน้ำเฉย ๆ แต่กลับพบว่าเดือนนี้ประจำเดือนมาไวกว่าที่คุณคาด และคุณก็ไม่ได้เตรียมผ้าอนามัยไว้ติดตัวเสียด้วย แก้ปัญหาเฉพาะหน้าด้วยการใช้กระดาษทิชชูพันรอบ ๆ เป้าของกางเกงชั้นใน หากมีสก็อตเทปอยู่ในกระเป๋าด้วย จะนำมาแปะหัว-ท้ายกระดาษทิชชู เพื่อช่วยยึดมันเอาไว้ก็ยิ่งดี วิธีนี้จะช่วยซับเลือดประจำเดือนได้ระยะหนึ่ง ซึ่งเป็นเวลาที่คุณจะต้องออกไปหาซื้อผ้าอนามัยจากร้านสะดวกซื้อที่ใกล้ที่สุด หากมีอาการปวดท้อง ให้กินยาแก้ปวด 1 เม็ด นอกจากจะบรรเทาอาการได้แล้ว ยังชะลอให้เลือดประจำเดือนไหลช้าลงด้วย 
+</div>
+<br>
+   <center><img src="assets/img/trick/04.แอบร้องไห้.jpg" alt="Trolltunga Norway" width="800" height="auto"></center>
+    <br>
+ <b>4. ทริคเพื่อไม่ให้น้ำตาไหลในที่สาธารณะ</b>
+ <div style="text-indent: 2.5em;">เผื่อว่าวันใดวันหนึ่งคุณอาจเกิดอารมณ์อ่อนไหว ถูกแฟนบอกเลิก เจ้านายดุ หรือทะเลาะกับเพื่อน และบ่อน้ำตาก็ตื้นจนจะปริ่มออกมา แต่คุณไม่อยากร้องไห้ในที่สาธารณะให้ใครเห็น ให้เงยหน้าขึ้นแล้วมองแสงไฟที่เพดานสักอึดใจ ความสว่างจ้าของแสงไฟจะทำให้ม่านตาหดตัวอย่างรวดเร็ว ซึ่งเป็นสถานะที่ทำให้น้ำตาไม่สามารถไหลออกมาได้ง่าย ๆ หรืออาจลองกลั้นหายใจสัก 4-5 วินาที ก็ช่วยหยุดน้ำตาได้เช่นกัน ทั้งนี้ การร้องไห้เป็นผลมาจากการประมวลผลของสมองส่วนความรู้สึก เพราะฉะนั้นหากคุณพยายามบีบให้สมองส่วนการคิดคำนวณทำงาน ด้วยการคิดโจทย์เลขยาก ๆ สักพักหนึ่ง ก็จะทำให้คุณรู้สึกไม่อยากร้องไห้แล้วก็ได้ 
+</div><br>
+   <center><img src="assets/img/trick/05.เมารถ.jpg" alt="Trolltunga Norway" width="800" height="auto"></center>
+    <br>
+ <b>5. แก้ปัญหาเมารถ</b>
+ <div style="text-indent: 2.5em;">การเดินทางระยะไกลทำให้คุณรู้สึกวิงเวียนเมารถได้ เมื่อไหร่ที่รู้สึกว่าอยากจะอาเจียน ให้เปิดกระจกเพื่อรับลมข้างนอกเข้ามา ลมเย็น ๆ และอากาศที่ไหลเวียนดีกว่าจะบรรเทาความคลื่นเหียนได้ นอกจากนี้ลองกินขนมขบเคี้ยวเล็ก ๆ น้อย ๆ ระหว่างการเดินทาง จะช่วยให้กระเพาะอาหารของคุณรู้สึกผ่อนคลาย ไม่บีบรัดตัวจนชวนให้คลื่นไส้ ที่สำคัญการนั่งด้านหน้าเคียงคนขับก็ช่วยลดอาการเมารถได้เป็นอย่างดี 
+</div><br>
+   <center><img src="assets/img/trick/06.ประคบสิว.jpg" alt="Trolltunga Norway" width="800" height="auto"></center>
+    <br>
+<b>6. วิธีจัดการผิว หลังบีบสิว</b>
+ <div style="text-indent: 2.5em;">หลังจากบีบสิวเค้นเอาเม็ดไขมันและหนองออกไปจากผิวหน้าของคุณแล้ว สิ่งที่ต้องกลุ้มลำดับถัดมาคืออาการบวมแดงของผิว ให้ใช้น้ำแข็งหรืออะไรก็ได้ที่เย็นจัด ประคบหัวสิวที่เพิ่งบีบไป ความเย็นจะช่วยลดอาการบวม รวมทั้งลดการอักเสบได้ นอกจากนี้ยังสามารถใช้น้ำยาหยอดตาเพื่อรักษาอาการตาแดงทาที่หัวสิว จะช่วยให้รอยแดงดูจางลงได้เล็กน้อยด้วย 
+</div>
+<br>
+   <center><img src="assets/img/trick/07.jpg" alt="Trolltunga Norway" width="800" height="auto"></center>
+    <br>
+ <b>7. ผื่นและตุ่มคันหลังโกนขนแนวบิกินี่ไลน์ </b>
+ <div style="text-indent: 2.5em;">เมื่อสัปดาห์ที่แล้วคุณเพิ่งโกนขนในแนวบิกินี่ไลน์เพื่อฉลองชุดว่ายน้ำตัวใหม่ใส่ไปเที่ยวทะเล แต่ตอนนี้ขนตรงนั้นเริ่มงอกกลับมา และแทงผิวเป็นตุ่ม ๆ ทั้งเจ็บทั้งคัน บางจุดก็ดูจะอักเสบเสียด้วย ลองใช้ผ้าห่อน้ำวางแข็งประคบที่ซอกขาเป็นเวลา 5 นาที ความเย็นจะทำให้เส้นเลือดหดตัว จึงช่วยลดอาการแดง ผิวเห่อ และช่วยบรรเทาอาการคัน จากนั้นสามารถใช้ถุงชาแช่เย็น นมสด หรือข้าวโอ๊ต (แช่น้ำแล้ว) มาประคบ-ทา ที่จุดซึ่งเป็นปัญหา ทั้งสามตัวนี้มีคุณสมบัติปลอบประโลมผิว และลดอาการอักเสบได้เล็กน้อย แต่หากคุณมีอาฟเตอร์เชฟโลชั่น ก็สามารถนำมาทาได้เช่นกันค่ะ 
+</div>
+<br>
+   <center><img src="assets/img/trick/08.ผื่น.jpg" alt="Trolltunga Norway" width="800" height="auto"></center>
+    <br>
+ <b>8. ผื่นขึ้นหน้าอก อย่าเพิ่งตกใจ </b>
+ <div style="text-indent: 2.5em;"> อาการผื่นขึ้นเป็นปื้นที่หน้าอก มาได้จากหลายสาเหตุ ทั้งอากาศแห้ง อาการแพ้ หรือเกิดจากการติดเชื้อยีสต์ที่ผิวหนัง หลังอาบน้ำให้ชโลมโลชั่นบาง ๆ ที่หน้าอกทุกครั้ง (อย่ามัวแต่ทาเฉพาะที่แขนและขาเท่านั้นนะ) ลองสังเกตตัวเองว่ามีอาการแพ้จากผงซักฟอก น้ำยาปรับผ้านุ่ม หรือสีย้อมผ้าจากเสื้อผ้าที่คุณใส่หรือไม่ หรืออาจเป็นอาการแพ้จากโครงเสื้อชั้นในก็เป็นได้ หากพบว่าอาการแพ้ของคุณเกิดจากสาเหตุเหล่านี้ ให้ใช้ยาทาไฮโดรคอร์ติโซน (hydrocortisone cream) ทาบริเวณที่เกิดผื่น จะช่วยรักษาได้ แต่หากพบว่าอาการผื่นของคุณเกิดจากการติดเชื้อยีสต์ที่ผิวหนัง ต้องใช้ยาฆ่าเชื้อยีสต์โดยเฉพาะ และหมั่นฟอกสบู่ที่หน้าอกให้สะอาด และเช็ดให้แห้งสนิททุกครั้งหลังอาบน้ำ
+</div>
+<br>
+   <center><img src="assets/img/trick/09.มือเท้่าเย็น.jpg" alt="Trolltunga Norway" width="800" height="auto"></center>
+    <br>
+ <b>9. มือ-เท้าเย็น ไม่รู้เป็นอะไร </b>
+ <div style="text-indent: 2.5em;">หากสังเกตพบว่าไม่ว่าจะทำอะไร มือและเท้าของคุณจะเย็นอยู่เสมอ นี่มักเป็นอาการที่บ่งบอกถึงการไหลเวียนเลือดในร่างกายไม่เป็นไปอย่างมีประสิทธิภาพ ซึ่งคุณสามารถกระตุ้นให้เลือดไหลเวียนดีขึ้นได้ ด้วยการออกกำลังกายแบบคาร์ดิโอ แต่หากพบว่าปลายนิ้วมือและเท้า ซีด หรือเป็นสีอมม่วง รวมทั้งมีอาการชาร่วมด้วย โดยมือเท้าจะเย็นหรือไม่ก็ได้ นี่เป็นสัญญาณของโรคเรย์นอยด์ (Raynaud's Disease) ซึ่งเป็นอาการผิดปกติของเส้นเลือดตีบตัวผิดปกติ หากมีอาการดังกล่าวควรพบแพทย์เพื่อรับการรักษาที่เหมาะสม
+</div>
+<br>
+   <center><img src="assets/img/trick/10ท้องเสีย.jpg" alt="Trolltunga Norway" width="800" height="auto"></center>
+    <br>
+<b>10. ท้องเสียเฉียบพลัน </b>
+ <div style="text-indent: 2.5em;">หากไปกินอะไรแผลง ๆ เข้าในมื้อก่อนหน้า และเพียงไม่ถึงชั่วโมงถัดมามันก็แผลงฤทธิ์รุมเร้าประตูหลังของคุณอย่างหนักหน่วง แต่คุณไม่สามารถลุกไปเข้าห้องได้ในทันท่วงที และกำลังอยู่ในท่านั่ง ให้นั่งโดยทิ้งน้ำหนักไปที่ขาข้างใดข้างหนึ่ง เนื่องจากน้ำหนักตัวจะช่วยกดกล้ามเนื้อไม่ให้ข้าศึกเล็ดลอดออกมาได้ ช่วยให้คุณอั้นต่อไปได้อีกสักครู่ และเมื่อลุกไปเข้าห้องน้ำ ให้เดินเกร็งก้น ย่างก้าวเร็ว ๆ แต่มั่นคง จะช่วยเบนความสนใจไปได้นิดหนึ่งว่าข้าศึกบุกมาจนเกือนล้นประตูแล้ว แต่ทางที่ดีที่สุด อย่าลองกินอะไรแผลง ๆ ให้ระคายท้องน่าจะดีกว่านะคะ ^^
+</div>
+<br>
+<br>
+ <div style="text-indent: 2.5em;"><b>10 เรื่องไม่สบายกายที่จุกจิกกวนใจ และเป็นปัญหาใหญ่ของวัน สามารถบรรเทาได้ง่าย ๆ ด้วยตัวคุณเอง ลองจำไปใช้ หรือไปแนะนำคนรอบข้างกันดูด้วยนะคะ </b></div>
+    
+   </div>
+  </div>
+
+
+
+  <div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>TRICK</div>
+    <div class=is-size-5>เคล็บลับ แต่ไม่ลับ</div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick9">
+      <img src="assets/img/trick/9.0.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>9 อาหารสู้แดด กินแล้วป้องกันผิวคล้ำเสีย</h4></div>
+    
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick10">
+      <img src="assets/img/trick/10.2.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>สุดยอด 20 อาหารล้างพิษ</h4></div>
+   
+  </div>
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick11">
+      <img src="assets/img/trick/11.0.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>12 ทริคสุขภาพสุดแปลกที่รับรองว่าทำแล้วเริด</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick12">
+      <img src="assets/img/trick/12.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>5 กินอาหารตามกรุ๊ปเลือด ลดน้ำหนักและความอ้วนได้</h4></div>
+    
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

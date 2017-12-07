@@ -1,0 +1,369 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+ 	
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+{% endblock %}
+
+{% block content %}
+
+  <main>
+
+  
+  <div class="row">
+  <div class="column left" style="background-color:#ffffff;">
+    <font face="TH SarabunPSK">
+    <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>12 ผักต้านมะเร็งร้าย ป้องกันโรคมะเร็งง่าย ๆ ด้วยผัก</b><br>
+
+ <div class="is-size-4">
+   <b>ผักที่จะช่วยลดความเสี่ยงโรคมะเร็งมีอะไรที่เราควรกินบ้าง ใครไม่อยากป่วยต้องเช็กเลยว่าผักป้องกันโรคมะเร็งมีอยู่กี่ชนิดด้วยกัน</b>
+  </div>
+  </div>
+</div>
+  <br>
+   <div class="is-size-4">
+ โรคมะเร็งเกิดขึ้นกับใครก็ได้ และเหมือนสมัยนี้โรคร้ายนี้จะคุกคามชีวิตเราได้ง่ายขึ้น เร็วขึ้น จากพฤติกรรมการบริโภคและไลฟ์สไตล์โดยรวมของเรา ๆ เอง ดังนั้นถ้ามีอะไรที่จะช่วยลดความเสี่ยงโรคมะเร็งได้ มีเท่าไรเราก็ควรทุ่มหน้าตักนะคะ และในวันนี้ กระปุกดอทคอมเองก็มีผักต้านมะเร็ง 12 ชนิด ที่สามารถหากินได้ง่าย ๆ มาแนะนำให้ทุกคนรู้ว่า ตัวเราเองสามารถป้องกันมะเร็งได้ไม่ยาก แค่เพียงกินผักตามนี้</div>
+
+     <div class="is-size-4">
+  <br>
+   <center><img src="assets/img/News/19.2.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+   <br>
+ 
+         <b>1. คะน้า</b> <br>
+ 
+          <div style="text-indent: 2.5em;">    คะน้าเป็นผักที่มีวิตามินเอสูงมาก ซึ่งวิตามินเอที่เราได้จากคะน้ามีคุณสมบัติเป็นสารต้านการเกิดเซลล์มะเร็ง และยังช่วยส่งเสริมภูมิคุ้มกันในร่างกาย ลดโอกาสเกิดการอักเสบของเนื้อเยื่อ และลดความเสี่ยงอาการเจ็บป่วยโดยรวมได้ 
+
+          </div>
+          <br>
+<center><img src="assets/img/News/19.3.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+<br>
+<b>2. ตำลึง</b><br>
+
+          <div style="text-indent: 2.5em;">ตำลึงเป็นผักใบเขียวที่มีวิตามินเอสูงเช่นกัน ทั้งยังเปี่ยมไปด้วยแคลเซียม วิตามินซี ฟอสฟอรัส ที่มีคุณสมบัติแก้อาการแพ้ แก้อักเสบ ช่วยป้องกันโรคโลหิตจาง และช่วยป้องกันโรคหัวใจขาดเลือด รวมทั้งต้านมะเร็งได้ด้วย
+</div>
+          <br>
+<center><img src="assets/img/News/19.4.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+<br>
+<b>3. กะหล่ำปลี
+</b><br>
+
+
+          <div style="text-indent: 2.5em;">     ข้อมูลจากสภากาชาดไทย ระบุว่า กะหล่ำปลีสายพันธุ์ที่ปลูกในไทยสามารถยับยั้งหรือป้องกันการเกิดมะเร็งเต้านมได้ เนื่องจากในผักประเภทหัวชนิดนี้มีซิลิเนียมค่อนข้างสูง ซึ่งซิลิเนียมก็มีคุณสมบัติในการช่วยกำจัดอนุมูอิสระ นอกจากนี้ยังพบว่าสารอาหารในกะหล่ำปลีมีคุณสมบัติช่วยกระตุ้นเอนไซม์ที่มีหน้าที่กำจัดสารพิษออกจากร่างกาย ช่วยลดโอกาสที่เซลล์จะเปลี่ยนเป็นเซลล์มะเร็งได้
+</div>
+          <br>
+<img src="assets/img/News/19.5.jpg" alt="Trolltunga Norway" width="10000" height="auto">
+<br>
+<b>4. กะหล่ำสีม่วง
+</b><br>
+
+          <div style="text-indent: 2.5em;">    พืชผักสีม่วงมีสารแอนโทไซยานิน ซึ่งมีคุณสมบัติต้านการเกิดเซลล์มะเร็งในร่างกายได้ นอกจากนี้ในกะหล่ำสีม่วงยังมีฟลาโวนอยด์ สารต้านอนุมูลอิสระอีกชนิดหนึ่ง และมีสารซัลเฟอร์ที่ช่วยกระตุ้นการทำงานของลำไส้ใหญ่ ทั้งยังช่วยต้านสารก่อมะเร็งเข้าสู่ร่างกายอีกด้วย</div>
+          <br>
+<center><img src="assets/img/News/19.6.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+<br>
+<b>5. ผักกาดขาว</b>
+<br>
+
+          <div style="text-indent: 2.5em;">  สารสีขาวจากผักอย่างผักกาดขาวมีเบต้าแคโรทีนสูง ซึ่งตับสามารถเปลี่ยนสารนี้ให้เป็นวิตามินเอ ช่วยต้านการเกิดเซลล์มะเร็งในร่างกายได้ นอกจากนี้เส้นใยของผักกาดขาวยังช่วยกระตุ้นการเคลื่อนไหวของลำไส้ ช่วยในการย่อยอาหาร ป้องกันอุจจาระแข็ง จึงทำให้การขับถ่ายเป็นไปอย่างไหลลื่นมากขึ้น</div>
+          <br>
+
+<img src="assets/img/News/19.7.jpg" alt="Trolltunga Norway" width="10000" height="auto">
+<b>6. ถั่วงอก</b></br>
+
+          <div style="text-indent: 2.5em;">  ผักราคาถูกและปลูกง่ายมาก ๆ อย่างถั่วงอกมีสารต้านมะเร็งที่เรียกว่า ซัลโฟราเฟน โดยในถั่วงอกจะมีสารต้านมะเร็งชนิดนี้สูงกว่าถั่วปกติถึง 50 เท่าเลยทีเดียวค่ะ นอกจากนี้ถั่วงอกยังเป็นผักที่มีวิตามินซีสูง จึงมีคุณสมบัติช่วยสมานแผล ช่วยในการดูดซึมธาตุเหล็ก ทำให้ร่างกายมีภูมิต้านทานสูงขึ้นด้วย</div>
+          <br>
+<img src="assets/img/News/19.8.jpg" alt="Trolltunga Norway" width="10000" height="auto">
+<b>7. ใบกะเพรา</b><br>
+
+          <div style="text-indent: 2.5em;">
+          ในใบกะเพราก็มีวิตามินเอสูงมาก จึงมีคุณสมบัติต่อต้านการเกิดมะเร็ง และช่วยเสริมระบบภูมิคุ้มกันของร่างกายให้แข็งแรง นอกจากนี้ใบกะเพรายังถูกใช้ในการรักษาโรคที่เกี่ยวกับระบบทางเดินอาหาร ทางเดินหายใจ หัวใจ และผิวหนังมาตั้งแต่สมัยโบราณกาลเลยด้วย</div><br>
+<img src="assets/img/News/19.9.jpg" alt="Trolltunga Norway" width="10000" height="auto">
+<b>8. แครอท</b><br>
+
+         <div style="text-indent: 2.5em;"> แครอทไม่เพียงแต่มีเบต้าแคโรทีนที่จะเปลี่ยนเป็นวิตามินเอในตับเท่านั้น แต่ยังมีสารต้านอนุมูลอิสระอย่างแคโรทีนอยด์ รวมไปทั้งไบโอฟลาโวนอยด์ที่มีคุณสมบัติช่วยต้านเซลล์มะเร็งในร่างกาย โดยเฉพาะความเสี่ยงโรคมะเร็งปอดและมะเร็งมดลูก</div><br>
+
+<img src="assets/img/News/19.10.jpg" alt="Trolltunga Norway" width="10000" height="auto">
+<b>9. บรอกโคลี</b><br>
+
+         <div style="text-indent: 2.5em;"> บรอกโคลีอุดมไปด้วยวิตามินซี และยังมีวิตามินเอ วิตามินบี และพิกเมนต์คลอโรฟิลล์ รวมทั้งอุดมไปด้วยสารต้านอนุมูลอิสระอย่างฟลาโวนอยด์ด้วย จึงจัดเป็นผักต้านมะเร็งชนิดหนึ่งที่กินง่าย</div><br>
+
+ <img src="assets/img/News/19.11.jpg" alt="Trolltunga Norway" width="10000" height="auto">
+<b>10. บัวบก</b><br>
+
+         <div style="text-indent: 2.5em;"> ใบบัวบกและต้นสดมีวิตามินและแคลเซียมสูงมาก นอกจากนี้ในบัวบกยังมีวิตามินบี 1 และเป็นพืชที่ประกอบไปด้วยไกลโคไซด์ซึ่งมีคุณสมบัติทำให้เนื้อเยื่อเกี่ยวพันที่ผิวหนังแข็งแรงขึ้น ส่งผลให้ผิวหนังเรียบตึง แน่น และยังช่วยบรรเทาอาการเส้นเลือดขอด ผิวด่างดำ และช่วยให้แผลเป็นจางหาย 
+
+          ทั้งนี้ยังพบว่า สารสกัดจากใบบัวบกมีสรรพคุณทำให้แผลหายเร็ว เร่งการสร้างเนื้อเยื่อและเยื่อบุเซลล์ใหม่ ช่วยระงับการเจริญเติบโตของเชื้อแบคทีเรียที่ทำให้เกิดหนองและการอักเสบ ทั้งยังมีคุณสมบัติทำให้หลอดเลือดขยายตัว กระตุ้นการไหลเวียนโลหิตให้ดีขึ้น และยังช่วยกระตุ้นเม็ดเลือดขาวให้ทำลายแบคทีเรียได้เต็มประสิทธิภาพมากยิ่งขึ้น ด้วยเหตุนี้บัวบกจึงช่วยต้านมะเร็งและทำลายเซลล์มะเร็งได้นั่นเอง</div><br>
+ <img src="assets/img/News/19.12.jpg" alt="Trolltunga Norway" width="10000" height="auto">
+<b>11. มะระขี้นก
+</b><br>
+
+         <div style="text-indent: 2.5em;">ผักที่พ่วงตำแหน่งสมุนไพรอย่างมะระขี้นกก็ช่วยต้านมะเร็งได้เป็นอย่างดีค่ะ เพราะใต้ความขมของมะระขี้นกนั้นเปี่ยมไปด้วยวิตามินเอ นอกจากนี้ยังพบว่าในมะระขี้นกมีสารสำคัญที่ออกฤทธิ์ต้านไวรัสและฆ่าเซลล์มะเร็งเต้านม รวมทั้งเซลล์มะเร็งสมองได้ผลดี สรรพคุณสุดยอดจริง ๆ</div><br>
+          <img src="assets/img/News/19.13.jpg" alt="Trolltunga Norway" width="10000" height="auto">
+<b>12. ยอ</b><br>
+
+         <div style="text-indent: 2.5em;"> ลูกยอเป็นผักที่มีวิตามินซีสูง คนไทยใช้เป็นยาอายุวัฒนะมาตั้งแต่โบราณ ช่วยบำรุงธาตุ และจากการศึกษาในสัตว์ทดลองก็พบว่า ยอมีสารยับยั้งการเจริญเติบโตของมะเร็งขั้นต้น โดยเป็นสารที่ช่วยสร้างความแข็งแรงให้ระบบภูมิคุ้มกันร่างกาย ต้านมะเร็งได้ แต่ทั้งนี้ยอก็เป็นผักที่มีโพแทสเซียมค่อนข้างสูง อาจเสี่ยงต่อผู้ป่วยโรคไตและโรคหัวใจนะคะ ฉะนั้นผู้ป่วย 2 โรคนี้อาจต้องเลือกกินผักต้านมะเร็งชนิดอื่นแทน
+</div>        
+</div>
+</div>
+ 
+<div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>NEWS</div>
+    <div class=is-size-5>ข่าวสารที่คุณไม่ควรพลาด</div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="news9">
+      <img src="assets/img/news/9.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>ผู้ชายที่ชอบกินผัก-ผลไม้ มี“กลิ่นกาย” ดึงดูดใจผู้หญิงได้มากกว่า</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news10">
+      <img src="assets/img/news/10.2.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>สาวกระชับหุ่นเร่งด่วนด้วย "อาหารคลีน"</h4></div>
+   
+  </div>
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news11">
+      <img src="assets/img/news/11.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>“น้ำผึ้ง” ดีกับผู้ชายยังไง ?</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news12">
+      <img src="assets/img/news/12.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>5 เคล็ดลับการกินเพื่อสร้างกล้าม โดยไม่ต้องพึ่งอาหารเสริม</h4></div>
+    
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

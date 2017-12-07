@@ -1,0 +1,144 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  
+{% endblock %}
+
+{% block content %}
+
+  <main>
+
+     
+      <font face="TH SarabunPSK">
+        <div class="has-text-centered">
+        <font size = "6"><b> Kiwi Pineapple Smoothie </b></font></div>
+
+<div class="column left" style="background-color:#ffffff;">
+<div class="text-center">
+
+      <img src="assets/img/drink/19.1.jpg" alt="" width="350" height="500">
+  <br><img src="assets/img/drink/19.2.jpg" alt="" width="350" height="500">
+  
+</div>
+</div>
+
+  <div class="column middle" style="background-color:#ffffff;">
+
+<font size = "5">
+<br>เอาล่ะ สาวๆ ชาวซิสต้าผู้รักสุขภาพทั้งหลาย รีบเร่เข้ามาเลยค่า 
+<br>วันนี้อายะพีจะขอนำเสนอเมนูเครื่องดื่มสมูทตี้สูตรเด็ดนั่นเอง
+     <br>
+     <br><font size = "6"> &emsp;&emsp;ส่วนผสม</font>
+     <br>-ชิ้นสับปะรดสด 1 ถ้วย
+     <br>-ผงขมิ้นชัน 1/2 ช้อนชา
+     <br>-เนื้อขิงบดละเอียด 1/2 ช้อนชา
+     <br>-เมล็ดเจีย 2 ช้อนชา
+     <br>-นํ้าแข็ง 4-5 ก้อนใหญ่
+     <br>-นํ้าเปล่า 1 ถ้วย
+     <br>-กีวี่ 2 ผล
+     <br>-ผักโขมแช่แข็ง 3 ช่อ
+     <br>
+
+     <br><font size = "6"> &emsp;&emsp;วิธีทำ</font>
+     <br>1. ใส่สับปะรด ผงขมิ้น เนื้อขิงบด เมล็ดเจียกับนํ้าแข็งสองในสามส่วนลงในเครื่องปั่น เติมนํ้าเปล่า
+     <br>เล็กน้อยและปั่นให้ทุกอย่างละเอียดเข้ากันดี จากนั้นเทแยกใส่สองแก้วไว้ก่อน
+     <br>2. ล้างโถปั่นสักนิด แล้วใส่นํ้าแข็งที่เหลือ กีวี่ที่ปอกเปลือกเรียบร้อยแล้ว ผักโขมกับนํ้าเปล่า 
+     <br> ปั่นให้เข้ากัน
+     <br>3. เทสมูทตี้ีเขียวลงในแก้วที่มีสมูทตี้สีเหลืองเตรียมไว้แล้วใช้หลอดหรือช้อนคนเบาๆ
+     
+     
+ </font> 
+  <br><br>
+  
+  
+</div>
+
+
+<font face="TH SarabunPSK">
+  <div class="column right" style="background-color:#ffffff;">
+
+         <div class="column right" style="background-color:#ffffff;">
+         <div class="sidenav">
+           <h1> <b>Recipe key</b></h1>
+           <h4><a href="food-1"><b>ไม่มีกุ้ง</b></a>
+           <a href="food-2"><b>ไม่มีถั่ว</b></a>
+           <a href="food-3"><b>ไม่มีเนื้อสัตว์</b></a>
+           <a href="food-4"><b>ไม่มีไข่</b></a></h4>
+         </div>
+       </div>
+   
+ 
+
+  <div class="responsive">
+  <div class="gallery">
+    <a href="drink9">
+      <img src="assets/img/drink/9.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>แก้วมังกรสมูทตี้ </h4></div>
+    <br>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="drink10">
+      <img src="assets/img/drink/10.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>น้ำอะโวคาโดปั่น</h4></div>
+    <br>
+  </div>
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="drink11">
+      <img src="assets/img/drink/11.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>Pumpkin pie Smoothie</h4></div>
+    <br>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="drink12">
+      <img src="assets/img/drink/12.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4> Blueberry Smothie</h4></div>
+    <br>
+  </div>
+</div>
+
+
+<div class="clearfix"></div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+
+
+  </main>
+{% endblock %}

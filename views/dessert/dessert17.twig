@@ -1,0 +1,133 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  
+{% endblock %}
+
+{% block content %}
+
+  <main> 
+    <font face="TH SarabunPSK">
+
+        <div class="has-text-centered"><font size = "6"><b>ไอศกรีมเมลอน</b></font>
+  </div>
+
+<div class="column left" style="background-color:#ffffff;">
+<div class="text-center">
+
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="assets/img/dessert/17.1.jpg" alt="" width="350" height="500">
+  <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="assets/img/dessert/17.2.jpeg" alt="" width="350" height="500">
+</div>
+</div>
+
+<div class="column middle" style="background-color:#ffffff;">
+<font face="MN Uthong">
+     <font size = "5">
+     <br>เมนูคลายร้อนสำหรับสาว ๆ ที่กลัวหุ่นเสียคงต้องเป็น
+     <br>น้ำผลไม้มีทั้งแบบเทใส่น้ำแข็งและแบบปั่น
+     <br>ถ้าหากรู้สึกเอียนลองมาทำเมนูไอศกรีมผลไม้แก้ขัดก็ได้
+     <br>เนื้อไอศกรีมมีกลิ่นหอมของเมลอน เสิร์ฟเป็นแท่งกินง่าย 
+     <br>เหมาะกับอากาศร้อนสุดใจเลย
+     <br>
+     <br><font size = "6"> &emsp;&emsp;ส่วนผสม</font>
+     
+     <br>-น้ำเปล่า 1/2 ถ้วยตวง
+     <br>-น้ำตาลทราย 1/4 ถ้วยตวง
+     <br>-เมลอนหั่นชิ้น 250 กรัม
+     <br>-นมสด 1/4 ถ้วยตวง
+     <br>
+     <br><font size = "6"> &emsp;&emsp;วิธีทำ</font>
+     <br>1. ผสมน้ำเปล่ากับน้ำตาลทรายคนให้ละลาย
+     <br>2. นำเมลอน นมสด และส่วนผสมน้ำตาลทราย
+     <br>ใส่ลงในโถปั่นน้ำผลไม้ปั่นจนละเอียด เทส่วนผสม
+     <br>ใส่ภาชนะที่เตรียมไว้ นำเข้าแช่ช่องแช่แข็ง
+     <br>พอเซตตัวเอาออกมาเสียบด้วยไม้ไอศกรีม
+     <br>3. นำเข้าแช่แข็งต่อจนแข็งตัว จัดเสิร์ฟ
+     <br>
+ </font>    
+  </span>
+</div>
+
+<font face="TH SarabunPSK">
+  <div class="column right" style="background-color:#ffffff;">
+
+         <div class="column right" style="background-color:#ffffff;">
+         <div class="sidenav">
+          <h1> <b>Recipe key</b></h1>
+           <h4><a href="food-1"><b>ไม่มีกุ้ง</b></a>
+           <a href="food-2"><b>ไม่มีถั่ว</b></a>
+           <a href="food-3"><b>ไม่มีเนื้อสัตว์</b></a>
+           <a href="food-4"><b>ไม่มีไข่</b></a></h4>
+         </div>
+       </div>
+       <div class="responsive">
+ 
+
+  
+  <div class="gallery">
+    <a href="dessert5">
+      <img src="assets/img/dessert/5.1.jpg" alt="Trolltunga Norway" width="600" height="400">
+    </a>
+    <div class="desc">กล้วยบวดชีนมสด</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="dessert6">
+      <img src="assets/img/dessert/6.1.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">แพนเค้กข้าวโอ๊ตกล้วยหอม</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="dessert7">
+      <img src="assets/img/dessert/7.1.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">โยเกิร์ต พาร์เฟ่ต์</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="dessert8">
+      <img src="assets/img/dessert/8.1.jpg"alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">โฮมเมดบัวลอยน้ำขิง</div>
+  </div>
+</div>
+</div>
+
+
+<div class="clearfix"></div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div>
+  <br><br><br>
+
+
+</main>
+
+
+{% endblock %}

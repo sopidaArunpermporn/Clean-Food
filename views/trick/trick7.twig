@@ -1,0 +1,336 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+{% endblock %}
+
+{% block content %}
+
+  <main>  
+<div class="row">
+    <div class="column left" style="background-color:#ffffff;">
+    
+
+   <font face="TH SarabunPSK">
+    <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>11 เทคนิคกินอย่างพอเพียง</b></div>
+
+ <br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/7.0.jpg" alt="" width="450" height="auto">
+  </div>
+
+
+<br>
+<div class="is-size-4">
+&emsp;&emsp;&emsp;"...คำว่าพอเพียงมีความหมายอีกอย่างหนึ่ง มีความหมายกว้างออกไปอีก ไม่ได้หมายถึงการมีพอสำหรับใช้เองเท่านั้น  แต่มีความหมายว่าพอมีพอกิน  พอมีพอกินนี้ก็แปลว่า เศรษฐกิจพอเพียงนั่นเอง..."
+<br><br>&emsp;&emsp;&emsp;"...พอเพียงนี้ก็หมายความว่า มีกินมีอยู่ ไม่ฟุ่มเฟือย ไม่หรูหราก็ได้ แต่ว่าพอแม้บางอย่างอาจจะดูฟุ่มเฟือย  แต่ถ้าทำให้มีความสุข ถ้าทำได้ก็สมควรที่จะทำ สมควรที่จะปฏิบัติ..."
+<br><br>&emsp;&emsp;&emsp;พระราชดำรัสในพระบาทสมเด็จพระเจ้าอยู่หัว พระราชทานเนื่องในโอกาสวันเฉลิมพระชนมพรรษา ณ ศาลาดุสิดาลัย สวนจิตรลดา พระราชวังดุสิต  ๔ ธันวาคม ๒๕๔๐
+<br><br>&emsp;&emsp;&emsp;การน้อมนำหลักปรัชญาเศรษฐกิจพอเพียง ตามแนวพระราชดำรัสของ พระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช บรมนาถบพิตร มาเป็นหลักยึดเหนี่ยวจิตใจและเป็นแนวปฏิบัติในการดำเนินชีวิตได้อย่างลงตัว  ไม่ว่าจะยุคสมัยไหนก็ตาม หากเราต่างใช้หลักเศรษฐกิจพอเพียงเป็นตัวตั้ง ดังเช่น เรื่องการกิน  ก็จะทำให้เรารู้จักกินอย่างฉลาดได้
+<br>
+ <br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/7.1.jpg" alt="" width="450" height="auto">
+  </div>
+
+<br>&emsp;&emsp;&emsp;ดังเช่นที่ อ.สง่า ดามาพงษ์ ที่ปรึกษากรมอนามัย และผู้ทรงคุณวุฒิด้านโภชนาการ สำนักงานกองทุนสนับสนุนการสร้างเสริมสุขภาพ (สสส.) กล่าวไว้ว่า  “การนำหลักปรัชญาเศรษฐกิจพอเพียงมาประยุกต์ใช้ให้เกิดความยั่งยืนทางอาหาร  ก็เป็นการก่อให้เกิดสุขภาพที่ดีมีภูมิคุ้มกันด้านโภชนาการที่ดีขึ้น”
+<br><br>&emsp;&emsp;&emsp;สำหรับวิธีการเลือกอาหารแบบฉลาดกินนั้นสามารถเลือกได้ทั้ง การทำอาหารกินเองภายในบ้าน ที่นับว่าเป็นการประหยัดอีกรูปแบบหนึ่ง เพราะเราสามารถเลือกซื้อวัตถุดิบในการประกอบอาหารที่มีโภชนาการที่ดี ในราคาไม่สูง ปลอดภัยมีคุณภาพ และการกินอาหารนอกบ้าน ที่เราสามารถเลือกร้านอาหารที่มีคุณภาพความปลอดภัยด้วยตัวเองได้
+<br>
+ <br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/7.2.jpg" alt="" width="450" height="auto">
+  </div>
+
+   11 เทคนิคกินอย่างพอเพียง
+<br>&emsp;&emsp;&emsp;ด้วยภาวะเศรษฐกิจที่ยุคอาหารแพง เราควรเลือกกินอย่างพอเพียง เพื่อการมีสุขภาพที่ดี ไม่เกิดภาวะขาดสารอาหารหรือภาวะโภชนาการเกินด้วย 11 เทคนิคต่อไปนี้
+<br>&emsp;&emsp;&emsp;1. กินพออิ่ม ควรกินแค่พออิ่มในแต่ละมื้อ โดยตักอาหารที่พอดีจนเกิดเป็นนิสัย ไม่เยอะจนเกินไป
+<br>&emsp;&emsp;&emsp;2. ไม่กินทิ้งกินขว้าง ต้องคำนวณให้ดีในการซื้อแต่ละครั้ง เพราะหากซื้อมากเกินไป กินไม่หมด ก็ทำให้เราเสียเงินโดยเปล่าประโยชน์
+<br>&emsp;&emsp;&emsp;3. อาหารที่มีคุณค่าราคาถูก อาหารประเภทเนื้อสัตว์ อาจใช้เต้าหู้ หรือถั่วเมล็ดแห้งผสม ซึ่งมีโปรตีนและใยอาหารสูง หรือเลือกกินปลาน้ำจืดสลับกับปลาทะเล และกินผักผลไม้อย่างน้อยวันละ 400 กรัม โดยเลือกเป็นผักผลไม้พื้นบ้าน ที่หาได้ง่ายและราคาถูก รวมไปถึงการกินไข่ ที่ให้โปรตีนคุณภาพดี ราคาไม่แพงแถมได้สุขภาพดีอีกด้วย
+<br>&emsp;&emsp;&emsp;4. กินผลไม้แทนขนมหวาน  ควรเลือกผลไม้ที่มีตามฤดูกาล เนื่องจากหาซื้อง่าย ราคาถูก ที่สำคัญคือร่างกายได้รับใยอาหารที่มีประโยชน์ต่อร่างกาย แทนความหวานและไขมันจากน้ำตาล และกะทิในขนมหวาน
+<br>&emsp;&emsp;&emsp;5. ลดการกินจุบจิบ  ของกินส่วนใหญ่ที่นอกเหนือจากผักผลไม้ที่เรากินแล้ว บางชนิดก็ยังให้พลังงานเกินกว่าที่ร่างกายต้องการ จนทำให้เกิด ภาวะอ้วนลงพุงได้ และไม่ควรกินวันละหลายๆ มื้อ เพราะหากติดเป็นนิสัยแล้วผลที่ตามมาคือ ภาวะโรคอ้วน
+<br>&emsp;&emsp;&emsp;6. ดื่มน้ำเปล่าดีที่สุด เพราะดื่มเท่าไหร่ก็ไม่อ้วน สิ่งสำคัญคือต้องเลือกน้ำสะอาด เพราะน้ำจะช่วยให้ร่างกายขับของเสียออกมาทางเหงื่อ หรือปัสสาวะ และยังช่วยลดอาการอ่อนเพลียของร่ายกายได้
+<br>&emsp;&emsp;&emsp;7. กินอาหารไทย เพราะอาหารไทยเลือกใช้วัตถุดิบภายในประเทศ คุณค่าทางอาหารถือว่าครบถ้วนใน 1 เมนู และถือว่าเป็นการช่วยเศรษฐกิจชาติอีกด้วย
+<br>&emsp;&emsp;&emsp;8. ลดการสั่งอาหารราคาพิเศษ   เช่น เพิ่มข้าว เพิ่มกับข้าว แต่กินไม่หมด จึงสิ้นเปลืองทั้งเงินและเสียดายอาหารที่เหลือด้วย
+<br>&emsp;&emsp;&emsp;9. งดกินอาหารมื้อดึก  เมื่อกินอาหารแล้วเข้านอนทันที ทำให้ร่างกายไม่ได้เผาผลาญพลังงาน สะสมเป็นไขมัน จึงทำให้เกิดภาวะอ้วนได้
+<br>&emsp;&emsp;&emsp;10. เคี้ยวอาหารช้าๆ อย่ารีบร้อน  เพราะการเคี้ยวอาหารแบบช้าๆ จะทำให้เรารู้สึกอิ่มเร็ว ลดปัญหาของระบบย่อยอาหาร และการกินอาหารแบบเร่งรีบจะทำให้เราจุกและกินอาหารมากขึ้นกว่าเดิม
+<br>&emsp;&emsp;&emsp;11.การเลี้ยงลูกด้วยนมแม่แทนนมผง ซึ่งการเลี้ยงลูกด้วยนมแม่นอกจากจะมีสารอาหารครบถ้วน ปกป้องลูกน้อยจากโรคภัยต่างๆ แล้ว ยังช่วยลดค่าใช้จ่ายในการซื้อนมผงได้อีกด้วย
+                
+
+                 <div class="has-text-centered"> 
+               <br> การเลือกปฏิบัติตัวตามหลักปรัชญาเศรษฐกิจพอเพียงในด้านการกินอาหาร นั่นคือ 
+              <br>  การประมาณตน กินเท่าที่อิ่ม และเพียงพอต่อปริมาณที่ร่างกายจะได้รับในแต่ละวัน 
+               <br> และเลือกกินอาหารที่มีประโยชน์ต่อร่างกาย เพียงเท่านี้ก็ทำให้เรามีสุขภาพที่ดี 
+              <br>  และยังเห็นคุณค่าของการใช้จ่ายในชีวิตประจำวันมากขึ้น
+
+
+
+
+
+
+</div>
+</div></div>
+
+
+</div>
+
+  <div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>TRICK</div>
+    <div class=is-size-5>เคล็บลับ แต่ไม่ลับ</div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick13">
+      <img src="assets/img/trick/13.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>กินอาหารตามกรุ๊ปเลือด ลดน้ำหนักและความอ้วนได้</h4></div>
+ <br>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick14">
+      <img src="assets/img/trick/14.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>6 เทคนิคสู่การออกกำลังกายอย่างถูกวิธี</h4></div>
+  
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick15">
+      <img src="assets/img/trick/15.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>ปีใหม่คนใหม่กับ 10 ทริค ปรับเปลี่ยนพฤติกรรมเพื่อสุขภาพที่ดี</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick16">
+      <img src="assets/img/trick/16.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>ไม่อยากสุขภาพพังต้องรู้!! กับ 9 ทริคเพื่อการนอนหลับสนิท</h4></div>
+   <br>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

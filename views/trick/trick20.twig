@@ -1,0 +1,338 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+
+{% endblock %}
+
+
+
+
+{% block content %}
+
+  <main>
+ 
+
+ 
+  <div class="row">
+    <div class="column left" style="background-color:#ffffff;">
+    <font face="TH SarabunPSK">
+      <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>8 วิธีทําให้อายุยืนสุขภาพดี</b> </div> <br>
+ <div class="is-size-4">
+   คงปฏิเสธไม่ได้ว่าใคร ๆ ก็อยากที่จะมีอายุที่ยืนยาวนานด้วยกันทั้งนั้น แล้วจะทำให้ อายุยืน ได้อย่างไรล่ะ วันนี้เรามีคำตอบมาฝากคุณแล้ว ด้วย 8 วิธี ทําให้อายุยืน ของเราจะช่วยให้คุณมีอายุที่ยืนยาวนานเพิ่มขึ้นไปอีก 8 ปีเชียวครับ นอกจากคุณจะสามารถ ทําให้อายุยืน ได้แล้วคุณยังจะมีสุขภาพที่ดีไปพร้อม ๆ กันอีกด้วย
+  </div>
+ </div>
+ 
+  <br>
+   <center><img src="assets/img/trick/01.dark chocolate.jpg" alt="Trolltunga Norway" width="850" height="auto"></center>
+    <br>
+   <div class="is-size-4">
+  <b>1. ทำให้ อายุยืน ยาวขึ้น 1 ปี ด้วยการกินดาร์กช็อกโกแลต</b>
+<div style="text-indent: 2.5em;">การวิจัยจากมหาวิทยาลัยฮาร์วาร์ดสหรัฐอเมริกาบอกว่า ถ้าเรากินดาร์กช็อกโกแลตบ่อย ๆ หรืออย่างน้อยเดือนละ 3 ครั้ง อาจจะช่วยให้ชีวิตยืนยาวขึ้นได้อีก 1 ปีเลย เพราะว่าในดาร์กช็อกโกแลตมีสารฟลาโวนอยด์ที่ช่วยทำให้เลือดไม่ข้นหนืดจนเกินไป เลือดเลยไหลได้สะดวกไม่ไปติดหรือกระแทกหลอดเลือดมากจึงไม่เกิดโรคเกี่ยวกับหลอดเลือด เส้นเลือดก็ไม่อุดตัน
+</div>
+<br>
+   <center><img src="assets/img/trick/02sex.jpg" alt="Trolltunga Norway" width="850" height="auto"></center>
+    <br>
+<b>2. ทำให้อายุยืนยาวขึ้น 2 ปี ด้วยเพศสัมพันธ์ที่ดี</b>
+<div style="text-indent: 2.5em;">มีเพศสัมพันธ์บ่อย ๆ แล้วดีครับ ช่วยเพิ่มอายุได้ถึง 2 ปีเลยทีเดียว มหาวิทยาลัยแคลิฟอร์เนียบอกว่า เป็นเพราะมันจะมีสารที่หลั่งออกมาหลังจากที่เราถึงจุดสุดยอดที่ทำให้คลายเครียดได้ดีมากและจะทำให้เรารู้สึกสบายตัวร่างกายและหัวใจเราก็ดีขึ้น ฮอร์โมนคอร์ติโซนก็จะหลั่งออกมาน้อยผมเคยอ่านงานวิจัยอีกอันที่เขาศึกษากับคนออสเตรเลีย 2,338 คน บอกว่า การที่ผู้ชายมีเพศสัมพันธ์หรือช่วยตัวเองสัปดาห์ละ 10 ครั้ง สามารถลดอัตราการเกิดมะเร็งต่อมลูกหมากได้ถึง 33 เปอร์เซ็นต์
+</div>
+<br>
+   <center><img src="assets/img/trick/03.ถั่ว.jpg" alt="Trolltunga Norway" width="850" height="auto"></center>
+    <br>
+<b>3. ทำให้อายุยืนยาวขึ้น 3 ปี ด้วยการกินถั่ว</b>
+<div style="text-indent: 2.5em;">อย่างน้อยสัปดาห์ละ 5 วัน มหาวิทยาลัยโลม่าลินดาที่แคลิฟอร์เนียวิจัยพบว่า ในถั่วจะมีไขมันโอเมก้า 3 สารต้านอนุมูลอิสระ ใยอาหารเยอะไขมันอิ่มตัวน้อยแคลอรีน้อยทำให้ร่างกายแข็งแรง โดยเฉพาะกับหัวใจแต่ต้องเลือกแบบไม่มีเกลือนะครับ
+</div><br>
+   <center><img src="assets/img/trick/04wine.jpg" alt="Trolltunga Norway" width="850" height="auto"></center>
+    <br>
+<b>4. ทำให้ อายุยืน ยาวขึ้น 4 ปี ด้วยการดื่มไวน์</b>
+<div style="text-indent: 2.5em;">นักวิทยาศาสตร์ชาวดัชช์ให้ดื่มไวน์วันละครึ่งแก้วจะทำให้ชีวิตเรายืนยาวได้ถึง 4 ปี เพราะในไวน์จะมีสารโพลิฟิโนลิคคอมพาวน์ส (polyphenolic compounds) ซึ่งสารนี้จะทำให้เลือดเราไม่มีการเติบโตของไขมันพอเยื่อไขมันไม่สามารถเติบโตได้เส้นเลือดเราจะสะอาดใสอยู่ตลอดเวลาไม่มีตะกอนตกค้างหรือมีไขมันมาเกาะผนังหลอดเลือด
+</div>
+<br>
+   <center><img src="assets/img/trick/05.golf.jpg" alt="Trolltunga Norway" width="850" height="auto"></center>
+    <br>
+<b>5. ทำให้อายุยืนยาวขึ้น 5 ปี ด้วยการเล่นกอล์ฟ</b>
+<div style="text-indent: 2.5em;">อาจจะมีหลายคนที่เล่นกอล์ฟกันอยู่แล้วแต่ยังไม่รู้ว่าทำไมเล่นกอล์ฟแล้วทำให้อายุเรายืนยาวขึ้นได้ นั่นเพราะการเล่นกอล์ฟทำให้เราเดินครับ เล่นกอล์ฟ 18 หลุม จะทำให้เราต้องเดินถึง 6-10 กม. เลยครับ แล้วการเดินทำให้ร่างกายเราเผาผลาญแคลอรีได้ดีเป็นการออกกำลังกายแบบ Low intensity คือการออกกำลังกายแบบไม่หนักแต่หัวใจเต้นเร็วและใช้ออกซิเจนเยอะมาก ซึ่งจะทำให้ร่างกายเราแข็งแรงแล้วการตีกอล์ฟทำให้เราไม่เบื่อที่จะออกกำลังกายด้วย
+</div><br>
+   <center><img src="assets/img/trick/bangmenu.jpg" alt="Trolltunga Norway" width="850" height="auto"></center>
+    <br>
+<b>6. อายุยืนยาวขึ้น 6 ปี ด้วยการกินอาหารที่ดีต่อสุขภาพ</b>
+<div style="text-indent: 2.5em;">กินทุก ๆ มื้อเลยนะครับ ให้เรื่องการกินอาหารที่ดีต่อสุขภาพเป็นชีวิตประจำวัน ไม่ใช่วันนี้พิเศษฉันจะไปกินอาหารเพื่อสุขภาพ นาน ๆ กินทีแบบนั้นไม่ดีแน่ ๆ แล้วมีการวิจัยจากฮอลแลนด์บอกว่า กินปลา เนื้อไม่ติดมัน น้ำมันมะกอก กระเทียม คาร์โบไฮเดรตที่ดีอย่างข้าวกล้อง ข้าวโอ๊ต เป็นประจำจะทำให้ไขมันในเลือดน้อยลงสุขภาพร่างกายดีขึ้น โรคมะเร็งกับเบาหวานก็จะเกิดได้ยากขึ้น
+</div>
+<br>
+   <center><img src="assets/img/trick/07.อาหารสุขภาพ.jpg" alt="Trolltunga Norway" width="850" height="auto"></center>
+    <br>
+<b>7. ทำให้อายุยืนยาวขึ้น 7 ปี ด้วยการควบคุมน้ำหนัก</b>
+<div style="text-indent: 2.5em;">นักวิทยาศาสตร์จากมหาวิทยาลัยอ็อกซ์ฟอร์ดศึกษาพบว่า ถ้าคุณสามารถควบคุมน้ำหนักให้อยู่ตามเกณฑ์มาตรฐานได้โดยตลอด คุณอาจจะเพิ่มชีวิตได้ถึง 7 ปีเลย หรือหากตอนนี้ใครกำลังน้ำหนักตัวเกินอยู่ก็รีบลดเลยครับเพราะปล่อยให้น้ำหนักมาก ๆ ไม่ดี กระดูกและไขข้อต้องรับน้ำหนักเยอะมากก็จะมีปัญหาได้แล้วก็เสี่ยงกับการเกิดโรคหลายโรคด้วย แต่ที่ต้องระวังด้วยคืออย่าดูแค่ตัวเลขของน้ำหนักเท่านั้นให้ดูไขมันด้วย เพราะคนผอมหลายคนเหมือนกันที่น้ำหนักน้อยแต่ไขมันเยอะนั่นก็สุขภาพไม่ดีได้ง่ายเหมือนกัน
+</div>
+<br>
+   <center><img src="assets/img/trick/08.หัวเราะ.jpg" alt="Trolltunga Norway" width="850" height="auto"></center>
+    <br>
+<b>8. ทำให้อายุยืนยาวขึ้น 8 ปี ด้วยการหัวเราะบ่อย ๆ</b>
+<div style="text-indent: 2.5em;">การที่เราหัวเราะฮอร์โมนคอร์ติโซนซึ่งเป็นอันตรายต่อสุขภาพจะหลั่งน้อยลง ทำให้เรามีความสุข ผ่อนคลายไม่เครียด เพราะสารเคมีที่ไม่ดีในร่างกายจะไม่หลั่งออกมาเลย แล้วจะมีสารเคมีดี เช่น เอ็นโดรฟิน อะดรีนาลีน หลั่งออกมาแทน ก็พยายามดูหนังตลก อยู่กับเพื่อนให้เยอะ ๆ นะครับจะได้หัวเราะ แค่คุณหัวเราะวันละ 15 นาที อาจจะทำให้คุณมีอายุยืนยาวขึ้นอีก 8 ปีเลยนะครับ
+</div>
+     
+   </div>
+  </div>
+
+
+  <div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>TRICK</div>
+    <div class=is-size-5>เคล็บลับ แต่ไม่ลับ</div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick13">
+      <img src="assets/img/trick/13.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>กินอาหารตามกรุ๊ปเลือด ลดน้ำหนักและความอ้วนได้</h4></div>
+ <br>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick14">
+      <img src="assets/img/trick/14.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>6 เทคนิคสู่การออกกำลังกายอย่างถูกวิธี</h4></div>
+  
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick15">
+      <img src="assets/img/trick/15.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>ปีใหม่คนใหม่กับ 10 ทริค ปรับเปลี่ยนพฤติกรรมเพื่อสุขภาพที่ดี</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick16">
+      <img src="assets/img/trick/16.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>ไม่อยากสุขภาพพังต้องรู้!! กับ 9 ทริคเพื่อการนอนหลับสนิท</h4></div>
+   <br>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

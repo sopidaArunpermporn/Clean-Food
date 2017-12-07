@@ -1,0 +1,567 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+<style>
+.checked {
+    color: #FFD700;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left, .right {
+  width: 15%;
+}
+
+.middle {
+  width: 70%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+    div.gallary {
+      margin: 9px;
+    }
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid #DCDCDC;
+}
+
+div.gallery img {
+    width: 300px;
+    height: 270px;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 10px;
+    float: left;
+    width: 24.9444%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 83%;
+}
+ .right {
+  width: 17%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: auto;
+    width: 160px;
+    position: ;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    padding-top:55px;
+}
+
+.sidenav a {
+    padding: 2px ;
+    text-decoration: none;
+    color:#FF4500;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #FFA500;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+.vl {
+    border-left: 1px solid #CCFF00;
+    height: 220px;
+}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+div.gallery {
+    margin:5px;
+}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+  <main>
+
+  <div class="row">
+    
+
+  <font face="TH SarabunPSK">
+<div class="is-size-2">
+        <div class="has-text-centered">
+          <div style="color:#000000;">   <b>NEWS<br>
+         </b></div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news1">
+      <img src="assets/img/news/1.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>โรคคลั่งกินคลีน อาการป่วยทางจิตของคนเสพติดอาหารคลีนเกินไป</h4></div>
+
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news2">
+      <img src="assets/img/news/2.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>ลดน้ำหนักต้องรู้จัก 4 เทรนด์มาแรงในแบบฉบับคลีนฟู้ด</h4></div>
+   
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news3">
+      <img src="assets/img/news/3.2.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>ล้วงความลับ ดาราตัวเด็ดดังรักสุขภาพ พร้อมวิธีทำคลีนฟู้ดง่าย ๆ</h4> </div>
+    
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news4">
+      <img src="assets/img/news/4.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>หมกมุ่นกับเมนูอาหารเพื่อสุขภาพมากเกินไป ใช่ว่าจะดี</h4></div>
+
+  
+</div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news5">
+      <img src="assets/img/news/5.1.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc"><h4>10 ประโยชน์ดีๆ จากต้นหอม อาหารเพื่อสุขภาพ</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news6">
+      <img src="assets/img/news/6.1.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc"><h4>5 อาหารเพื่อสุขภาพ แค่ทานก่อนนอน ก็ช่วยให้หลับสบาย</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news7">
+      <img src="assets/img/news/7.2.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>6 อาหารเพื่อสุขภาพ กินลดน้ำหนักได้ผล ดีแบบนี้จะพลาดได้ไง</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news8">
+      <img src="assets/img/news/8.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>4 กุญแจสำคัญสู่การ “ลดน้ำหนัก” ให้ได้ผล</h4></div>
+    <br>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news9">
+      <img src="assets/img/news/9.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>ผู้ชายที่ชอบกินผัก-ผลไม้ มี“กลิ่นกาย” ดึงดูดใจผู้หญิงได้มากกว่า</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news10">
+      <img src="assets/img/news/10.2.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>สาวกระชับหุ่นเร่งด่วนด้วย "อาหารคลีน"</h4></div>
+   
+  </div>
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news11">
+      <img src="assets/img/news/11.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>“น้ำผึ้ง” ดีกับผู้ชายยังไง ?</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news12">
+      <img src="assets/img/news/12.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>5 เคล็ดลับการกินเพื่อสร้างกล้าม โดยไม่ต้องพึ่งอาหารเสริม</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news13">
+      <img src="assets/img/news/13.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>กินคลีนแบบไหน...เหมาะกับแม่หลังคลอด </h4></div>
+ <br>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news14">
+      <img src="assets/img/news/14.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>กินอยู่อย่างเฮลธ์ตี้ ใช้ชีวิตแบบคลีน ๆ ถึงเงินไม่มากก็ทำได้นะ !</h4></div>
+  
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news15">
+      <img src="assets/img/news/15.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>12 ของว่างอาหารคลีน ลดน้ำหนักเพื่อหุ่นลีนต้องไม่พลาด</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news16">
+      <img src="assets/img/news/16.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>6 ซูเปอร์ฟู้ดเลอค่า อัพเดทไว้จะได้เฮลท์ตี้</h4></div>
+   <br>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news17">
+      <img src="assets/img/news/17.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>หน่อไม้ฝรั่ง สรรพคุณเหลือล้ำ ขอย้ำว่าต้องกิน !</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news18">
+      <img src="assets/img/news/18.2.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>อะโวคาโด สรรพคุณล้น ลดอ้วนลงพุง ปราบไขมันในเลือดอยู่หมัด</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news19">
+      <img src="assets/img/news/19.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>12 ผักต้านมะเร็งร้าย ป้องกันโรคมะเร็งง่าย ๆ ด้วยผัก</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news20">
+      <img src="assets/img/news/20.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>10 อาหารเช้าช่วยปลุกสมอง ลองแล้วตื่นตัว !</h4></div>
+   
+  </div>
+</div>
+
+
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

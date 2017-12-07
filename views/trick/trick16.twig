@@ -1,0 +1,319 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+
+{% endblock %}
+
+
+
+
+{% block content %}
+
+  <main>
+ 
+
+  <div class="row">
+    <div class="column left" style="background-color:#ffffff;">
+    <font face="TH SarabunPSK">
+      <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>ไม่อยากสุขภาพพังต้องรู้!! กับ 9 ทริคเพื่อการนอนหลับสนิท</b>  </div> <br>
+ <div class="is-size-4">
+   <b>“การนอนหลับ”</b>
+   <br>เป็นช่วงเวลาที่อวัยวะต่างๆ ของร่างกายได้พักผ่อน ระบบหัวใจและไหลเวียนเลือด ไม่ต้องออกแรงมากเพื่อสูบฉีดเลือดไปเลี้ยงส่วนต่างๆ ของร่างกาย รวมถึงเป็นช่วงเวลาที่เกิดการซ่อมแซมส่วนที่สึกหรอ ปรับสมดุลของสารเคมีต่างๆ ตลอดจนเป็นระยะที่สมองทำการเรียบเรียงข้อมูล และจัดเก็บเป็นหมวดหมู่ ทำให้สมองเกิดการจดจำและมีพัฒนาการ การนอนหลับไม่เพียงพอย่อมส่งผลเสียต่อสุขภาพ อาทิ เสี่ยงต่อโรคหัวใจและหลอดเลือด โรคเบาหวาน ความดันโลหิตสูง ส่งผลกระทบต่อระบบประสาท การคิด และความจำ รวมไปถึงมีความเสี่ยงที่จะเกิดอุบัติเหตุขณะขับรถ อาจสูญเสียประสิทธิภาพการทำงานด้วยถ้าไม่อยากสุขภาพพังจากการนอนไม่หลับหรือหลับไม่สนิท แนะนำให้ทำตามคำแนะนำของกระทรวงสาธารณสุขที่ว่าด้วย 9 วิธีทำให้นอนหลับสนิท
+  </div>
+ </div>
+
+  <br>
+   <center><img src="assets/img/trick/Make-Yourself.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+   <div class="is-size-4">
+ <div style="text-indent: 2.5em;"><b>1. ออกกำลังกายช่วงเย็น</b>  อย่างน้อย 30 นาที หรือ 4-6 ชั่วโมงก่อนนอน</div>
+ <div style="text-indent: 2.5em;"><b>2. กินกล้วยหอม</b> เพราะผิวของกล้วยหอมมีฤทธิ์เหมือนยานอนหลับ และมีอะมิโนแอซิดที่เรียกว่า ทริปโตฟาน ซึ่งจะเปลี่ยนเป็นสารเซโรโทนิน เมื่อกินแล้วจะช่วยคลายเครียด คลายกังวล ทำให้หลับสบาย</div>
+  <div style="text-indent: 2.5em;"><b>3. หลีกเลี่ยงอาหารมื้อหนัก</b> อาหารที่มีรสเผ็ด รสจัด หรืออาหารหวานมาก ก่อนเข้านอน 4 ชั่วโมง เพราะร่างกายต้องใช้เวลาประมาณ 2-3 ชั่วโมงในการย่อยอาหาร</div>
+<br>
+   <center><img src="assets/img/trick/Make-Yourself2.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+  <div style="text-indent: 2.5em;"><b>4. หลีกเลี่ยง</b> กาแฟ เครื่องดื่มแอลกอฮอล์ หรือเครื่องดื่มที่กระตุ้นประสาททุกชนิด 4-6 ชั่วโมงก่อนเวลาเข้านอน</div>
+<br>
+   <center><img src="/Users/com/Desktop/webrester/trickfile16/img16/Make-Yourself3.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+  <div style="text-indent: 2.5em;"><b>5. ผ่อนคลายร่างกาย และจิตใจก่อนนอน</b>  ด้วยการอาบน้ำอุ่น เดินเบาๆ ไปมา หรือการนั่งสมาธิ และไม่ควรทำกิจกรรมที่กระตุ้นร่างกายและสมองไปจนถึงเวลาเข้านอน</div>
+ <div style="text-indent: 2.5em;"><b>6. จัดระเบียบห้องนอนและกำจัดสิ่งรบกวน</b> ด้วยการปิดไฟและอุปกรณ์ต่างๆ ทั้งโทรทัศน์ คอมพิวเตอร์ รวมถึงอุปกรณ์สื่อสารก่อนนอน แต่บางรายอาจจำเป็นต้องเปิดเพลงเบาๆ เพื่อสร้างบรรยากาศ ทำให้หลับสบายขึ้น</div>
+ <div style="text-indent: 2.5em;"><b>7. เลี่ยงการสูบบุหรี่</b> เพราะจะทำให้หลับยาก ตื่นบ่อย และฝันร้าย เนื่องจากผ  ลของสารนิโคติน</div>
+<br>
+   <center><img src="/Users/com/Desktop/webrester/trickfile16/img16/Make-Yourself4.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+ <div style="text-indent: 2.5em;"><b>8. เข้านอนให้เป็นเวลา</b> ไม่ควรนอนดึกมาก ควรเข้านอนเวลาประมาณ 21.00– 23.00 น. และปฏิบัติให้เป็นประจำ รวมถึงตื่นนอนให้เป็นเวลาทุกวัน รวมทั้งช่วงวันหยุดด้วย</div>
+ <div style="text-indent: 2.5em;"><b>9. เข้านอนเมื่อร่างกายพร้อมที่จะนอน</b> คือเมื่อรู้สึกง่วง และไม่ได้อยู่ในภาวะตึงเครียด อย่าพยายามฝืนนอน หากไม่ง่วง</div>
+<br>
+<div style="text-indent: 2.5em;"><b>รู้ทริคดีๆ แบบนี้แล้ว มาดามก็อยากให้เพื่อนๆ ทุกคนไปปฏิบัติด้วยนะคะ</b></div>
+    
+   </div>
+  </div>
+ 
+
+
+
+  <div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>TRICK</div>
+    <div class=is-size-5>เคล็บลับ แต่ไม่ลับ</div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick9">
+      <img src="assets/img/trick/9.0.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>9 อาหารสู้แดด กินแล้วป้องกันผิวคล้ำเสีย</h4></div>
+    
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick10">
+      <img src="assets/img/trick/10.2.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>สุดยอด 20 อาหารล้างพิษ</h4></div>
+   
+  </div>
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick11">
+      <img src="assets/img/trick/11.0.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>12 ทริคสุขภาพสุดแปลกที่รับรองว่าทำแล้วเริด</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick12">
+      <img src="assets/img/trick/12.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>5 กินอาหารตามกรุ๊ปเลือด ลดน้ำหนักและความอ้วนได้</h4></div>
+    
+  </div>
+</div>
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

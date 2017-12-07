@@ -1,0 +1,322 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+ 	
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+{% endblock %}
+
+{% block content %}
+
+  <main>
+  
+
+  <div class="row">
+  <div class="column left" style="background-color:#ffffff;">
+    <font face="TH SarabunPSK">
+    <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>5 เคล็ดลับการกินเพื่อสร้างกล้าม โดยไม่ต้องพึ่งอาหารเสริม</b><br>
+
+ <div class="is-size-4">
+   <b>  รวมทิปส์ดี ๆ เกี่ยวกับการบริโภคอาหารที่ถูกต้อง สำหรับหนุ่ม ๆ ที่อยากมีกล้าม ปั้นหุ่นให้ฟิต แอนด์ เฟิร์ม โดยไม่ต้องกินอาหารเสริม
+
+</b>
+  </div>
+  </div>
+</div>
+  <br>
+   <div class="is-size-4">
+ คุณผู้ชายที่กำลังออกกำลังเร่งฟิตหุ่นให้ดูล่ำหลาย ๆ คนมักคิดว่า การที่จะมีกล้ามใหญ่ ๆ ได้ในเร็ววันนั้น นอกเหนือจากออกกำลังอย่างสม่ำเสมอและควบคุมอาหารแล้ว จะต้องกินอาหารเสริมต่าง ๆ เช่น เวย์โปรตีน เพื่อเร่งการเจริญเติบโตของกล้ามเนื้อ 
+</div>
+
+     <div class="is-size-4">
+  <br>
+   <center><img src="assets/img/News/12.1.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+   <center><img src="assets/img/News/12.2.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+   <br>
+          <div style="text-indent: 2.5em;">   ทว่าในความเป็นจริงยังมีปัจจัยอื่น ๆ ด้วย เช่น ทุกวันนี้คุณกินอาหารที่ให้สารอาหารในการสร้างกล้ามเนื้อมากพอหรือยัง ? ถ้าไม่...อาหารเสริมก็อาจช่วยอะไรได้ไม่มาก ดังนั้นจึงควรรู้เคล็ดลับการกินที่ถูกวิธีด้วยเช่นกัน 
+          </div>
+          <div style="text-indent: 2.5em;">    ถ้าอย่างนั้นเราลองไปดูเคล็ดลับการกินอาหารเพื่อสร้างกล้ามพร้อม ๆ กันเลยดีกว่า ดูสิว่าจะต้องปรับเปลี่ยนการกินของตัวเองมากน้อยขนาดไหน
+          </div>
+            <div style="text-indent: 2.5em;">  <b>- จดบันทึกสิ่งที่กินเป็นประจำทุกวัน</b> </div>
+          <br>
+             <div style="text-indent: 2.5em;"> ดูเป็นเรื่องยิบย่อย แต่เอาจริง ๆ มันสำคัญมากนะที่คุณต้องรู้ว่า ในแต่ละวันโยนอะไรเข้าปากไปบ้าง บางวันเผลอกินแป้งเยอะหรือบางวันกินโปรตีนน้อยเกินไป เป็นต้น เพราะไม่งั้นเดี๋ยวจะงงว่า เอ...ทำไมออกกำลังแทบทุกวัน ทว่ากล้ามเนื้อกลับไม่ชัดขึ้นเลย นั่นอาจเป็นเพราะกินแต่ของไม่มีประโยชน์เข้าไปเยอะก็เป็นได้</div>
+
+          <br>
+<center><img src="assets/img/News/12.3.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+<br>
+<div style="text-indent: 2.5em;"> <b>  - คำนวณแคลอรีทุกมื้อ</b></div>
+          <div style="text-indent: 2.5em;">เมื่อจดบันทึกสิ่งที่กินจนเป็นนิสัยแล้ว สิ่งสำคัญต่อมาคือการนับปริมาณแคลอรี ว่าในแต่ละมื้อคุณกินไปเท่าไร แล้วมาสรุปอีกทีว่าวันนี้กินไปกี่แคลอรี มากหรือน้อยเกินไปต่อความต้องการของร่างกายและการสร้างกล้ามเนื้อ ยิ่งเดี๋ยวนี้แอพพลิเคชั่นเกี่ยวกับการนับแคลอรีอาหารก็มีเยอะมาก ไม่ต้องมานั่งกะเอาเองหรือชั่งน้ำหนักให้เสียเวลาเลยด้วย
+
+</div>
+<div style="text-indent: 2.5em;"> <b> - นับปริมาณแม็คโครของอาหาร</b></div>
+          <div style="text-indent: 2.5em;">มาถึงขั้นตอนการนับแม็คโคร (Macro) หรือ ประเภทของสารอาหาร กันแล้ว ซึ่งเป็นหนึ่งในกุญแจสำคัญที่จะทำให้คุณไปถึงเป้าหมายได้เร็วขึ้น ซึ่งหลัก ๆ แล้วก็มี โปรตีน คาร์โบไฮเดรต และไขมัน นั่นเอง เวลาซื้อของกินให้ดูที่ส่วนประกอบอาหารบนฉลากด้วย เพื่อคำนวณแคลอรีที่ได้จากสารอาหารแต่ละชนิด โดยสัดส่วนปริมาณสารอาหารสำหรับคนสร้างกล้ามจะอยู่ที่ 40:40:20 (โปรตีน 40 เปอร์เซ็นต์, คาร์บ 40 เปอร์เซ็นต์ และ ไขมัน 20 เปอร์เซ็นต์) แต่ทั้งนี้ทั้งนั้น นี่ไม่ใช่กฎตายตัว เนื่องจากรูปร่างที่แตกต่างกันของแต่ละคนนั่นเอง
+</div><br>
+<center><img src="assets/img/News/12.4.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+<br>
+<div style="text-indent: 2.5em;"> <b> - อาหารคลีนก็ช่วยได้เยอ </b></div>
+          <div style="text-indent: 2.5em;">   ก็อย่างที่เขาฮิต ๆ กันนั่นแหละครับ ด้วยความที่เทรนด์รักสุขภาพมาแรงมาก นอกเหนือจากการออกกำลังแล้ว อาหารคลีนนี่ก็ได้รับความนิยมเช่นกัน ทั้งกินเพื่อลดน้ำหนักหรือกินเพื่อสร้างกล้ามก็ตาม ทว่าอย่าลืมว่า อะไรที่มันมากไปก็ไม่ดีเช่นกัน ดังนั้นคุณยังคงต้องนับแม็คโครประกอบด้วย เพื่อผลลัพธ์ที่ดีอย่างที่หวัง
+</div>
+
+<div style="text-indent: 2.5em;"> <b> - ติดตามผลการเปลี่ยนแปลงทุก ๆ 4 สัปดาห์</b></div>
+          <div style="text-indent: 2.5em;">     ถ้าหนุ่ม ๆ ทำตามคำแนะนำที่กล่าวไปข้างต้นควบคู่ไปกับการออกกำลัง หลังจากผ่านไป 4 สัปดาห์ คุณน่าจะเห็นความเปลี่ยนแปลงที่เกิดขึ้นบ้าง จากนั้นให้ลองกลับมาทบทวนแผนการนับแม็คโครอีกทีว่าต้องเพิ่มหรือลดอะไรบ้างไหม เช่น บางคนตกใจที่น้ำหนักมากขึ้น แต่เมื่อวัดสัดส่วนดูแล้วน้ำหนักที่เพิ่มมาจากกล้ามเนื้อล้วน ๆ ซึ่งก็ถือว่าประสบความสำเร็จนะ</div>
+
+</div>
+</div>
+ 
+<div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>NEWS</div>
+    <div class=is-size-5>ข่าวสารที่คุณไม่ควรพลาด</div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="news1">
+      <img src="assets/img/news/1.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>โรคคลั่งกินคลีน อาการป่วยทางจิตของคนเสพติดอาหารคลีนเกินไป</h4></div>
+
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news2">
+      <img src="assets/img/news/2.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>ลดน้ำหนักต้องรู้จัก 4 เทรนด์มาแรงในแบบฉบับคลีนฟู้ด</h4></div>
+   
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news3">
+      <img src="assets/img/news/3.2.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>ล้วงความลับ ดาราตัวเด็ดดังรักสุขภาพ พร้อมวิธีทำคลีนฟู้ดง่าย ๆ</h4> </div>
+    
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news4">
+      <img src="assets/img/news/4.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>หมกมุ่นกับเมนูอาหารเพื่อสุขภาพมากเกินไป ใช่ว่าจะดี</h4></div>
+
+  
+</div>
+</div>
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

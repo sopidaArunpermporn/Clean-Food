@@ -1,0 +1,323 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+
+{% endblock %}
+
+
+
+
+{% block content %}
+
+  <main>
+ 
+
+
+  <div class="row">
+    <div class="column left" style="background-color:#ffffff;">
+    <font face="TH SarabunPSK">
+      <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>6 เทคนิคสู่การออกกำลังกายอย่างถูกวิธี</b>  </div> <br>
+ <div class="is-size-4">
+  วันนี้เรามีเทคนิคในการออกกำลังกายที่ถูกวิธีมาแนะนำค่ะ รับรองว่าเป็นประโยชน์ต่อสาวๆ รักสุขภาพเป็นอย่างมากเลยล่ะ งั้นเรามาดูพร้อมๆ กันเลยว่าสิ่งดีๆ ที่ว่านี้เป็นอย่างไรกันบ้างเอ่ย
+  </div>
+ </div>
+
+ <br>
+      <center><img src="assets/img/trick/orchid2.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+      <br>
+
+   <div class="is-size-4">
+ <div style="text-indent: 2.5em;">
+  <b>1. เวลาการออกกำลังกายที่เหมาะสมที่สุด</b>  การออกกำลังกายให้ได้ผลดีที่สุดคือ คุณไม่ควรออกกำลังกายน้อยกว่า 30 นาที/ครั้ง และไม่ควรน้อยกว่า 3 ครั้งต่อสัปดาห์ค่ะ ทางที่ดีควรจะหมั่นออกกำลังกายอย่างสม่ำเสมอเข้าไว้นะคะ ร่างกายจะได้ปรับสมดุลอย่างสมบูรณ์แข็งแรง
+  </div>
+  <br>
+  <div style="text-indent: 2.5em;">
+  <b>2. ถ้าเหนื่อยก็หยุดพัก</b>  ถ้าเหนื่อยจากการออกกำลังกายก็หยุดนะคะ อย่าออกกำลังกายแบบหักโหม อย่าฝืนสังขารตัวเองและกำลังของตัวเองเด็ดขาด เพราะจะทำให้กล้ามเนื้อฉีกขาดได้ง่ายและเกิดอันตรายต่อร่างกายได้
+</div>
+<br>
+<div style="text-indent: 2.5em;">
+  <b>3. ก่อนออกกำลังกายต้องวอร์มร่างกาย</b>  ก่อนออกกำลังกายทุกครั้งควรวอร์มร่างกายก่อนนิดนึงนะคะ เพื่อเป็นการปรับอุณหภูมิให้ร่างกายพร้อมและเตรียมกล้ามเนื้อเพื่อยืดและคลายตัวอย่างยืดหยุ่น ส่วนเวลาที่ออกกำลังกายเสร็จก็ควรวอร์มอัพด้วยเช่นกัน เพื่อช่วยลดการปวดเมื่อยในวันรุ่งขึ้นยังไงล่ะคะ
+</div>
+ <br>
+      <center><img src="assets/img/trick/warm.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+      <br>
+<div style="text-indent: 2.5em;">
+  <b>4. ทำใจว่าต้องมีการปวดเมื่อยร่างกาย</b>  เวลาที่ออกกำลังกายในช่วงแรกๆ คุณอาจจะรู้สึกปวดเมื่อยได้อย่างเห็นได้ชัด แต่ถ้าคุณออกกำลังกายเป็นประจำอาการปวดเมื่อยเหล่านั้นก็จะน้อยลงค่ะ
+</div>
+<br>
+<div style="text-indent: 2.5em;">
+  <b>5. เปลี่ยนวิธีการออกกำลังกายจะได้ใม่เบื่อ</b>  คุณควรจะเปลี่ยนรูปแบบในการออกกำลังกายบ้างนะคะ เพื่อความสนุก เพิ่มความหลากหลาย และไม่น่าเบื่อ เพราะแต่ละกีฬาก็มีข้อดีแตกต่างกันออกไป ยังไงก็สับเปลี่ยนหมุนเวียนกันไปบ้างก็ดีค่ะ
+</div>
+<br>
+<div style="text-indent: 2.5em;">
+  <b>6. ดื่มน้ำอย่างเหมาะสมทั้งก่อนออกและระหว่างออกกำลังกาย</b>  คุณควรดื่มน้ำก่อนออกกำลังกายประมาณ 3 ชั่วโมง ประมาณ 2-3 แก้ว และในระหว่างเล่นก็ควรดื่ม 1-2 แก้ว เพื่อเป็นการชดเชยการสูญเสียน้ำระหว่างที่ออกกำลังกายและป้องกันไม่ให้ร่างกายเกิดอาการเกร็งเป็นตะคริว,คลื่นไส้หรือปวดหัว เนื่องจากภาวะขาดน้ำนั่นเอง
+</div>
+<br>
+      <center><img src="assets/img/trick/drinking.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+      <br>
+<div style="text-indent: 2.5em;">อย่างไรก็ตามการออกกำลังกายไม่ว่าจะด้วยวิธีการใดๆ ย่อมเป็นประโยชน์ต่อร่างกายทั้งสิ้นค่ะ เพียงแต่ว่าคุณต้องออกกำลังกายด้วยความเหมาะสม ด้วยความพอดี เพื่อร่างกายที่แข็งแรง ปราศจากโรคภัยยังไงล่ะคะ</div>
+<br>
+<div style="text-indent: 2.5em;">ขอขอบคุณ นิตยสาร เรื่อง ผู้หญิง</div>
+    
+   </div>
+  </div>
+
+ 
+
+
+
+  <div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>TRICK</div>
+    <div class=is-size-5>เคล็บลับ แต่ไม่ลับ</div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick1">
+      <img src="assets/img/trick/1.0.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>เด็กวัยคิดส์กินอาหารคลีนได้ไหม เด็กกินอาหารคลีนอย่างไร</h4></div>
+
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick2">
+      <img src="assets/img/trick/2.0.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>10 วิธีสำหรับเตรียมตัวทานอาหารคลีน เพื่อลดความอ้วน!</h4></div>
+   
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick3">
+      <img src="assets/img/trick/3.0.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>5 ข้อหลักที่คนกิน อาหารคลีน อาจไม่รู้</h4> </div>
+    
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick4">
+      <img src="assets/img/trick/4.0.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>เทคนิคฝึกทานอาหารคลีนแบบง่ายๆ เริ่มต้นด้วยการเปลี่ยนพฤติกรรม</h4></div>
+
+  
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

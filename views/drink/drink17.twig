@@ -1,0 +1,139 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  
+{% endblock %}
+
+{% block content %}
+
+  <main>
+
+       <font face="TH SarabunPSK">
+        <div class="has-text-centered">
+        <font size = "6"><b> LEMON CHIA FRESCA</b></font></div>
+
+<div class="column left" style="background-color:#ffffff;">
+<div class="text-center">
+
+      <img src="assets/img/drink/17.1.jpg" alt="" width="350" height="500">
+  <br><img src="assets/img/drink/17.2.jpg" alt="" width="350" height="500">
+  <br>
+</div>
+</div>
+
+  <div class="column middle" style="background-color:#ffffff;">
+<font size = "5">
+     
+     <br>หาเมนูอะไรที่เกี่ยวข้องกับเลม่อน จนมาจบอยู่ที่เมนูนี้
+     <br>
+     <br><font size = "6"> &emsp;&emsp;ส่วนผสมเมล็ดเจีย:</font>
+     <br>-นํ้าเปล่า 2 ถ้วย
+     <br>-เมล็ดเจีย 3 ช้อนโต๊ะ
+     
+     <br>
+     <br><font size = "6"> &emsp;&emsp;ส่วนผสมนํ้าเลม่อน</font>
+     <br>-นํ้าเลม่อนคั้นแช่เย็น 2 ถ้วย
+     <br>-นํ้าผึ้ง 3 ช้อนโต๊ะ
+     <br>-ใบสะระแหน่ 2-3 ใบ
+     <br>-นํ้าโซดาแช่เย็น 1 ถ้วย
+     <br>
+
+     <br><font size = "6"> &emsp;&emsp;วิธีทำ</font>
+     <br>1. ใส่นํ้าเปล่ากับเมล็ดเจียลงในภาชนะ จากนั้นปิดฝาแล้วเขย่าให้เข้ากัน นําไปแช่ตู้เย็นไว้ก่อน 
+     <br>นําไปแช่ตู้เย็นไว้ก่อน (อย่าลืมเอาออกมาเขย่าทุกๆ30 นาทีรวมทั้งหมดประมาณ 3-4 ครั้งะ) 
+     <br>2. ผสมเมล็ดเจียที่แช่นํ้าเลม่อน นํ้าผึ้งกับใบสะระแหน่ลงในเหยือกและคนให้เข้ากันดี  
+     <br>3. เทนํ้าโซดาตามลงไปพร้อมค่อยๆ คนเบาๆ
+     <br>4. เทลงแก้ว ตกแต่งด้วยใบสะระแหน่อีกหน่อย  
+     
+ </font>    
+  <br><br>
+  
+  
+</div>
+
+
+<font face="TH SarabunPSK">
+  <div class="column right" style="background-color:#ffffff;">
+
+         <div class="column right" style="background-color:#ffffff;">
+         <div class="sidenav">
+           <h1> <b>Recipe key</b></h1>
+           <h4><a href="food-1"><b>ไม่มีกุ้ง</b></a>
+           <a href="food-2"><b>ไม่มีถั่ว</b></a>
+           <a href="food-3"><b>ไม่มีเนื้อสัตว์</b></a>
+           <a href="food-4"><b>ไม่มีไข่</b></a></h4>
+         </div>
+       </div>
+ 
+ 
+
+  <div class="responsive">
+  <div class="gallery">
+    <a href="drink5">
+      <img src="assets/img/drink/5.1.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc"><h4>สมูทตี้มะม่วงโยเกิร์ตและน้ำผึ้ง </h4></div>
+    <br>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="drink6">
+      <img src="assets/img/drink/6.1.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc"><h4>Detox smoothie</h4></div>
+    <br>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="drink7">
+      <img src="assets/img/drink/7.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>Mix berry carrot soy milk</h4></div>
+    <br>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="drink8">
+      <img src="assets/img/drink/8.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>นมกล้วยหอมโยเกิร์ตช็อคโกแลตเนยถั่วปั่น</h4></div>
+    <br>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+
+
+  </main>
+{% endblock %}

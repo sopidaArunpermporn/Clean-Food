@@ -1,0 +1,354 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+
+{% endblock %}
+
+
+
+
+{% block content %}
+
+  <main>
+ 
+
+  <div class="row">
+  <div class="column left" style="background-color:#ffffff;">
+    <font face="TH SarabunPSK">
+    <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>Orthorexia โรคคลั่งกินคลีน อาการป่วยทางจิตของคนเสพติดอาหารคลีนเกินไป</b>  <br>
+ <div class="is-size-4">
+  <b> อาการป่วยทางจิตของคนที่กังวลเรื่องอาหารการกินมากเกินไป <br> จนอาจนำมาซึ่งภัยสุขภาพที่ร้ายแรงเกินจะคาดคิด</b>
+
+  </div>
+</div>
+</div>
+
+  <br>
+   <div class="is-size-4">
+   กระแสการกินอาหารเพื่อสุขภาพอย่างการกินคลีนเป็นที่นิยมมาอย่างเนิ่นนาน และดูท่าจะติดเทรนด์การกินเพื่อสุขภาพต่อไปอีกเรื่อย ๆ อีกทั้งยังมีแนวโน้มว่าจะเข้มงวดขึ้นซะจนน่าเป็นห่วง โดยเฉพาะคนที่คลั่งกินคลีนชนิดที่เกิดความหวาดระแวงกับอาหารที่จะกิน และเลือกกินแต่อาหารที่ตัวเองคิดว่าสะอาด หรือบริสุทธิ์เท่านั้น ซึ่งประเด็นนี้ร้อนถึงจิตแพทย์และนักโภชนาการให้ต้องออกโรงเตือนว่า โรคคลั่งกินคลีน หรือโรค Orthorexia อาจทำให้สุขภาพพัง !
+  <br>
+   <center><img src="assets/img/News/1.2.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+   <br>
+ 
+ <b>โรคคลั่งกินคลีน (Orthorexia nervosa) คืออะไร ?</b>
+          <div style="text-indent: 2.5em;">    ภาวะ Orthorexia คือ อาการของคนห่วงกินคลีนมากเกินไป กินคลีนจัด ๆ หรือคนที่หมกมุ่นกับการเลือกกินอาหารที่คิดว่าดีต่อสุขภาพ และหวาดกลัวอาหารที่ไม่ดีต่อสุขภาพหรืออาหารปนเปื้อน จนบางครั้งก็เผลอตัดหมวดโภชนาการที่จำเป็นออกไปโดยไม่รู้ตัว และเลือกกินแต่อาหารชนิดเดิม ๆ จนร่างกายได้รับสารอาหารไม่ครบ อีกทั้งยังใส่ใจแต่ปริมาณแคลอรีที่รับเข้าสู่ร่างกายเป็นหลัก โดยไม่คำนึงถึงหลักโภชนาการที่ร่างกายควรได้รับต่อวัน
+
+          </div>
+          <br>
+             <div style="text-indent: 2.5em;">   ทั้งนี้ในทางจิตแพทย์ชี้แจงว่า โรคคลั่งกินคลีนจะมีความคล้ายคลึงกับโรคอะนอเร็กเซีย หรือโรคคลั่งผอม คือมีความกังวลกับอาหารที่กินเข้าไป เพียงแต่แตกต่างกันตรงที่โรคคลั่งผอมจะไม่ยอมกินอาหารเพราะกลัวอ้วน แต่สำหรับโรคคลั่งกินคลีนจะไม่ยอมแตะอาหารที่เขาเข้าใจว่าไม่สะอาดและบริสุทธิ์เพียงพอเลยแม้แต่นิดเดียว
+
+          </div>
+          <br>
+<center><img src="assets/img/News/1.3.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+<br>
+<b>สาเหตุของโรคคลั่งกินคลีน (Orthorexia nervosa) คืออะไร ?</b>
+          <div style="text-indent: 2.5em;"> สาเหตุโรค Orthorexia nervosa เกิดจากแนวคิดที่อยากรับประทานอาหารเพื่อสุขภาพ และเพื่อรูปร่างที่ดี จึงรับประทานอาหารคลีนที่ผ่านกระบวนการปรุงแต่งน้อยที่สุด ทว่าเมื่อเกิดความคลั่งไคล้ในการกินคลีน ก็อาจทำให้คอนเซ็ปต์ในการกินคลีนคลาดเคลื่อน ส่งผลให้ผู้ป่วยเลือกที่จะกินแต่อาหารตามกฎเกณฑ์ของตัวเอง และปฏิเสธอาหารบางหมู่ซึ่งจริง ๆ แล้วก็ให้คุณแก่ร่างกายไปโดยสิ้นเชิง
+</div>
+  <div style="text-indent: 2.5em;">   นอกจากนี้กระแสการดูแลสุขภาพบนโลกโซเชียลและคนรอบข้างที่เน้นการกินคลีนยังเป็นอีกหนึ่งแรงผลักดันให้ผู้ป่วยหมกมุ่นกับการกินคลีนจัด ๆ อีกด้วย
+</div>
+<b>โรคคลั่งกินคลีน อันตรายขนาดไหน</b>
+  <div style="text-indent: 2.5em;">    การกินอาหารคลีนดีต่อสุขภาพก็จริง ทว่าหากเข้มงวดจนเข้าสู่ภาวะของโรคคลั่งกินคลีน งานนี้คงต้องขอเตือนเลยว่า การปฏิเสธที่จะกินอาหารบางหมวดหมู่อาจทำให้น้ำหนักลด ร่างกายได้รับสารอาหารไม่ครบตามหลักโภชนาการ เกิดภาวะขาดสารอาหารทั้ง ๆ ที่เชื่อว่าตัวเองกินอย่างอุดมสมบูรณ์ ส่งผลให้ระบบภูมิคุ้มกันเสื่อมประสิทธิภาพ การทำงานในระบบต่าง ๆ ของร่างกายไม่เต็มที่เท่าที่ควร 
+
+</div>
+ <div style="text-indent: 2.5em;">   นอกจากนี้ในส่วนของสุขภาพจิต ความกดดันตัวเองหรือการตีกรอบที่เข้มงวดในการรับประทานอาหารอาจส่งผลให้เกิดภาวะเครียด  
+</div>
+ <div style="text-indent: 2.5em;">    อีกทั้งนักโภชนาการยังเตือนว่า การตัดอาหารหมู่ใดหมู่หนึ่งหรืออาหารหลาย ๆ หมู่ออกไปจะยิ่งเพิ่มความเสี่ยงต่อการเป็นโรคร้ายแรงได้ </div>
+<br>
+
+<center><img src="assets/img/News/1.4.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+<br>
+<b>อาการของโรคคลั่งกินคลีน</b>
+          <div style="text-indent: 2.5em;"> <b> การกินอาหารเพื่อสุขภาพหรือกินอาหารคลีนเป็นเรื่องที่ดีต่อสุขภาพของเราจริง ๆ และเราไม่ได้กล่าวว่าผู้ที่กินอาหารคลีนทุกคนจะเป็นโรคนี้ ดังนั้นภาวะโรคคลั่งกินคลีนจึงต้องมีการจำแนกอาการของโรค ซึ่งมีดังต่อไปนี้</b></div>
+  <div style="text-indent: 2.5em;">   1. หมกมุ่นว่าอาหารที่จะกินต้องดีต่อสุขภาพเท่านั้น ชนิดที่เสียเวลาเป็นชั่วโมง ๆ เพื่อพิจารณาอาหารที่จะกิน
+</div>
+  <div style="text-indent: 2.5em;">  2. ไม่ยอมรับประทานอาหารที่ผลิตจากอุตสาหกรรมขนาดใหญ่ เพราะเชื่อว่าเป็นอาหารคุณภาพต่ำ มีสารปนเปื้อนตั้งแต่กระบวนการเพาะเลี้ยง อาจทำให้เสี่ยงต่อโรคมะเร็ง
+</div>
+   <div style="text-indent: 2.5em;">   3. คำนวณจำนวนแคลอรีในอาหารที่จะกินเข้าไปแต่ละมื้ออย่างจริงจัง
+</div>
+   <div style="text-indent: 2.5em;">   4. ยิ่งกินคลีนได้มากเท่าไร ยิ่งรู้สึกถึงคุณค่าของตัวเองเพิ่มมากขึ้นเท่านั้น
+   <div style="text-indent: 2.5em;">   5. หากเผลอรับประทานอาหารที่นอกเหนือกฎเกณฑ์ของตัวเองเข้าไป โดยเฉพาะอาหารที่คิดว่าไม่คลีน ไม่สะอาด จะพยายามโหมออกกำลังกายอย่างหนักเพื่อกำจัดสิ่งที่กินออกไป หรืออาจจะกำหนดแผนการกินคลีนที่เข้มงวดกว่าเดิม
+</div>
+   <div style="text-indent: 2.5em;">  6. มีอาการย้ำคิดย้ำทำ ล้างผักแล้วล้างผักอีก หรือตรวจเช็กซ้ำ ๆ ว่าอาหารที่จะกินนั้นสะอาดและคลีนอย่างแท้จริง
+</div>
+   <div style="text-indent: 2.5em;">      7. เมื่อทำตามสิ่งที่ตัวเองตั้งกฎเกณฑ์เอาไว้ไม่ได้ จะเกิดความรู้สึกผิดต่อตัวเองเป็นอย่างมาก หรืออาจรู้สึกโกรธเกลียดตัวเองเลยก็ได้
+</div>
+   <div style="text-indent: 2.5em;">     8. หลีกเลี่ยงการรับประทานอาหารนอกบ้าน หรือรับประทานอาหารกับผู้อื่น เพื่อปกปิดพฤติกรรมการรับประทานอาหารของตัวเอง
+</div>
+   <div style="text-indent: 2.5em;">   9. บางคนถึงขั้นไม่ยอมรับประทานแม้แต่อาหารที่คนรักหรือคนในครอบครัวทำให้เลย เนื่องจากไม่ไว้ใจในความ "คลีน"
+</div><br>
+
+<img src="assets/img/News/1.5.jpg" alt="Trolltunga Norway" width="1000" height="auto">
+<br>
+<b>โรคคลั่งกินคลีน รักษาได้ ไม่ยากด้วย</b>
+          <div style="text-indent: 2.5em;"> <b>   จริง ๆ แล้วโรคคลั่งกินคลีนเป็นอาการทางจิตที่เยียวยารักษาได้ โดยเริ่มแรกที่เข้าใจว่าตัวเองป่วยด้วยโรคนี้แน่แล้วให้ลองเข้าไปปรึกษากับจิตแพทย์ในเบื้องต้นดูก่อน ถัดมาค่อยเข้ารับคำแนะนำด้านโภชนาการจากนักโภชนการ ให้ผู้เชี่ยวชาญช่วยปรับสไตล์การรับประทานอาหาร พร้อมทั้งช่วยกำหนดแผนการบริโภคที่เหมาะกับสุขภาพและร่างกายของเราด้วย</b></div>
+  <div style="text-indent: 2.5em;">    อย่างไรก็ตาม หัวใจสำคัญของการกินอาหารเพื่อสุขภาพที่ดี ควรต้องได้รับสารอาหารที่ครบถ้วนในปริมาณที่พอเหมาะ เลือกรับประทานอาหารที่ถูกสุขอนามัย รวมทั้งหมั่นออกกำลังกายอย่างเหมาะสมด้วยนะคะ</div>
+  <div style="text-indent: 2.5em;">   และไม่ว่าคุณจะเข้าข่ายเป็นโรคคลั่งกินคลีน หรือยังไม่เสี่ยงต่อภาวะนี้ก็ตาม เราอยากแนะนำให้มาทำความเข้าใจการกินคลีนที่ถูกต้องเสียใหม่ จากบทความด้านล่างนี้ เพื่อเป็นการป้องกันการเกิดโรค พร้อมทั้งเป็นวิธีที่จะทำให้คุณได้กินคลีนอย่างที่ดีต่อสุขภาพจริง ๆ
+</div>
+</div>
+</div>
+  </div>
+
+
+
+
+  <div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>NEWS</div>
+    <div class=is-size-5>ข่าวสารที่คุณไม่ควรพลาด</div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="news17">
+      <img src="assets/img/news/17.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>หน่อไม้ฝรั่ง สรรพคุณเหลือล้ำ ขอย้ำว่าต้องกิน !</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news18">
+      <img src="assets/img/news/18.2.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>อะโวคาโด สรรพคุณล้น ลดอ้วนลงพุง ปราบไขมันในเลือดอยู่หมัด</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news19">
+      <img src="assets/img/news/19.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>12 ผักต้านมะเร็งร้าย ป้องกันโรคมะเร็งง่าย ๆ ด้วยผัก</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news20">
+      <img src="assets/img/news/20.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>10 อาหารเช้าช่วยปลุกสมอง ลองแล้วตื่นตัว !</h4></div>
+   
+  </div>
+</div>
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

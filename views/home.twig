@@ -1,8 +1,130 @@
 {% extends 'layout/base.twig' %}
 
 {% block stylesheet %}
- 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
- 	<link rel="stylesheet" href="home.css">
+ 	<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+<style>
+
+
+
+.parallax {
+    /* The image used */
+    background-image: url('assets/img/banner1.jpg');
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1200px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 350px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 15%;
+}
+
+.right {
+  width: 15%;
+}
+
+.middle {
+  width: 70%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ div.gallary {
+      margin: 9px;
+    }
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid #DCDCDC;
+}
+
+div.gallery img {
+    width: 300px;
+    height: 290px;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 10px;
+    float: left;
+    width: 24.9444%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 {% endblock %}
 
 {% block content %}
@@ -10,41 +132,349 @@
 
 	<main>
 		
-		<section class="banner">
-			<div class="highlight">
-			
-					<div class="highlight-item">
-						    <br>&emsp;&emsp;อาหารคลีน คือ 
-							<br>
-							<br>&emsp;&emsp;อาหารที่ไม่ผ่านการปรุงแต่งด้วยสารเคมีต่าง ๆ 
-							<br>&emsp;&emsp;หรือผ่านการแปรรูปน้อยที่สุดนั่นเอง 
-							<br>&emsp;&emsp;อาหารเหล่านี้จะเป็นอาหารที่สดสะอาดไม่ผ่าน
-							<br>&emsp;&emsp;กระบวนการหมักดองหรือปรุงรสใด ๆ มากจนเกินไป 
-							<br>&emsp;&emsp;เช่น เค็มจัดหรือหวานจัด เป็นต้น 
-							<br>
-          					<br>&emsp;&emsp;อย่างอาหารประเภทอาหารสำเร็จรูปที่แช่ตู้เย็น
-          					<br>&emsp;&emsp;นั่นคือตรงข้ามเลย เพราะอาหารเหล่านี้มักใส่สาร
-          					<br>&emsp;&emsp;กันเสียเข้าไปด้วยเพื่อให้สามารถเก็บได้นานขึ้น 
-          					<br>&emsp;&emsp;หรือขนมขบเคี้ยวที่ก็จะมีแต่แป้งและผงชูรส 
-          					<br>&emsp;&emsp;และยังเต็มไปด้วยโซเดียมกับน้ำมัน น้ำอัดลม
-          					<br>&emsp;&emsp;หลากสีหลากกลิ่นทั้งหลาย รวมทั้งอาหารขยะอย่าง
-          					<br>&emsp;&emsp;เบอร์เกอร์ เฟรนช์ฟราย ไก่ชุบแป้งทอดก็ด้วย
-          					<br>
-          					<br>&emsp;&emsp;การปรุงอาหารแบบคลีนไม่ใช่การเน้นทานผักเยอะ ๆ 
-          					<br>&emsp;&emsp;แต่เป็นการทานอาหารทุกหมู่อย่างในสัดส่วนที่
-          					<br>&emsp;&emsp;เหมาะสม คือต้องมีทั้งคาร์โบไฮเดรตและโปรตีน
-          					<br>&emsp;&emsp;ในปริมาณที่เพียงพอต่อความต้องการของร่างกาย 
-          					<br>&emsp;&emsp;เนื้อสัตว์ที่ใช้ควรเลือกแบบที่ไม่ใช่สำเร็จรูป
-          					<br>&emsp;&emsp;หรือผ่านการปรุงรสมาแล้ว		
-					</div>
-				</div>
-			</div>
+		<content>
+<div class="parallax"></div>
 
-			
+<div style="height:1200px; width: 1180px; background-color:#A2CD5A; font-size:25px">
 
-					</div>
-				</div>
-			</div>
+
+<div class="row">
+  <div class="column left" style="background-color:#FFFF99;">
+  </div>
+
+
+  <div class="column middle" style="background-color:#FFFF99;">
+<br>
+<h1><center>อาหารคลีน คืออะไร</h1></center> 
+<br> <center>อาหารที่ผ่านการปรุงแต่งดัดแปลงน้อยที่สุด 
+<br>เน้นความเป็นธรรมชาติให้มากที่สุด และได้รับสารอาหารอย่างครบถ้วน </center>
+<br>
+<br>
+
+    <font color="#ffffff">
+ <div style="text-indent: 2em;">อาหารคลีน (Clean Food) คือ อาหารที่ไม่ผ่านการปรุงแต่งด้วยสารเคมีต่าง ๆ หรือผ่านการแปรรูปน้อยที่สุดนั่นเอง อาหารเหล่านี้จะเป็นอาหารที่สดสะอาดไม่ผ่านกระบวนการหมักดองหรือปรุงรสใด ๆ มากจนเกินไป เช่น เค็มจัดหรือหวานจัด เป็นต้น </div>
+
+          <div style="text-indent: 2em;">อย่างอาหารประเภทอาหารสำเร็จรูปที่แช่ตู้เย็นนั่นคือตรงข้ามเลย เพราะอาหารเหล่านี้มักใส่สารกันเสียเข้าไปด้วยเพื่อให้สามารถเก็บได้นานขึ้น หรือขนมขบเคี้ยวที่ก็จะมีแต่แป้งและผงชูรส และยังเต็มไปด้วยโซเดียมกับน้ำมัน น้ำอัดลมหลากสีหลากกลิ่นทั้งหลาย รวมทั้งอาหารขยะอย่างเบอร์เกอร์ เฟรนช์ฟราย ไก่ชุบแป้งทอดก็ด้วย </div>
+
+          <div style="text-indent: 2em;">การปรุงอาหารแบบคลีนไม่ใช่การเน้นทานผักเยอะ ๆ แต่เป็นการทานอาหารทุกหมู่อย่างในสัดส่วนที่เหมาะสม คือต้องมีทั้งคาร์โบไฮเดรตและโปรตีนในปริมาณที่เพียงพอต่อความต้องการของร่างกาย เนื้อสัตว์ที่ใช้ควรเลือกแบบที่ไม่ใช่สำเร็จรูปหรือผ่านการปรุงรสมาแล้ว </div>
+
+          <div style="text-indent: 2em;">จะเห็นได้ว่า อาหารคลีนเป็นอาหารที่ผ่านขั้นตอนการปรุงแต่งมาน้อย หรือไม่ผ่านการปรุงแต่งเลย เน้นธรรมชาติของอาหารนั้นเป็นหลัก และอาหารคลีนยังมีสรรพคุณที่ดีสำหรับคนที่อ้วน คนที่มีน้ำหนักและไขมันมาก เพราะอาหารคลีนส่วนใหญ่จะผลิตมาจากธรรมชาติ ไม่ผ่านการปรุงแต่งสังเคราะห์ หรือหากจะมีการปรุงแต่งก็มีการปรุงแต่งที่น้อยถึงน้อยที่สุด ซึ่งจะมีผลดีต่อคนที่ต้องการลดน้ำหนัก ลดความอ้วน ลดไขมัน และคนที่ใส่ใจกับสุขภาพของตนเอง </div>
+<br>
+  </div>
+  <div class="column right" style="background-color:#FFFF99;">
+  </div>
+</div>
+
+</font></div>
+
+<div style="font-size: 50px">
+
+<div style="font-size: 50px"> <a class="navbar-item "href="food-11">
+       FOOD
+      </a></div>
+<p>
+
+<div style="font-size: 20px">
+ <div class="row">
+    <div class="responsive">
+  <div class="gallery">
+    <a href="food17">
+      <img src="assets/img/food/17.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"> สลัดอกไก่สไตล์จีน</div>
+
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="food18">
+      <img src="assets/img/food/18.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">สลัดอกไก่สไตล์ไทย</div>
+
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="food19">
+      <img src="assets/img/food/19.2.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">สลัดอกไก่บาร์บีคิว</div>
+
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="food20">
+      <img src="assets/img/food/20.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">สลัดแอปเปิลอกไก่</div>
+   
+  </div>
+</div>
+  </div>
+</div>
+
+
+<div style="font-size: 50px"> <a class="navbar-item "href="drink-1">
+       DRINK
+      </a></div>
+<p>
+
+<div style="font-size: 20px">
+ <div class="row">
+<div class="responsive">
+  <div class="gallery">
+    <a href="drink9">
+      <img src="assets/img/drink/9.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">แก้วมังกรสมูทตี้ </div>
+    <br>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="drink10">
+      <img src="assets/img/drink/10.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">น้ำอะโวคาโดปั่น</div>
+    <br>
+  </div>
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="drink11">
+      <img src="assets/img/drink/11.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Pumpkin pie Smoothie</div>
+    <br>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="drink12">
+      <img src="assets/img/drink/12.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Blueberry Smothie</div>
+    <br>
+  </div>
+</div>
+</div>
+</div>
+<div style="font-size: 50px"> <a class="navbar-item "href="dessert-1">
+       DESSERT
+      </a></div>
+<p>
+<div style="font-size: 20px">
+ <div class="row">
+<div class="responsive">
+  <div class="gallery">
+    <a href="dessert1">
+      <img src="assets/img/dessert/1.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">Red Velvet Pancakes</div>
+<br>
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="dessert2">
+      <img src="assets/img/dessert/2.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">Chocolate Coconut Flour Crepes</div>
+   
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="dessert3">
+      <img src="assets/img/dessert/3.2.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">แพนเค้กสอดไส้ครีมงาดำรสช็อกโกแลต </div>
+    
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="dessert4">
+      <img src="assets/img/dessert/4.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">Cranberry scones</div>
+
+    <br>
+</div>
+</div>
+  </div>
+</div>
+
+<div style="font-size: 50px"><a class="navbar-item "href="restaurants-1 ">
+       RESAURANT
+      </a></div>
+<p>
+<div style="font-size: 20px">
+
+ <div class="row">
+ <div class="responsive">
+  <div class="gallery">
+    <a href="restaurants1">
+      <img src="assets/img/restaurants/1.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">Brekkie</div>
+
+
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="restaurants2">
+      <img src="assets/img/restaurants/2.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">สวนผัก โอ้กะจู๋</div>
+  
+
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="restaurants3">
+      <img src="assets/img/restaurants/3.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">ORGANIC SUPPLY</div>
+    
+
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="restaurants4">
+      <img src="assets/img/restaurants/4.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">Ariya Organic Place</div>
+
+
+  </div>
+</div>
+  </div>
+</div>
+
+
+<div style="font-size: 50px"><a class="navbar-item "href="trick ">
+       TRICK
+      </a></div>
+<p>
+<div style="font-size: 20px">
+
+ <div class="row">
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick2">
+      <img src="assets/img/trick/2.0.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">10 วิธีสำหรับเตรียมตัวทานอาหารคลีน เพื่อลดความอ้วน!</div>
+   
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick3">
+      <img src="assets/img/trick/3.0.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">5 ข้อหลักที่คนกิน อาหารคลีน อาจไม่รู้ </div>
+    
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick4">
+      <img src="assets/img/trick/4.0.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">เทคนิคฝึกทานอาหารคลีนแบบง่ายๆ เริ่มต้นด้วยการเปลี่ยนพฤติกรรม</div>
+
+  
+</div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick5">
+      <img src="assets/img/trick/5.0.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">9 อาหารช่วยดีท็อกซ์ ขับสารพิษได้อย่างดีเยี่ยม</div>
+   
+  </div>
+</div>
+
+ </div>
+</div>
+
+
+
+<div style="font-size: 50px"><a class="navbar-item "href="news-1 ">
+       NEWS
+      </a></div>
+<p>
+     <div style="font-size: 20px">
+
+ <div class="row">
+
+
+  <div class="responsive">
+  <div class="gallery">
+    <a href="news20">
+      <img src="assets/img/news/20.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">10 อาหารเช้าช่วยปลุกสมอง ลองแล้วตื่นตัว !</div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news13">
+      <img src="assets/img/news/13.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">กินคลีนแบบไหน...เหมาะกับแม่หลังคลอด </div>
+ <br>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news11">
+      <img src="assets/img/news/11.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">“น้ำผึ้ง” ดีกับผู้ชายยังไง ?</div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news7">
+      <img src="assets/img/news/7.2.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">6 อาหารเพื่อสุขภาพ กินลดน้ำหนักได้ผล</div>
+   
+  </div>
+</div>
+</div>
+</div>
+</div>
+			
 		</section>
 	</main>
 {% endblock %}

@@ -1,0 +1,353 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+ 	
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+{% endblock %}
+
+{% block content %}
+
+  <main>
+ 
+
+   <div class="row">
+  <div class="column left" style="background-color:#ffffff;">
+    <font face="TH SarabunPSK">
+    <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>10 อาหารเช้าช่วยปลุกสมอง ลองแล้วตื่นตัว !</b><br>
+ <div class="is-size-4">
+   <b>ตื่นเช้าแล้วมีอาการมึน อึนหน่อย ๆ ต้องลองกินอาหารเช้าต่อไปนี้สักที แล้วชีวิตจะดี สมองจะตื่นตัว !</b>
+  </div>
+</div>
+</div>
+  <br>
+   <div class="is-size-4">
+ ถ้ามื้อเช้าที่เป็นมื้อสำคัญ คุณไม่รู้ว่าจะกินอะไรเพื่อปลุกให้ร่างกายตื่นตัว ช่วยกระตุ้นสมองให้พร้อมทำงาน และเติมท้องให้อิ่มแบบได้คุณค่าทางสารอาหาร วันนี้กระปุกดอทคอมขอแนะนำเป็น 10 อาหารเช้าเพื่อสุขภาพ ต่อไปนี้ค่ะ รับรองกินแล้วตาสว่าง สมองตื่น ความง่วงหายไปอย่างไม่รู้ตัวเลย !
+</div>
+
+     <div class="is-size-4">
+  <br>
+   <center><img src="assets/img/News/20.2.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+   <br>
+ 
+         <b>1. น้ำเปล่า</b> <br>
+ 
+          <div style="text-indent: 2.5em;">เครื่องดื่มอย่างแรกที่อยากให้ตกถึงท้องทุกคนก่อนใครก็คือน้ำเปล่านี่เองค่ะ เพราะขณะที่ร่างกายเรานอนหลับ 6-8 ชั่วโมง เราจะไม่ได้ดื่มน้ำเลย ดังนั้นเพื่อเติมน้ำให้เซลล์และอวัยวะต่าง ๆ ในร่างกาย น้ำเปล่าก็ควรเป็นสิ่งที่เราเติมเต็มให้ตัวเองเป็นอันดับแรก แล้วเชื่อเถอะค่ะว่า หลังจากดื่มน้ำเข้าไปสักแก้วแล้ว จะรู้สึกสดชื่นตื่นตัวขึ้นมาทันทีเลย
+
+          </div>
+          <br>
+<center><img src="assets/img/News/20.3.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+<br>
+<b>2. น้ำมะนาว</b><br>
+
+          <div style="text-indent: 2.5em;">ใ   สำหรับคนที่ตื่นมาแล้วเพลียหนักมาก ดื่มน้ำเปล่าเพียว ๆ อาจไม่พอค่ะ ต้องเป็นน้ำมะนาวอุ่น ๆ สักแก้ว หรือจะบีบมะนาวลงไปในน้ำเปล่าปกติสักครึ่งซีกก็ได้ กลิ่นซิตรัสของมะนาวจะช่วยปลุกความสดชื่นให้สมอง ส่วนน้ำก็จะช่วยขับไล่ความอ่อนเพลียให้หมดไป 
+</div>
+          <br>
+<center><img src="assets/img/News/20.4.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+<br>
+<b>3. ไข่</b><br>
+
+
+          <div style="text-indent: 2.5em;">   ไข่เป็นอาหารที่กินมือไหนก็อร่อย แต่หากกินไข่เป็นอาหารเช้าก็จะได้ประโยชน์ในแง่ของการบำรุงสมองที่อึน ๆ ให้ตื่นตัวขึ้นด้วย เนื่องจากไข่มีกรดไขมันโอเมก้า-3 และโปรตีน นอกจากนี้ไข่ไก่ 1 ฟอง ยังมีโคลีน (Choline) ซึ่งเป็นส่วนประกอบของเยื่อหุ้มเซลล์ เยื่อหุ้มสมอง อยู่มากถึง 20% ส่งผลให้สมองและระบบประสาทแข็งแรง พร้อมทำกิจกรรมต่าง ๆ อย่างตื่นตัว โดยยืนยันให้มั่นใจอีกทีด้วยผลการศึกษาในวารสาร International Journal of Obesity ที่พบว่า คนกินไข่ไก่เป็นมื้อเช้าจะรู้สึกตื่นตัวและพร้อมทำกิจกรรมต่าง ๆ มากกว่าคนที่กินอาหารชนิดอื่นที่ให้พลังงานเท่ากัน อย่างเช่น ขนมปังเบเกิล เป็นต้น </div>
+          <br>
+<img src="assets/img/News/20.5.jpg" alt="Trolltunga Norway" width="10000" height="auto">
+<br>
+<b>4. กล้วย</b><br>
+
+          <div style="text-indent: 2.5em;">  กล้วยเป็นผลไม้ที่มีคาร์โบไฮเดรตเซิงซ้อน ที่ร่างกายสามารถเปลี่ยนเป็นกลูโคสเพื่อให้พลังงานแก่เซลล์และอวัยวะต่าง ๆ โดยเฉพาะเซลล์สมองได้ทันที อีกทั้งในกล้วย 1 ผลยังเปี่ยมไปด้วยวิตามินบี 2 บี 3 โพแทสเซียม และแมกนีเซียม ที่ช่วยฟื้นฟูร่างกายจากความเหนื่อยล้าได้อีกต่างหาก ดังนั้นหากมีเวลาจำกัด ต้องรีบเร่ง พกกล้วยน้ำว้าสัก 1-2 ผลไปกินเป็นมื้อเช้าได้เลยค่ะ</div>
+          <br>
+<center><img src="assets/img/News/20.6.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+<br>
+<b>5. ข้าวโอ๊ต โฮลเกรน โฮลวีท</b>
+<br>
+
+          <div style="text-indent: 2.5em;">   ข้าวและธัญพืชไม่ขัดสีกลุ่มนี้ก็มีคาร์โบไฮเดรตเชิงซ้อนให้ร่างกายเปลี่ยนแป้งเป็นกลูโคสด้วยเหมือนกัน แต่ที่พีคไปกว่านั้นคือนอกจากจะเป็นคาร์บเชิงซ้อนให้ร่างกายรู้สึกอิ่มได้นานแล้ว ธัญพืชเหล่านี้ยังอุดมไปด้วยวิตามินและแร่ธาตุที่เป็นวัตถุดิบหลักของระบบประสาทและสมอง ช่วยให้อวัยวะและเซลล์ในร่างกายตื่นตัว ส่วนคาร์โบไฮเดรตที่เปลี่ยนเป็นน้ำตาลก็ช่วยให้ร่างกายสดชื่นเพิ่มขึ้นด้วย</div>
+          <br>
+
+<img src="assets/img/News/20.7.jpg" alt="Trolltunga Norway" width="10000" height="auto">
+<b>6. ข้าวกล้อง</b></br>
+
+          <div style="text-indent: 2.5em;">  ข้าวกล้องมีกาบ้า สารอาหารสำคัญที่มีประโยชน์ต่อการทำงานของระบบประสาทและสมอง อีกทั้งข้าวกล้องยังมีวิตามินบีสูงมาก จึงช่วยกระตุ้นระบบประสาทและสมองให้ตื่นตัวได้อีกทาง</div>
+          <br>
+<img src="assets/img/News/20.8.jpg" alt="Trolltunga Norway" width="10000" height="auto">
+<b>7. ถั่วชนิดต่าง ๆ</b><br>
+
+          <div style="text-indent: 2.5em;">
+          ถั่วเป็นแหล่งของสารอาหารที่ให้พลังงานแก่ร่างกาย ทั้งโปรตีน ไขมัน และคาร์โบไฮเดรต ดังนั้นการกินถั่วเป็นมื้อเช้าก็ช่วยให้มีพลังกายมากยิ่งขึ้น ที่สำคัญกรดไขมันชนิดดีและธาตุสังกะสีจากถั่วยังจะเข้าไปเป็นพลังงานให้เซลล์สมองพร้อมทำงานได้อย่างเต็มประสิทธิภาพเพิ่มขึ้นด้วยนะคะ ซึ่งหากใครไม่สะดวกจะกินถั่วเปล่า ๆ ลองกินถั่วกับโยเกิร์ต หรือจะเป็นเมนูขนมปังโฮลวีททาเนยถั่วแบบนี้ก็ได้</div><br>
+<img src="assets/img/News/20.9.jpg" alt="Trolltunga Norway" width="10000" height="auto">
+<b>8. องุ่น</b><br>
+
+         <div style="text-indent: 2.5em;">มีการศึกษาพบว่า ไม่ว่าจะกินองุ่นเขียว องุ่นดำ หรือองุ่นแดง ก็จะได้รับสารต้านอนุมูลอิสระจากผลไม้ที่ชื่อว่าองุ่นในปริมาณที่ใกล้เคียงกัน ซึ่งเจ้าสารต้านอนุมูลอิสระนี่แหละที่มีประโยชน์ต่อการทำงานของสมอง ช่วยป้องกันโรคอัลไซเมอร์ที่มีสาเหตุมาจากความเสื่อมของเซลล์ ในขณะเดียวกันก็เป็นพลังงานสำคัญของเซลล์สมองด้วย ดังนั้นหากเบื่ออาหารเช้าเดิม ๆ ลองหันมากินองุ่นกันบ้างก็ได้นะ</div><br>
+
+<img src="assets/img/News/20.10.jpg" alt="Trolltunga Norway" width="10000" height="auto">
+<b>9. บลูเบอร์รี</b><br>
+
+         <div style="text-indent: 2.5em;">ผลไม้ชนิดนี้มีสารต้านอนุมูลอิสระอยู่มากเช่นกัน และยังมีการศึกษาที่พบว่าคนที่รับประทานบลูเบอร์รีเป็นประจำจะมีความจำและทักษะการเคลื่อนไหวที่ดี อันเนื่องมาจากสารแทนนินในบลูเบอร์รีมีส่วนช่วยเชื่อมการทำงานของเซลล์ต่าง ๆ ในสมอง จากที่ตื่นมาด้วยความมึนงง พอได้กินบลูเบอร์รีก็จะช่วยให้เชื่อมต่อข้อมูลได้ดีขึ้น นอกจากนี้บลูเบอร์รียังมีสารพฤกษเคมี (phytochemicals) ที่เชื่อกันว่าเป็นสารที่ช่วยเติมเต็มความสามารถของสมองในด้านการเรียนรู้ ความคิด และความจำ </div><br>
+
+ <img src="assets/img/News/20.11.jpg" alt="Trolltunga Norway" width="10000" height="auto">
+<b>10. แอปเปิล</b><br>
+
+         <div style="text-indent: 2.5em;">ผลไม้อย่างแอปเปิลมีน้ำและน้ำตาลที่ร่างกายสามารถดึงไปใช้ได้ทันที ดังนั้นใครที่รู้สึกเพลีย ๆ หลังตื่นนอนแอปเปิลก็จะช่วยเติมความสดชื่นให้ร่างกายได้อย่างรวดเร็ว แต่ประโยชน์ของแอปเปิลยังไม่จบแค่นั้นค่ะ เพราะการศึกษาจากมหาวิทยาลัย Cornell ยังพบว่า แอปเปิลมีสารพฤกษเคมีที่ชื่อว่า เควอร์ซิทิน (quercetin) ที่มีคุณสมบัติต้านอนุมูลอิสระ ป้องกันเซลล์สมองและเซลล์ประสาทถูกทำลาย จึงช่วยให้สมองทำงานได้อย่างเต็มประสิทธิภาพโดยไม่เสื่อมสภาพก่อนวัยอันควร</div>        
+</div>
+</div>
+ 
+<div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>NEWS</div>
+    <div class=is-size-5>ข่าวสารที่คุณไม่ควรพลาด</div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="news13">
+      <img src="assets/img/news/13.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>กินคลีนแบบไหน...เหมาะกับแม่หลังคลอด </h4></div>
+ <br>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news14">
+      <img src="assets/img/news/14.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>กินอยู่อย่างเฮลธ์ตี้ ใช้ชีวิตแบบคลีน ๆ ถึงเงินไม่มากก็ทำได้นะ !</h4></div>
+  
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news15">
+      <img src="assets/img/news/15.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>12 ของว่างอาหารคลีน ลดน้ำหนักเพื่อหุ่นลีนต้องไม่พลาด</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news16">
+      <img src="assets/img/news/16.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>6 ซูเปอร์ฟู้ดเลอค่า อัพเดทไว้จะได้เฮลท์ตี้</h4></div>
+   <br>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+  </main>
+
+
+{% endblock %}

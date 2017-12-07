@@ -1,0 +1,381 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+ 	
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+{% endblock %}
+
+{% block content %}
+
+  <main>
+ 
+
+ 
+  <div class="row">
+  <div class="column left" style="background-color:#ffffff;">
+    <font face="TH SarabunPSK">
+    <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>6 ซูเปอร์ฟู้ดเลอค่า อัพเดทไว้จะได้เฮลท์ตี้</b><br>
+ <div class="is-size-4">
+   <b>คนรักสุขภาพได้เวลาอัพเดท กับซูเปอร์ฟู้ดกินแล้วดีกับสุขภาพ ของแบบนี้ไม่ลองไม่รู้</b>
+  </div>
+  </div>
+</div>
+  <br>
+   <div class="is-size-4">
+ เทรนด์การเลือกรับประทานอาหารเพื่อสุขภาพ อย่างซูเปอร์ฟู้ด ไม่ว่าเมื่อไรก็ยังคงได้รับความนิยมอยู่เสมอ และอาหารเพื่อสุขภาพที่เรามักจะเห็นว่าได้รับความนิยมมาก ๆ ก็คงจะหนีไม่พ้นบรรดาธัญพืชต่าง ๆ หรือแม้แต่ผลไม้ตระกูลเบอร์รี เนื่องด้วยประโยชน์ต่อสุขภาพที่มีมากมาย และวันนี้เราก็มีตัวอย่างซูเปอร์ฟู้ดใหม่ ๆ ที่เราอาจจะนึกไม่ถึงมาฝากกัน โดยคุณธิษณา จรรยาชัยเลิศ จากหนังสือชีวจิต ใครที่กำลังอยากลองลิ้มลองอาหารเพื่อสุขภาพใหม่ ๆ ละก็ห้ามพลาด เพราะอาหารเหล่านี้ดีจริงแบบไม่ต้องโปรโมทให้เสียเวลาเลยเชียว
+</div>
+
+     <div class="is-size-4">
+  <br>
+   <center><img src="assets/img/News/16.1.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+   <br>
+ 
+         <b>เคเฟอร์ (Kefir) </b> <br>
+ 
+          <div style="text-indent: 2.5em;">       นมเปรี้ยวชนิดหนึ่งผลิตจากการหมักน้ำนมวัว แพะ หรือแกะ ด้วยแบคทีเรียและยีสต์ กระบวนการหมักช่วยเปลี่ยนน้ำตาลแลคโตส (Lactose) ในนมให้กลายเป็นกรดแลคติก (Lactic acid) ทำให้มีรสเปรี้ยว
+
+          </div>
+           <b><div style="text-indent: 2.5em;">    เคเฟอร์มีรสชาติเปรี้ยวคล้ายโยเกิร์ต แต่มีความข้นหนืดน้อยกว่า และมีโพรไบโอติกส์ (Probictics) หรือแบคทีเรียที่มีประโยชน์ต่อสุขภาพแตกต่างกัน แนะนำให้กินสลับกับโยเกิร์ต โดยกินร่วมกับผลไม้สดเพื่อให้ร่างกายได้รับโพรไบโอติกส์หลากหลาย ช่วยรักษาสมดุลของจุลินทรีย์ในระบบทางเดินอาหาร ทำลายจุลินทรีย์ก่อโรค ทั้งกระตุ้นให้ร่างกายหลั่งสารแอนติบอดี (Antibody) ต่อต้านสิ่งแปลกปลอม และช่วยเพิ่มภูมิคุ้มกัน
+          </div></b>
+           <div style="text-indent: 2.5em;"> ขณะเดียวกัน ผลไม้ที่มีกากใยสูงเมื่อกินควบคู่กับเคเฟอร์ จะมีคุณสมบัติเป็นพรีไบโอติกส์ (Prebiotic) ทำหน้าที่เป็นอาหารให้กับโพรไบโอติกส์ กระตุ้นให้จุลินทรีย์ชนิดดีภายในลำไส้เจริญเติบโตได้ดี และเพิ่มการดูดซึมแร่ธาตุบางชนิด เช่น แคลเซียม เหล็ก แมกนีเซียม และสังกะสี อีกด้วย
+
+          </div>
+                   <div style="text-indent: 2.5em;"> เคเฟอร์เป็นอาหารที่เหมาะสำหรับผู้ที่มีปริมาณเอนไซม์แลคเตส (Lactase) ในระบบทางเดินอาหารต่ำ ส่งผลให้ไม่สามารถย่อยน้ำตาลแลคโตสในนมได้ หลังดื่มนมจึงเกิดอาการท้องอืด ท้องเฟ้อ ท้องเดิน ปวดท้อง แนะนำให้ดื่มเคเฟอร์นม ช่วยให้ร่างกายได้รับแคลเซียมเพียงพอ โดยไม่ก่อให้เกิดอาการปั่นป่วนในระบบทางเดินอาหาร</div><br>
+                     <center><img src="assets/img/News/16.2.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+   <br>
+ 
+         <b>มันแกว (Jicama)</b> <br>
+ 
+          <div style="text-indent: 2.5em;">   เป็นไม้เถาเลื้อยพัน มีหัวใต้ดินเป็นรากสะสมอาหาร แต่เดิมมีถิ่นกำเนิดในประเทศเม็กซิโกและอเมริกากลาง ปัจจุบันแพร่หลายในประเทศเขตร้อน เช่น จีน อินโดจีน อินโดนีเซีย มันแกวเป็นพืชที่มีหัวใต้ดินซึ่งกินได้ แต่ส่วนอื่น เช่น ใบและเมล็ดเป็นพิษ มีฤทธิ์เป็นยาฆ่าแมลง ควรหลีกเลี่ยง เพราะอาจทำให้ ช็อก หมดสติ และหยุดหายใจ
+
+          </div>
+           <b><div style="text-indent: 2.5em;">   กินมันแกวสดเป็นผลไม้ กินพร้อมผักสดร่วมกับน้ำสลัด นำไปผัดกับกุ้งด้วยไฟอ่อน หรือหั่นเป็นชิ้นสี่เหลี่ยมลูกเต๋าต้มเป็นแกงจืดพร้อมผักสดหลากชนิดก็อร่อย มันแกวสดมีน้ำเป็นส่วนประกอบถึง 90 เปอร์เซ็นต์ เนื้อสัมผัสจึงฉ่ำกรอบ ให้ความสดชื่น ช่วยดับกระหาย ทั้งอุดมไปด้วยสารอาหารหลายชนิด เช่น คาร์โบไฮเดรต โปรตีน ไขมัน แคลเซียม ฟอสฟอรัส เหล็ก ไทอามีน ไนอะซิน และวิตามินซี
+
+          </div></b>
+           <div style="text-indent: 2.5em;"> มันแกวเพียง 1 ถ้วยตวง ให้ใยอาหารมากถึงร้อยละ 25 ของความต้องการใน 1 วันนอกจากนี้ยังมีส่วนประกอบของ อินูลิน (Inulin) ซึ่งร่างกายไม่สามารถย่อยได้ในระบบทางเดินอาหาร และไม่ให้พลังงาน มีคุณสมบัติเป็นพรีไบโอติกส์ช่วยกระตุ้นให้จุลินทรีย์ชนิดดีภายในลำไส้เจริญเติบโตได้ดี ช่วยในการขับถ่าย จึงนับเป็นอาหารสุขภาพที่เหมาะสำหรับผู้ป่วยโรคเบาหวานและผู้ที่ต้องการควบคุมน้ำหนักอีกด้วย
+
+<br><br>
+                     <center><img src="assets/img/News/16.3.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+   <br>
+ 
+         <b>มัทฉะ (Matcha) </b> <br>
+ 
+          <div style="text-indent: 2.5em;">   มัทฉะ คือ ชาเขียวชนิดหนึ่งมีต้นกำเนิดที่ประเทศญี่ปุ่น ผลิตโดยนำยอดอ่อนมาอบไอน้ำโดยไม่ผ่านกระบวนการหมักและนวด เมื่อแห้งจึงนำมาบดกลายเป็นผงสีเขียว เป็นชาที่กินได้ทั้งใบ จึงอุดมไปด้วยสารอาหารที่ไม่ละลายน้ำ เช่น ใยอาหาร และ เบต้าแคโรทีน
+          </div>
+           <b><div style="text-indent: 2.5em;"> เมื่อละลายน้ำ มัทชะจะกลายเป็นน้ำสีเขียวอ่อนสดใส นิยมชงโดยใช้ไม้ตีฟองผสมชาและน้ำร้อนให้เข้ากัน ขณะตีเสร็จใหม่ ๆ บนผิวหน้าน้ำชาจะมีฟองละเอียดสีเขียวปกคลุม ยิ่งตีนานน้ำชาจะกลายเป็นสีเขียวมรกตเข้มขึ้น
+          </div></b>
+           <div style="text-indent: 2.5em;"> สำหรับวิธีชงชาที่ถูกต้อง สมาคมผู้ฝึกสอนชาญี่ปุ่น แนะนำว่า ควรกรองชาก่อนเพื่อไม่ให้ผงชาจับตัวเป็นก้อน จากนั้นใส่มัทฉะ 2 กรัมลงในถ้วยชา รินน้ำอุณหภูมิปกติลงไปประมาณ 10 ซี.ซี. ใช้ไม้ตีน้ำมัทฉะให้เข้ากัน แล้วจึงรินน้ำเดือดลงในถ้วยชา 50 ซี.ซี. จากนั้นตีผงชาและน้ำร้อนให้เข้ากันจนเกิดฟองละเอียดเต็มบริเวณผิวด้านบน จึงยกไม้ตีชาออก ใช้จิบขณะอุ่น
+
+          </div>
+                   <div style="text-indent: 2.5em;">  มัทฉะ อุดมไปด้วยสารคาเตชิน (Catechin) และวิตามินต่าง ๆ โดยสารคาเตชิน มีสารแอนติออกซิแดนท์ ต้านมะเร็ง ลดคอเลสเตอรอล ลดความดันโลหิต ช่วยเพิ่มระบบเผาผลาญ ต้านเชื้อไวรัสไข้หวัด ต้านเชื้อแบคทีเรียในช่องปาก จึงช่วยกำจัดกลิ่นปาก ข้อมูลจากวารสาร American Physiological Society เปิดเผยว่า มัทฉะ 1 กรัม มีสารคาเตชินสูงถึง 105 มิลลิกรัม มีค่าโอแรค (ORAC) หรือค่าที่ใช้วัดประสิทธิภาพสารแอนติออกซิแดนท์ถึง 1300 umoleTE/กรัม เมื่อเปรียบเทียบกับผลไม้ที่มีแอนติออกซิแดนท์ประสิทธิภาพสูงชนิดอื่น เช่น ทับทิมซึ่งมีค่าโอแรค 105 และบลูเบอร์รีป่า 93 นอกจากนี้ ยังอุดมไปด้วยวิตามิน เอ ซี และอี จึงช่วยชะลอวัย ทำให้ดวงตา และผิวพรรณสดใส</div><br>
+                     <center><img src="assets/img/News/16.4.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+   <br>
+ 
+         <b>กระเทียมสีดำ (Black Garlic) </b> <br>
+ 
+          <div style="text-indent: 2.5em;">  กระเทียมสีดำได้รับการกล่าวขวัญถึงประโยชน์ต่อสุขภาพว่าเหนือกว่ากระเทียมทั่วไป แท้จริงคือ กระเทียมสีขาวที่ผ่านการหมักบ่ม (Fermentation) ด้วยอุณหภูมิ 65-80 เปอร์เซ็นต์ นาน 1 เดือน จนกระเทียมสีขาวเปลี่ยนเป็นสีดำ วารสาร Medicinal and Aromatic Plant Science And Biotechnology เพิ่มเติมว่า สาร SAC (S-Allyl-L cysteine) ที่พบในกระเทียมสีดำมีคุณสมบัติด้านมะเร็ง
+
+          </div>
+           <b><div style="text-indent: 2.5em;"> กระเทียมสีดำใช้ปรุงอาหารเหมือนกระเทียมทั่วไป และเพื่อให้กระเทียมหลั่งสารสำคัญเพิ่มขึ้น เช่น สารอัลลิซิน (Allicin) ซึ่งมีคุณสมบัติฆ่าเชื้อแบคทีเรียและเชื้อรา ควรบุ บด หรือสับกระเทียม และตั้งทิ้งไว้สักครู่ก่อนนำมาปรุงอาหาร
+          </div></b>
+           <div style="text-indent: 2.5em;">  นายแพทย์แอนดรูว์ ไวล์ (Andrew Weil) พ่อมดแห่งวงการแพทย์ทางเลือก กล่าวว่า กระเทียมสีดำมีรสชาติหวานกว่ากระเทียมสีขาว และพบรายงานผลวิจัยที่ระบุว่า กระเทียมสีดำมีสารแอนติออกซิแดนต์และสาระสำคัญที่มีประโยชน์ต่อสุขภาพมากกว่ากระเทียมสีขาวหลายเท่า
+          </div>
+                   <div style="text-indent: 2.5em;">  นายแพทย์แอนดรูว์เห็นว่า กระเทียมสีดำมีเสน่ห์ดึงดูดนักชิมและผู้ที่ชื่นชอบอาหารแปลกใหม่ หากไม่สามารถหาซื้อได้ กินกระเทียมสีขาวก็นับว่ามีประโยชน์ต่อสุขภาพมากพอ เพราะช่วยยับยั้งการเจริญเติบโตของเชื้อแบคทีเรียและเชื้อรา ป้องกันโรคในระบบทางเดินหายใจ ลดปริมาณคอเลสเตอรอลและระดับน้ำตาลในเลือดได้</div><br>
+                     <center><img src="assets/img/News/16.5.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+   <br>
+ 
+         <b>กิมจิ (Kimchi) </b> <br>
+ 
+          <div style="text-indent: 2.5em;"> เป็นอาหารเกาหลี ทำจากผักหลากหลายชนิดนำมาดองหรือแช่ในน้ำเกลือเพื่อถนอมอาหารเตรียมไว้กินแทนผักสดในช่วงฤดูหนาวที่ไม่สามารถปลูกผักบางชนิดได้ นับเป็นภูมิปัญญาคนโบราณที่ทำให้มีผักกินตลอดทั้งปี โดย ผักกาดขาว หัวผักกาด หัวหอม ต้นหอม แตงกวา กระเทียม ขิง พริกแดง คือผักที่นิยมปรุงเป็นกิมจิ โดยหั่นเป็นชิ้นพอดีคำ จากนั้นคลุกเคล้ากับเครื่องปรุงรสที่มีกระเทียมสับ ขิง และพริกแดงป่นเป็นส่วนประกอบ
+
+          </div>
+           <b><div style="text-indent: 2.5em;">    นิยมกินกิมจิเป็นเครื่องเคียงในอาหารมื้อหลัก หรือปรุงเป็นอาหารหลากหลาย เช่น ข้าวผัด สตูบะหมี่ กิมจิมีรสชาติเปรี้ยวนำเพราะผ่านกระบวนการหมัก ทำให้อุดมด้วยจุลินทรีย์ที่ดีต่อสุขภาพ เช่น แบคทีเรียแลคโตบาซิลลัส เช่นเดียวกับที่พบในนมเปรี้ยว โดยหลายการศึกษาพบว่าแบคทีเรียชนิดดีช่วยทำความสะอาดลำไส้ ป้องกันโรคในระบบทางเดินอาหารจากแบคทีเรียก่อโรค และลดความเสี่ยงมะเร็งลำไส้ใหญ่
+          </div></b>
+           <div style="text-indent: 2.5em;">  กิมจิ 1 ถ้วยตวงอุดมด้วยใยอาหาร วิตามิน และแร่ธาตุจากผัก ที่สำคัญ ให้พลังงานเพียง 29 กิโลแคลอรี ผู้ช่วยศาสตราจารย์ ดร.ชนิพรรณ บุตรยี่ สถาบันโภชนาการ มหาวิทยาลัยมหิดลเสริมว่า นอกจากให้พลังงานต่ำ ส่วนประกอบต่าง ๆ ในกิมจิล้วนมีประโยชน์ต่อสุขภาพ เช่น พริกแดงมีสารแคปไซซิน (Capsiaicin) ช่วยเผาผลาญไขมัน พริกแดงป่นมีวิตามินซีช่วยให้ถุงน้ำดีขับคอเลสเตอรอล ส่วนกระเทียมและหัวหอมช่วยลดระดับน้ำตาลในเลือด คอเลสเตรอล และไตรกลีเซอไรด์ ซึ่งเป็นสาเหตุของโรคหัวใจ และหลอดเลือด
+
+          </div>
+            <br>
+                     <center><img src="assets/img/News/16.6.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+   <br>
+ 
+         <b>คามู คามู (Camu Camu)</b> <br>
+ 
+          <div style="text-indent: 2.5em;">  ผลไม้ทรงกลม ขนาดเท่าผลพุทรา เมื่อสุกจะเปลี่ยนจากสีเขียวเป็นสีแดงอมม่วง โดดเด่นที่รสเปรี้ยวช่วยให้เจริญอาหาร
+
+          </div>
+           <b><div style="text-indent: 2.5em;">   นิยมคั้นผลคามู คามูสด ดื่มเป็นน้ำผลไม้ ผสมกับน้ำผลไม้อื่นหรือผสมกับน้ำเปล่า นอกจากนี้สามารถซื้อผงคามู คามูจากร้านจำหน่ายผลิตภัณฑ์เพื่อสุขภาพ ชง ผสมน้ำดื่ม อัตราส่วนน้ำ 1 แก้วต่อผงคามู คามู 1 ช้อนชา หรือใช้เติมลงในน้ำผักผลไม้ปั่นหรือน้ำสลัด
+          </div></b>
+           <div style="text-indent: 2.5em;"> Journal of Food Research International ระบุว่า ผลคามู คามู 100 กรัมมีปริมาณวิตามินซี 1,882-2,280 มิลลิกรัม มีสรรพคุณช่วยรักษาสุขภาพดวงตาและผิวหนัง กระตุ้นระบบภูมิคุ้มกัน ช่วยป้องกันโรคหวัด หอบหืด บรรเทาอาการของโรคเหงือก อ่อนเพลียเรื้อรังไปจนถึงโรคซึมเศร้า
+
+
+          </div>
+                   <div style="text-indent: 2.5em;"><b> แม้มีสุดยอดอาหารอยู่ในมือแต่ก็ต้องไม่ลืมกินอาหารให้เพียงพอ และหลากหลาย เพื่อให้ร่างกายได้รับสารอาหารครบถ้วน สุขภาพจึงจะแข็งแรงอย่างแท้จริง
+</b></div><br>
+
+</div>
+</div>
+</div>
+
+
+<div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>NEWS</div>
+    <div class=is-size-5>ข่าวสารที่คุณไม่ควรพลาด</div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="news9">
+      <img src="assets/img/news/9.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>ผู้ชายที่ชอบกินผัก-ผลไม้ มี“กลิ่นกาย” ดึงดูดใจผู้หญิงได้มากกว่า</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news10">
+      <img src="assets/img/news/10.2.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>สาวกระชับหุ่นเร่งด่วนด้วย "อาหารคลีน"</h4></div>
+   
+  </div>
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news11">
+      <img src="assets/img/news/11.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>“น้ำผึ้ง” ดีกับผู้ชายยังไง ?</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news12">
+      <img src="assets/img/news/12.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>5 เคล็ดลับการกินเพื่อสร้างกล้าม โดยไม่ต้องพึ่งอาหารเสริม</h4></div>
+    
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

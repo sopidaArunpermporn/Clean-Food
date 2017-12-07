@@ -1,0 +1,340 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+
+{% endblock %}
+
+
+
+
+{% block content %}
+
+  <main>
+ 
+
+
+  <div class="row">
+    <div class="column left" style="background-color:#ffffff;">
+    <font face="TH SarabunPSK">
+      <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>ปรับเปลี่ยนการกินเพื่อสุขภาพที่ดีได้ไม่ยาก</b></div>  <br>
+ <div class="is-size-4">
+   คำว่า "อาหาร" กับ "สุขภาพ" เป็นสิ่งที่คู่กันนะค่ะ ไม่ว่าใครก็อยากมีสุขภาพที่ดี ยิ่งเวลาทานอาหารแล้วละก็ทำให้สุขภาพดี หุ่นดี ยิ่งทำให้เรารู้สึกดี ทำให้กำลังได้รับความสนใจจากคนทั่วโลกการกินเพื่อ สุขภาพคือสิ่งที่จำเป็นที่จะต้องให้ความใส่ใจ เพราะการกินไม่ใช่แค่การสนองความต้องการหรือให้อิ่มท้องเท่านั้น หากแต่ยังต้องคำนึงถึงผลที่มีต่อสุขภาพด้วย วันนี้เรามีเคล็ดลับการรับประทานอาารให้ได้สุขภาพที่ดีมาฝากนะคะ  </div>
+ </div>
+ 
+  <br>
+   <center><img src="assets/img/trick/img17/6.png" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+   <div class="is-size-4">
+ <div style="text-indent: 2.5em;">
+  <b>1.) ทานอาหารเช้าเป็นประจำ</b>  เพราะมื้อเช้าเป็นมื้อที่สำคัญที่สุด และควรเป็นมื้อที่มีคุณค่าครบทั้ง 5 หมู่ในปริมาณที่เหมาะสม เพราะนอกจากจะช่วยเติมพลังให้ร่างกายและสมองแล้ว ยังช่วยลดระดับคอเลสเตอรอลในเส้นเลือด ช่วยให้การเผาผลาญ พลังงานดีขึ้น
+</div>
+<div style="text-indent: 2.5em;">
+  <b>2.) เลือกอาหารจากธรรมชาติไม่ขัดสี</b> เช่น ข้าวกล้อง ข้าวบาร์เลย์(มอลต์) ถั่ว ข้าวสาลี (โฮลวีต) เมล็ดทานตะวัน เป็นต้น ซึ่งอาหารเหล่า นี้มีคุณค่าทางโภชนาการสูงเป็นแหล่งรวมของแร่ธาตุ วิตามิน โปรตีนที่ปราศจากคอเลสเตอรอลและคาร์โบไฮเดรตเชิงซ้อน 
+มีสารแอนติออกซิแดนต์ ใยอาหาร และปัจจัยอื่น ช่วยลดความเสี่ยง โรคหัวใจ นอกจากนี้ยังช่วยลดคอเลสเตอรอล และความดันโลหิตได้ หรืออาจเลือกอาหารที่มีส่วนผสมของธัญพืชไม่ขัดสี เช่น ขนมปังโฮลวีต ซีเรียลจากมอลต์ เป็นต้น
+</div>
+<br>
+   <center><img src="assets/img/trick/1489805739470.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+<div style="text-indent: 2.5em;">
+  <b>3.) เพิ่มผักผลไม้ในมื้ออาหารและทานเป็นประจำ</b> เพื่อเพิ่ม วิตามิน เกลือแร่และสารอื่น ๆ ที่จำเป็นต่อร่างกาย ช่วยลดความเสี่ยงโรคหัวใจ ช่วยนำคอเลสเตอรอล และสารก่อมะเร็งบางชนิด ออกจากร่างกาย ทำให้ลดการสะสมของสารก่อมะเร็งบางชนิด และมีกากใยช่วยในการขับถ่าย ช่วยให้กระบวนการต่าง ๆ ในร่างกายดำเนินการได้อย่างมีประสิทธิภาพ
+</div>
+<div style="text-indent: 2.5em;">
+  <b>4.) ลดขนมขบเคี้ยวและขนมอบกรอบ</b>  ที่มีแต่ไขมัน เกลือ น้ำตาลและสารปรุงแต่งอื่น ๆ ที่ส่งผลเสียต่อสุขภาพ หากอยากทานขนมอาจหันมาทานขนมที่มีส่วนผสมของธัญพืชเพื่อเพิ่มคุณค่าทาง โภชนาการให้กับขนมที่มีประโยชน์น้อย อย่างไรก็ตาม ควรทานในปริมาณที่เหมาะสมเท่านั้น
+</div>
+<br>
+   <center><img src="assets/img/trick/protein-foods.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+<div style="text-indent: 2.5em;">
+  <b>5.) กินปลา ไข่และเนื้อสัตว์ไม่ติดมัน</b> อาหารเหล่านี้เป็นแหล่งโปรตีนที่ดี ช่วยเสริมสร้างร่างกายในผู้เยาว์ และซ่อมแซมเนื้อเยื่อ ที่เสื่อมสลายในผู้สูงวัย เป็นส่วนประกอบของสารสร้างภูมิคุ้มกันโรคติดเชื้อ ช่วยลดความเสี่ยงของโรคอ้วน ไขมันในเส้นเลือดสูง เป็นต้น
+</div>
+<div style="text-indent: 2.5em;">
+  <b>6.) ดื่มเครื่องดื่มเพื่อสุขภาพแทนน้ำหวาน น้ำอัดลม หรือเครื่องดื่มแอลกอฮอล์</b> ซึ่งมีน้ำตาลสูง การดื่มน้ำผักผลไม้ ก็เป็นทางเลือกที่ดี เพราะอุดมไปด้วยคุณค่าทางโภชนาการ ทั้งคาร์โบไฮเดรต โปรตีน วิตามินและแร่ธาตุกว่า 50 ชนิด เหมาะกับคนทุกเพศทุกวัย
+</div>
+<div style="text-indent: 2.5em;">
+  <b>7.) ดื่มน้ำและนมให้เป็นนิสัย ควรดื่มน้ำอย่างน้อยวันละ 8 แก้ว</b> เพื่อช่วยระบบขับถ่าย และมีน้ำหล่อเลี้ยงในเซลล์ต่าง ๆ ของร่างกาย และควรดื่มนมอย่างน้อยวันละ 1-2แก้ว ทั้งในเด็กและผู้ใหญ่ นมอุดมไปด้วยคุณค่าโภชนาการสูง ช่วยในการเจริญเติบโตของเด็ก ๆ ช่วยให้กระดูกและฟันแข็งแรง โดยชนิดของนมขึ้นอยู่กับวัย หากเป็นเด็กที่กำลังเจริญเติบโต ควรเป็นนมจืดธรรมดา แต่ในผู้สูงอายุควรเป็นนมพร่องมันเนย เพื่อลดคอเลสเตอรอล
+</div>
+<br>
+   <center><img src="assets/img/trick/j4_2.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+<div style="text-indent: 2.5em;">
+  <b>8.) งดหรือลดเครื่องดื่มที่มีแอลกอฮอล์</b> แอลกอฮอล์เป็นสารเสพติด บั่นทอนสุขภาพ ทำให้การทำงานของระบบประสาทและสมองช้าลงมักก่อให้เกิดอุบัติเหตุได้ง่ายเป็นตัวพาสารพิษเข้าร่างกายได้รวดเร็วเพราะดูดซึมเร็ว คนที่ติดแอลกอฮอล์มักขาดวิตามินและแร่ธาตุ และมักเป็นโรคตับแข็งปริมาณอาหารแค่ไหนจึงจะพอเหมาะสำหรับผู้สูงอายุ เพื่อให้สามารถนำไปปฏิบัติได้ในแง่รูปธรรมการกำหนดปริมาณอาหารในแต่ละหมวดหมู่จึงมีความจำเป็น พร้อมกันนี้การแนะนำอาหารในแต่ละหมวดให้สามารถแลกเปลี่ยนกันได้ก็จะเป็น ประโยชน์แก่ผู้สูงอายุเพื่อให้เกิดความหลากหลายของการเลือกบริโภคอาหารวิธี การตรวจดูได้ว่าได้รับอาหารน้อยเกินไปหรือไม่  
+  คำนวณหาค่าดัชนีมวลกาย (Body Mass Index, BMI) ถ้า BMI เกินมาตรฐานอ้วนไป แสดงว่ารับประทานมากกว่าที่ร่างกายต้องการใช้
+</div>
+<br>
+   <center><img src="assets/img/trick/1502165941825.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+    <br>
+<div style="text-indent: 2.5em;">
+  <b>9.) หลีกเลี่ยงอาหารรสจัด</b> หวานจัด เค็มจัด อาหารหวานจัด เช่น พวกขนมหวานต่างๆหรือการเติมน้ำตาลในเครื่องดื่มต่างๆถ้ากินมากๆจะเป็นพลังงานส่วน เกินสามารถเปลี่ยนเป็นไขมันสะสมในร่างกายได้ สำหรับอาหารเค็มจัดจะมีแร่ธาตุโซเดียมอยู่มาก ถ้ากินเป็นประจำทำให้เกิดภาวะความดันโลหิตสูงได้ หลีกเลี่ยงการเติมเครื่องปรุงรสใดๆก่อนการชิมอาหาร ลดการบริโภค
+</div>
+<div style="text-indent: 2.5em;">
+  <b>10.) กินอาหารสะอาดปราศจากการปนเปื้อน</b> เลือกซื้ออาหารสดสะอาด ล้างผักให้สะอาดก่อนปรุง เก็บอาหารที่ปรุงสุกปิดฝาให้มิดชิด ถ้ามีอาหารเหลือเก็บในตู้เย็นเลือกซื้ออาหารที่ปรุงสุกใหม่ๆหลีกเลี่ยงอาหารที่เติมสีและอาหารสุกๆดิบๆ
+</div>
+<br>
+<br>
+   </div>
+  </div>
+
+
+  <div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>TRICK</div>
+    <div class=is-size-5>เคล็บลับ แต่ไม่ลับ</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick5">
+      <img src="assets/img/trick/5.0.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc"><h4>9 อาหารช่วยดีท็อกซ์ ขับสารพิษได้อย่างดีเยี่ยม</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick6">
+      <img src="assets/img/trick/6.0.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc"><h4>7 วิธีออกกำลังสมอง...ต้านอัลไซเมอร์</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick7">
+      <img src="assets/img/trick/7.0.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>11 เทคนิคกินอย่างพอเพียง</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick8">
+      <img src="assets/img/trick/8.0.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>5 วิธีกินอาหารเพื่อผิวสวยใสจากภายใน</h4></div>
+    <br>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

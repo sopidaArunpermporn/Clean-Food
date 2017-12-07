@@ -1,0 +1,333 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+ 	
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+{% endblock %}
+
+{% block content %}
+
+  <main>
+ 
+
+  <div class="row">
+  <div class="column left" style="background-color:#ffffff;">
+    <font face="TH SarabunPSK">
+    <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>สาวกระชับหุ่นเร่งด่วนด้วยอาหารคลีน หวังใส่ชุดเจ้าสาวด้วยรูปร่างที่ลีนให้สวยที่สุด !</b><br>
+ <div class="is-size-4">
+   <b> อยากใส่ชุดเจ้าสาวสวย ๆ สักครั้งในชีวิตแต่ตัวเองดันมีหุ่นอวบอั๋นจนถึงขั้นเรียกว่าอ้วน เธอเลยต้องลดน้ำหนักเร่งด่วนด้วยอาหารคลีน !
+</b>
+  </div>
+  </div>
+</div>
+  <br>
+   <div class="is-size-4">
+อ้วนมาทั้งปียังไม่ค่อยเดือนร้อนใจ แต่ถ้ายังอ้วนในวันที่ใกล้จะแต่งงานแบบนี้สาว ๆ ทุกคนแทบทนรับสภาพตัวเองไม่ได้กันทั้งนั้นแหละค่ะ ไม่เว้นแม้แต่สาวสวยคนนี้ด้วยเช่นกัน ที่ยอมตัดขาดจากอาหารอร่อยแคลอรีสูงที่ตัวเองชอบ และไลฟ์สไตล์ปาร์ตี้เกิร์ลที่โปรดปราน ไปกินอาหารคลีน  เน้น ๆ และเปลี่ยนไลฟ์สไตล์ตัวเองเป็นสาวเฮลธ์ตี้ เพียงเพราะอยากจะลดน้ำหนัก ให้สำเร็จเพื่อจะได้สวมชุดเจ้าสาวให้สวยที่สุดก็เท่านั้นเอง ไม่มีอะไรมาก
+ </div>
+     <div class="is-size-4">
+  <br>
+   <center><img src="assets/img/News/10.1.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+      <center><img src="assets/img/News/10.2.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+         <center><img src="assets/img/News/10.3.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+   <br>
+  <div style="text-indent: 2.5em;">  Jelly Devote สาวชาวสวีเดนวัย 26 ปี เป็นคนที่ไม่ได้อ้วนมากเท่าไรค่ะ แต่ก็เรียกได้ว่าอยู่ในขั้นอวบระยะสุดท้าย ตัวบวมไม่น้อยอยู่เหมือนกัน โดยเธอบอกว่าจริง ๆ แล้วเธอไม่ได้เป็นคนอ้วนตั้งแต่เกิด แต่เหตุผลที่ทำให้อ้วนขึ้นจนตัวเกือบแตกเพราะเผลอตัวตามใจปาก และใช้ชีวิตเป็นปาร์ตี้เกิร์ลอยู่พักใหญ่ 
+          </div>
+            <div style="text-indent: 2.5em;">   ทว่าจุดเปลี่ยนที่ทำให้เธออยากกลับมาดูแลตัวเองอีกครั้ง นั่นก็เพราะเธอกำลังจะแต่งงาน ! ฉะนั้นปล่อยตัวเองให้ขึ้นอืดแบบนี้ไม่ได้แล้วล่ะ 
+          </div>
+                <br>
+              <br>
+
+             <center><img src="assets/img/News/10.4.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+            
+          <center><img src="assets/img/News/10.5.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+          <center><img src="assets/img/News/10.6.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+          <center><img src="assets/img/News/10.7.jpg" alt="Trolltunga Norway" width="600" height="auto"></center><br>
+            <div style="text-indent: 2.5em;">   ซึ่งนอกจากอาหารคลีนแล้ว จะสังเกตได้ว่า Jelly Devote เน้นกินแต่น้ำเปล่า โดยหากต้องการรสชาติของน้ำเพื่อเพิ่มความสดชื่นสักหน่อย เธอจะฝานเลมอนชิ้นหนา ๆ ใส่ลงไปในแก้วน้ำเปล่าของเธอด้วย ซึ่งเธอก็แอบกระซิบมาค่ะว่า นี่เป็นเคล็ดลับในการลดน้ำหนักที่ดีอย่างหนึ่ง เพราะการกินน้ำเปล่าผสมน้ำมะนาวในตอนเช้า ช่วยเรื่องขับถ่ายดีมาก ๆ เลย อ้อ ! แต่ทั้งวันก็ต้องกินน้ำเปล่ามาก ๆ ด้วยนะ 
+
+          </div><br>
+          <center><img src="assets/img/News/10.8.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+          <center><img src="assets/img/News/10.9.jpg" alt="Trolltunga Norway" width="600" height="auto"></center><br>
+           <div style="text-indent: 2.5em;"> หลังจากดำรงตนเป็นสายคลีนมาได้สักพัก น้ำหนักเริ่มลงไปสัก 3 กิโลกรัมเห็นจะได้ เธอก็หันมาออกกำลังกายแทนการออกไปแฮงก์เอาท์กับเพื่อน ๆ โดยเธอจะเน้นเล่นเวทเทรนนิ่งเป็นส่วนใหญ่ เพราะต้องการกระชับรูปร่างและสร้างกล้ามเนื้อลีน ๆ
+
+          </div><br>
+            <center><img src="assets/img/News/10.10.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+              <center><img src="assets/img/News/10.11.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+                <center><img src="assets/img/News/10.12.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+                  <center><img src="assets/img/News/10.13.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+                    <center><img src="assets/img/News/10.14.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+                      <center><img src="assets/img/News/10.15.jpg" alt="Trolltunga Norway" width="600" height="auto"></center><br>
+                       <center> ทว่า Jelly Devote ก็บอกว่าต้องคาร์ดิโอควบคู่กันไปด้วย เพื่อที่เราจะได้เบิร์นไขมันได้อย่างเต็มที่</cemter><br>
+                       <center><img src="assets/img/News/10.16.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+                      <center><img src="assets/img/News/10.17.jpg" alt="Trolltunga Norway" width="600" height="auto"></center><br>
+                     <center> ในที่สุดความพยายามของสาวคนนี้ก็บังเกิดผล โดยเธอสามารถลดน้ำหนักได้กว่า 20 กิโลกรัม</center><br>
+                      <center><img src="assets/img/News/10.18.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+              <center><img src="assets/img/News/10.19.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+                <center><img src="assets/img/News/10.20.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+                  <center><img src="assets/img/News/10.21.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+                    <center><img src="assets/img/News/10.22.jpg" alt="Trolltunga Norway" width="600" height="auto"></center><br>
+                       <center>นอกจากนี้เธอยังเพิ่มความมั่นใจให้ตัวเองด้วยการศัลยกรรมนิด ๆ หน่อย ๆ จนกระทั่งแน่ใจแล้วว่า เธอจะสวมชุดเจ้าสาวได้สวยงามที่สุดอย่างที่คาดไว้</center><br>
+                 <center><img src="assets/img/News/10.23.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+                  <center><img src="assets/img/News/10.24.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+                    <center><img src="assets/img/News/10.25.jpg" alt="Trolltunga Norway" width="600" height="auto"></center>
+</div>
+</div>
+
+<div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>NEWS</div>
+    <div class="responsive">
+  <div class="gallery">
+    <a href="news5">
+      <img src="assets/img/news/5.1.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc"><h4>10 ประโยชน์ดีๆ จากต้นหอม อาหารเพื่อสุขภาพ</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news6">
+      <img src="assets/img/news/6.1.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc"><h4>5 อาหารเพื่อสุขภาพ แค่ทานก่อนนอน ก็ช่วยให้หลับสบาย</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news7">
+      <img src="assets/img/news/7.2.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>6 อาหารเพื่อสุขภาพ กินลดน้ำหนักได้ผล ดีแบบนี้จะพลาดได้ไง</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news8">
+      <img src="assets/img/news/8.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>4 กุญแจสำคัญสู่การ “ลดน้ำหนัก” ให้ได้ผล</h4></div>
+    <br>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

@@ -1,0 +1,137 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  
+{% endblock %}
+
+{% block content %}
+
+  <main> 
+     <font face="TH SarabunPSK">
+
+        <div class="has-text-centered"><font size = "6"><b>Orange Muffin</b></font>
+</div>
+
+<div class="column left" style="background-color:#ffffff;">
+<div class="text-center">
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="assets/img/dessert/12.1.jpg" alt="" width="350" height="500">
+  <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="assets/img/dessert/12.2.jpg" alt="" width="350" height="500">
+</div>
+</div>
+
+<div class="column middle" style="background-color:#ffffff;">
+
+     <font size = "5">
+     <br>&emsp;&emsp;วิธีทำของหว๊านหวานง่ายๆ และอร่อยได้ที่บ้านด้วยสูตร
+     <br>&emsp;&emsp;Orange Muffin (มัฟฟินส้ม เนื้อเต้าหู้ และแป้งโฮลวีต)
+     <br>
+     <br><font size = "6"> &emsp;&emsp;ส่วนผสม </font>
+     <br>-แป้งอเนกประสงค์ 120 กรัม
+     <br>-แป้งโฮลวีต 30 กรัม
+     <br>-เบกกิ้งโซดา 1/4 ชช
+     <br>-เนื้อส้มแกะเป็นกลีบสำหรับแต่งหน้ามัฟฟิน
+     <br>-เต้าหู้คินุ 100 กรัม
+     <br>-นมถั่วเหลือง 30 ml
+     <br>-น้ำส้มเข้มข้นซันควิส 30 ml
+     <br>-น้ำมันคาโนลา 50 ml
+     <br>-น้ำตาลหญ้าหวาน 50 กรัม
+     <br>-น้ำส้มสายชู(แอปเปิ้ล) 2 ชช
+     <br>-เกลือป่น 1/8 ชช
+     <br>
+     <br><font size = "6"> &emsp;&emsp;วิธีทำ</font>
+     <br>1. เปิดเตาที่ 170 องศา ทาน้ำมันบาง ๆ ให้ทั่วพิมพ์เตรียมไว้
+     <br>2. ร่อนส่วนผสม แป้งเบกกิ้งโซดาเข้าด้วยกัน
+     <br>3. ผสมเต้าหู้ นมถั่วเหลือง น้ำส้ม น้ำมัน น้ำตาล น้ำส้มสายชู
+     <br>เกลือ ปั่นหรือตีให้เข้ากัน
+     <br>4. เทส่วนผสมของเหลวในข้อ 3 ลงให้แป้งข้อ 2
+     <br>5. ใช้พายกวนผสมแค่พอเข้ากันเท่านั้น
+     <br>6. ตักใส่พิมพ์ เรียงชิ้นส้มให้สวยงาม ทำตรงกลางพูน
+     <br>ไว้เวลาสุกจะได้ออกมาสวย ๆ
+     <br>7. นำเข้าเตา 20-25 นาที และพักบนตะแกรงให้เย็น
+     <br>แล้วแกะออกจากพิมพ์พร้อมเสิร์ฟได้ทันที
+     <br>
+ </font>    
+
+</div>
+<font face="TH SarabunPSK">
+  <div class="column right" style="background-color:#ffffff;">
+
+         <div class="column right" style="background-color:#ffffff;">
+         <div class="sidenav">
+          <h1><b>Recipe key</b></h1>
+           <h4><a href="food-1"><b>ไม่มีกุ้ง</b></b></a>
+           <a href="food-2"><b>ไม่มีถั่ว</b></a>
+           <a href="food-3"><b>ไม่มีเนื้อสัตว์</b></a>
+           <a href="food-4"><b>ไม่มีไข่</b></a></h4>
+         </div>
+       </div>
+       <div class="responsive">
+ 
+ <div class="gallery">
+    <a href="dessert4">
+      <img src="assets/img/dessert/4.1.jpg" alt="Trolltunga Norway" width="600" height="400">
+    </a>
+    <div class="desc">Cranberry scones</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="dessert3">
+      <img src="assets/img/dessert/3.1.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">แพนเค้กสอดไส้ครีมงาดำรสช็อกโกแลต</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="dessert2">
+      <img src="assets/img/dessert/2.1.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Chocolate Coconut Flour Crepes</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="dessert1">
+      <img src="assets/img/dessert/1.1.jpg"alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Red Velvet Pancakes</div>
+  </div>
+</div>
+</div>
+
+<div class="clearfix"></div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+ <div>
+  <br><br><br>
+  
+
+
+
+</main>
+
+
+{% endblock %}

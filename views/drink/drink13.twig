@@ -1,0 +1,135 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  
+{% endblock %}
+
+{% block content %}
+
+  <main>
+
+      <font face="TH SarabunPSK">
+        <div class="has-text-centered">
+        <font size = "6"><b> Green Vegetable Smoothie</b></font></div>
+
+<div class="column left" style="background-color:#ffffff;">
+<div class="text-center">
+
+  <br> <img src="assets/img/drink/13.1.jpg" alt="" width="350" height="500">
+
+</div>
+</div>
+
+  <div class="column middle" style="background-color:#ffffff;">
+
+    
+     <font size = "5">
+      <br>เครื่องดื่มปั่นเน้นสุขภาพ ดื่มตอนเช้าได้ทั้งรสชาติที่อร่อย 
+     <br> หอม แถมได้ประโยชน์ครบถ้วนอีกด้วย ขั้นตอนง่ายมากๆ ไปดูกันเลย
+
+     <br><font size = "6"> &emsp;&emsp;ส่วนผสมของแห้ง</font>
+     <br>-ขึ้นช่ายหรือผักซาเลอรี่ 3 ต้น
+     <br>-แตงกวาลูกเล็ก 1 ผล
+     <br>-ขิงชิ้นเล็กๆ 1 ชิ้น
+     <br>-มะนาว3 ชอนชา  
+     <br>-นํ้าเปลา่ 1/4 ถ้วย
+     
+     <br>
+     
+     <br><font size = "6"> &emsp;&emsp;วิธีทำ</font>
+     <br>หั่นแตงกวาเป็นชิ้นเล็กๆกอนใส่ส่วนผสมตางๆ
+     <br>ไปปั่นรวมกะนให้ละเอียด
+
+     
+ </font>  
+  <br><br>
+  
+  
+</div>
+
+
+<font face="TH SarabunPSK">
+  <div class="column right" style="background-color:#ffffff;">
+
+         <div class="column right" style="background-color:#ffffff;">
+         <div class="sidenav">
+           <h1> <b>Recipe key</b></h1>
+           <h4><a href="food-1"><b>ไม่มีกุ้ง</b></a>
+           <a href="food-2"><b>ไม่มีถั่ว</b></a>
+           <a href="food-3"><b>ไม่มีเนื้อสัตว์</b></a>
+           <a href="food-4"><b>ไม่มีไข่</b></a></h4>
+         </div>
+       </div>
+    
+ 
+
+  <div class="responsive">
+  <div class="gallery">
+    <a href="drink17">
+      <img src="assets/img/drink/17.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>LEMON CHIA FRESCA</h4></div>
+    <br>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="drink18">
+      <img src="assets/img/drink/18.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>Pineapple Ginger Lassi </h4></div>
+    <br>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="drink19">
+      <img src="assets/img/drink/19.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>Kiwi Pineapple Smoothie </h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="drink20">
+      <img src="assets/img/drink/20.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>Very Berry Mojito Slushies </h4></div>
+   
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+
+
+  </main>
+{% endblock %}

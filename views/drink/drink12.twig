@@ -1,0 +1,130 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  
+{% endblock %}
+
+{% block content %}
+
+  <main>
+
+      <font face="TH SarabunPSK">
+        <div class="has-text-centered">
+        <font size = "6"><b> Blueberry Smothie </b></font></div>
+
+<div class="column left" style="background-color:#ffffff;">
+<div class="text-center">
+
+    <br>  <img src="assets/img/drink/12.1.jpg" alt="" width="350" height="500">
+
+</div>
+</div>
+
+  <div class="column middle" style="background-color:#ffffff;">
+
+    <font size = "5">
+    <br>หยุดน้ำหวานทำร้ายหุ่น ด้วยการเปลี่ยนมาทานสมูทตี้ 
+    <br>สูตรลดน้ำหนัก ที่จะทำให้คุณสดชื่นได้ ทำให้ระบบ
+    <br>ขับถ่ายดีขึ้น แถมยังทำง่ายดื่มแล้วอิ่มท้อง 
+
+     <br><font size = "6"> &emsp;&emsp;ส่วนผสมของแห้ง</font>
+     <br>-นมพร่องมันเนย 1 ถ้วย
+     <br>-บลเบอรูร์หวานนีอยแช้แข่็ง 1 ถ้วย
+     <br>-นํามนเมลั็ดแฟลกซออแกน์กิ 1 ช้อนโต๊ะ
+     
+     <br>
+     
+     <br><font size = "6"> &emsp;&emsp;วิธีทำ</font>
+     <br>นํานมพร่องมันเนยปั่นรวมกับผลบลูเบอรี่แช่แข็งหลงจากนั้นเทใส่แก้ว
+     <br>แล้วค่อยใส่นํา้มันแฟลักซลงไป 1 ช้อนโต๊ะ จากนั้นคนใหเข้ากัน
+
+     
+ </font>    
+  <br><br>
+  
+  
+</div>
+
+
+<font face="TH SarabunPSK">
+  <div class="column right" style="background-color:#ffffff;">
+
+         <div class="column right" style="background-color:#ffffff;">
+         <div class="sidenav">
+           <h1> <b>Recipe key</b></h1>
+           <h4><a href="food-1"><b>ไม่มีกุ้ง</b></a>
+           <a href="food-2"><b>ไม่มีถั่ว</b></a>
+           <a href="food-3"><b>ไม่มีเนื้อสัตว์</b></a>
+           <a href="food-4"><b>ไม่มีไข่</b></a></h4>
+         </div>
+       </div>
+       
+ 
+
+ <div class="responsive">
+  <div class="gallery">
+    <a href="drink1">
+      <img src="assets/img/drink/1.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>Pineapple yellow mixed fruit</h4></div>
+<br>
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="drink2">
+      <img src="assets/img/drink/2.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>สูตรซันเดย์พุดดิ้งเมล็ดเจีย</h4></div>
+   
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="drink3">
+      <img src="assets/img/drink/3.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>ช็อกโกแลต(เวย์)ปั่น </h4> </div>
+    
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="drink4">
+      <img src="assets/img/drink/4.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>Root Beer Float </h4></div>
+
+    <br>
+</div>
+</div>
+<div class="clearfix"></div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+
+
+  </main>
+{% endblock %}

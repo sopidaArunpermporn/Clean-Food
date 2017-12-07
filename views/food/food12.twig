@@ -1,0 +1,217 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+ 	
+{% endblock %}
+
+{% block content %}
+
+  <main>
+ <font face="TH SarabunPSK">
+<div class="is-size-3">
+        <div class="has-text-centered">
+          <div style="color:#000000;">    <b>พิซซ่าไข่ </b>
+<br>
+            <div class="is-size-4">
+  </div>
+      </div>
+  </div>
+</div>
+<body>
+
+
+
+
+
+  <div class="row">
+
+  <font face="TH SarabunPSK">
+  <div class="column left" style="background-color:#ffffff;">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="assets/img/FOOD/12.1.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="assets/img/FOOD/12.2.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="assets/img/FOOD/12.3.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="assets/img/FOOD/12.4.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="assets/img/FOOD/12.5.jpg" style="width:100%">
+
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+  <img src="assets/img/FOOD/12.6.jpg"  alt="Trolltunga Norway" width="auto" height="auto">
+
+  </div>
+
+
+  <div class="column middle" style="background-color:#ffffff;">
+
+    <div class="is-size-4">
+
+<b>ส่วนผสม พิซซ่าไข่</b><br>
+
+         <div style="text-indent: 2.5em;">  • ไข่ไก่ 3 ฟอง (สำหรับ 2 คน) </div>
+         <div style="text-indent: 2.5em;">  • เห็ดหั่นบาง </div>
+         <div style="text-indent: 2.5em;">  • แครอทหั่นเส้น</div>
+         <div style="text-indent: 2.5em;">  • ข้าวไรซ์เบอร์รี หรือข้าวกล้องหุงสุก 100 กรัม หรือ 1 ทัพพี </div>
+         <div style="text-indent: 2.5em;">  • น้ำปลา</div>
+         <div style="text-indent: 2.5em;">  • น้ำมันมะกอก</div>
+         <div style="text-indent: 2.5em;">  • พริกขี้หนู (ใส่หรือไม่ใส่ก็ได้)</div>
+         <div style="text-indent: 2.5em;"> • มะเขือเทศราชินี </div>
+<b> วิธีทำพิซซ่าไข่ </b>
+        
+ <div style="text-indent: 2.5em;">• ตอกไข่ใส่ชาม แบ่งเห็ดใส่บางส่วน แครอท และข้าวลงในชามผสม ปรุงรสด้วยน้ำปลานิดหน่อย แต่ไม่ใส่ผงชูรสน</div>
+       
+ <div style="text-indent: 2.5em;"> • เทน้ำมันมะกอกลงไปพอเคลือบหน้ากระทะ รอให้ร้อน เทส่วนผสมไข่ทั้งหมดลงไป รอจนไข่เริ่มสุก 
+       </div>
+ <div style="text-indent: 2.5em;"> • ได้เวลาแต่งหน้าพิซซ่าแล้ว โรยเห็ดส่วนที่แบ่งไว้ ตามด้วยมะเขือเทศสไลซ์ ตกแต่งให้สวยงาม รอจนข้างล่างเริ่มเซตตัวแล้วพลิกกลับด้าน </div>
+      
+ <div style="text-indent: 2.5em;">  • เทคนิคการพลิกให้ยังคงเป็นแผ่นควรหาจานสังกะสีขนาดเท่า ๆ กับกระทะมาครอบไว้แล้วค่อยกลับด้าน ไข่ก็จะยังคงรูปอยู่ไม่แตก
+</div>
+</div>
+  </div>
+ <font face="TH SarabunPSK">
+  <div class="column right" style="background-color:#ffffff;">
+
+         
+       <div class="column right" style="background-color:#ffffff;">
+         <div class="sidenav">
+           <h1><b> Recipe key</b></h1>
+           <h4><a href="food-1"><b>ไม่มีกุ้ง</b></b></a>
+           <a href="food-2"><b>ไม่มีถั่ว</b></a>
+           <a href="food-3"><b>ไม่มีเนื้อสัตว์</b></a>
+           <a href="food-4"><b>ไม่มีไข่</b></a></h4>
+         </div>
+       </div>
+ 
+ 
+
+
+      <div class="responsive">
+  <div class="gallery">
+    <a href="food1">
+      <img src="assets/img/food/1.4.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>สลัดอะโวคาโดอกไก่สไตล์เม็กซิกัน </h4></div>
+
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="food2">
+      <img src="assets/img/food/2.5.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>สลัดอกไก่อะโวคาโดเบคอน</h4></div>
+   
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="food3">
+      <img src="assets/img/food/3.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>สลัดอกไก่สูตรเฮลธ์ตี้ </h4> </div>
+    
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="food4">
+      <img src="assets/img/food/4.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>พาสต้าเส้นซูกินี</h4></div>
+
+  
+</div>
+</div>
+
+<div class="clearfix"></div>
+  </div>
+
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+  </main>
+
+
+{% endblock %}

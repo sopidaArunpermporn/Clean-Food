@@ -1,0 +1,217 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+ 	
+{% endblock %}
+
+{% block content %}
+
+  <main>
+ <font face="TH SarabunPSK">
+<div class="is-size-3">
+        <div class="has-text-centered">
+          <div style="color:#000000;">    <b>   พิซซ่าเมล็ดเจียสูตรไขมันต่ำ </b>
+
+<br>
+            <div class="is-size-4">
+<b>The Quick-to-Make Pizza Crust Your Diet Needs</b></div>
+      </div>
+  </div>
+</div>
+<body>
+
+
+
+
+
+  <font face="TH SarabunPSK">
+<div class="is-size-3">
+        <div class="has-text-centered">
+          <div style="color:#000000;">    <b> สลัดแอปเปิลอกไก่   
+
+            <div class="is-size-4">
+      Apple Dill Chicken Salad </b></div>
+      </div>
+  </div>
+</div>
+<body>
+
+
+
+
+
+  <div class="row">
+
+  <font face="TH SarabunPSK">
+  <div class="column left" style="background-color:#ffffff;">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="assets/img/FOOD/20.1.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="assets/img/FOOD/20.2.jpg" style="width:100%">
+
+</div>
+<div class="mySlides fade">
+
+  <img src="assets/img/FOOD/20.3.jpg" style="width:100%">
+
+</div>
+<div class="mySlides fade">
+
+  <img src="assets/img/FOOD/20.4.jpg" style="width:100%">
+
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+  </div>
+
+
+  <div class="column middle" style="background-color:#ffffff;">
+
+    <div class="is-size-4">
+    ใครซื้อแอปเปิลมาเยอะแยะแล้วกลัวกินไม่หมด จับมาทำสลัดแอปเปิลอกไก่สิคะ สูตรนี้ใส่หอมแดงและผักชีลาวกลิ่นหอม คลุกเคล้ากับมายองเนสก็อร่อยแล้ว
+      <br>
+
+<b>ส่วนผสม สลัดแอปเปิลอกไก่</b><br>
+
+    <div style="text-indent: 2.5em;"> • อกไก่สุกฉีก 2 ถ้วย </div>
+    <div style="text-indent: 2.5em;"> • มายองเนส สูตรออร์แกนิก 1/3 ถ้วย</div>
+    <div style="text-indent: 2.5em;"> • แอปเปิล (หั่นเต๋า) 2 ลููก</div>
+    <div style="text-indent: 2.5em;"> • ผักชีลาวอบแห้ง 1+1/2 ช้อนชา</div>
+    <div style="text-indent: 2.5em;"> • หอมแดงหั่นเต๋า 1/2 หัว</div>
+    <div style="text-indent: 2.5em;"> • น้ำตาลมะพร้าว 2 ช้อนชา</div>
+
+<b>วิธีทำสลัดแอปเปิลอกไก่</b><br>
+
+    <div style="text-indent: 2.5em;"> • นำอกไก่ใส่อ่างผสม ใส่มายองเนส แอปเปิล ผักชีลาวอบแห้ง และหอมแดง เติมน้ำตาลมะพร้าว คนผสมจนเข้ากัน นำไปแช่เย็นจนกว่าจัดเสิร์ฟ</div>
+</div>
+  </div>
+
+  <font face="TH SarabunPSK">
+  <div class="column right" style="background-color:#ffffff;">
+
+         <div class="column right" style="background-color:#ffffff;">
+         <div class="sidenav">
+           <h1><b> Recipe key</b></h1>
+           <h4><a href="food-1"><b>ไม่มีกุ้ง</b></b></a>
+           <a href="food-2"><b>ไม่มีถั่ว</b></a>
+           <a href="food-3"><b>ไม่มีเนื้อสัตว์</b></a>
+           <a href="food-4"><b>ไม่มีไข่</b></a></h4>
+         </div>
+       </div>
+ 
+
+
+      <div class="responsive">
+  <div class="gallery">
+    <a href="food13">
+      <img src="assets/img/food/13.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>อกไก่ปิ้ง</h4></div>
+
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="food14">
+      <img src="assets/img/food/14.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>สลัดถั่วเลนทิล-ซิกพี</h4></div>
+
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="food15">
+      <img src="assets/img/food/15.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>สลัดผลไม้กุ้งกรอบ</h4></div>
+  
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="food16">
+      <img src="assets/img/food/16.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>โจ๊กข้าวโอ๊ตกุ้ง</h4></div>
+  
+  </div>
+</div>
+
+<div class="clearfix"></div>
+  </div>
+
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

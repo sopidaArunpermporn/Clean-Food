@@ -1,0 +1,355 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+{% endblock %}
+
+{% block content %}
+
+  <main>  
+<div class="row">
+    <div class="column left" style="background-color:#ffffff;">
+    
+
+   <font face="TH SarabunPSK">
+    <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>เทคนิคฝึกทานอาหารคลีนแบบง่ายๆ เริ่มต้นด้วยการเปลี่ยนพฤติกรรม</b></div>
+
+ <br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/4.0.jpg" alt="" width="450" height="auto">
+  </div>
+
+
+<br>
+<div class="is-size-4">
+&emsp;&emsp;&emsp;เมื่อจะกล่าวถึงอาหารคลีน คนส่วนใหญ่มักนึกถึงวิธีการทำที่ยุ่งยาก วุ่นวาย ตั้งแต่การเลือกวัตถุดิบไปจนถึงการทำ บางคนจึงคิดว่าการกินคลีนเป็นสิ่งที่ดูไกลเกินเอื้อม แต่เทคนิคการกินคลีนดังต่อไปนี้จะทำให้ไม่ใช่เรื่องยากอีกต่อไป
+
+<br><br>
+&emsp;&emsp;&emsp;1. ดื่มน้ำมากๆ
+
+<br>
+&emsp;&emsp;&emsp;เพราะน้ำเปล่าเป็นสิ่งที่ดีที่สุดสำหรับร่างกาย ดังนั้นการดื่มน้ำเปล่าจะช่วยลดความอยากอาหารและบรรเทาความหิวในระหว่างวันได้ จึงทำให้ไม่รู้สึกหิวจนเผลอไปหยิบอาหารที่มีไขมันสูงหรือเต็มไปด้วยความหวานมามารับประทาน
+
+<br>
+&emsp;&emsp;&emsp;2. หลีกเลี่ยงผลิตภัณฑ์ที่ทำจากแป้งขาวทุกชนิด
+
+<br>
+&emsp;&emsp;&emsp;เพราะแป้งขาวเป็นต้นเหตุของความอ้วนและมีผลเสียต่อสุขภาพ ฉะนั้นควรงดผลิตภัณฑ์อาหารจากแป้งขาวอย่างเด็ดขาด เช่น ขนมปัง ข้าว หรือเส้นพาสต้า แล้วเปลี่ยนมาเป็นอาหารที่ทำจากแป้งไม่ขัดสีแทน เช่น แป้งโฮลวีท หรือธัญพืชอื่น ๆ เพราะเต็มไปด้วยไฟเบอร์ ที่ดีต่อสุขภาพและน้ำหนักไม่ขึ้นอีกด้วย
+<br><br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/4.1.jpg" alt="" width="450" height="auto">
+  </div>
+
+<br>
+&emsp;&emsp;&emsp; 3. ไม่ควรงดมื้อเช้า
+
+<br>
+&emsp;&emsp;&emsp;เพราะมือเช้าเป็นมื้อสำคัญ จึงควรทานอาหารคลีนแบบง่ายๆ เช่น ผลไม้สด ซีเรียลแบบโฮลวีท หรือธัญพืช กับนมสดหรือนมถั่วเหลืองก็พียงพอแล้ว
+
+<br>
+&emsp;&emsp;&emsp;4. ลด ละ เลิก กาแฟ
+
+<br>
+&emsp;&emsp;&emsp;กาแฟอาจช่วยทำให้สมองตื่นตัวได้ แต่ กาแฟมีฤทธิ์ขับปัสสาวะ จึงอาจทำให้ร่างกายเกิดการขาดน้ำ ถ้าดื่มมากก็ส่งผลเสียต่อตับ ทำให้ขับของเสียได้ไม่ดีเท่าที่ควร อีกทั้งอาจทำให้อ้วนขึ้นได้ทางที่ดีจึงควรเปลี่ยนเป็นดื่มชาร้อนที่ดีกับสุขภาพ เช่น ชาอู่หลง ชาเขียว ชาสะระแหน่แทน ก็จะมีประโยชน์กว่า
+
+<br>
+&emsp;&emsp;&emsp;5. ไม่ทานอาหารฟาสต์ฟู้ด
+
+<br>
+&emsp;&emsp;&emsp;เพราะในอาหารฟาสต์ฟู้ดมีทั้งแป้งขาว น้ำตาล และไขมันตัวร้ายอย่างไขมันทรานส์ หากต้องการทานคลีนก็ควรเลือกอาหารฟาสต์ฟู้ดเด็ดขาด
+<br><br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/4.2.jpg" alt="" width="450" height="auto">
+  </div>
+
+<br>
+&emsp;&emsp;&emsp;  6. เลือกของว่างที่ดี
+
+<br>
+&emsp;&emsp;&emsp;เพราะการกินคลีน สามารถกินของว่างได้ โดยเลือกของว่างคลีน มารับประทานอย่างพอเหมาะ ได้แก่บรรดาถั่วต่าง ๆ ที่ไม่ผ่านการปรุงแต่งรสชาติ ไม่เติมเกลือ หรือเติมน้ำตาล ผลไม้สด หรือผลไม้อบแห้งที่ไม่มีการแต่งรสชาติ เป็นต้น
+
+<br>
+&emsp;&emsp;&emsp;7. มีผักหรือผลไม้ติดตู้เย็นเสมอ
+
+<br>
+&emsp;&emsp;&emsp;การกินอาหารคลีน ผักและผลไม้สดเป็นสิ่งที่ขาดไม่ได้ ดังนั้นการมีไว้ในตู้เย็นจะทำให้สามารถหยิบมาทานหรือทำได้เลย
+
+<br>
+&emsp;&emsp;&emsp;8. เตรียมอาหารไว้ตั้งแต่วันหยุด
+
+<br>
+&emsp;&emsp;&emsp;การกินคลีนตลอดทั้งสัปดาห์จะไม่สะดุดหากเตรียมอาหารไว้ทุกอย่างตั้งแต่ช่วงวันหยุดสุดสัปดาห์แล้ว และควรจัดให้สะดวกต่อการหยิบมาใช้ นอกจากจะไม่ทำให้เสียเวลาแล้ว ยังได้กินอาหารคลีนจริง ๆ ตามที่ต้องการโดยไม่เสียเงินในการหารับประทานนอกบ้าน
+
+ <div class="has-text-centered"> 
+<br>
+<br>เห็นไหมว่าการกินอาหารคลีนนั้นไม่ใช่เรื่องยุ่งยากเลย แถมยัง
+<br>ดีต่อสุขภาพเป็นอย่างมากอีกด้วย เพราะฉะนั้นเพื่อสุขภาพที่ดียิ่งขึ้น
+<br>ลองหันมากินอาหารคลีนเหล่านี้กันเถอะ
+
+
+
+
+</div>
+</div></div>
+
+
+</div>
+
+  <div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>TRICK</div>
+    <div class=is-size-5>เคล็บลับ แต่ไม่ลับ</div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="News2">
+      <img src="assets/img/News/2.1.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>ลดน้ำหนักต้องรู้จัก 4 เทรนด์มาแรงในแบบฉบับคลีนฟู้ด</h4></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="News4">
+      <img src="assets/img/News/4.1.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc"><h4>หมกมุ่นกับเมนูอาหารเพื่อสุขภาพมากเกินไป ใช่ว่าจะดี</h4></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="News5">
+      <img src="assets/img/News/5.1.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc"><h4>10 ประโยชน์ดีๆ จากต้นหอม อาหารเพื่อสุขภาพ</h4></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="News7">
+      <img src="assets/img/News/7.1.jpg"alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>6 อาหารเพื่อสุขภาพ <br>กินลดน้ำหนักได้ผล ดีแบบนี้จะพลาดได้ไง</h4></div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

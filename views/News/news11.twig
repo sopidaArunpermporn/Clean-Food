@@ -1,0 +1,315 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+ 	
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+{% endblock %}
+
+{% block content %}
+
+  <main>
+ 
+
+  
+
+  <div class="row">
+  <div class="column left" style="background-color:#ffffff;">
+    <font face="TH SarabunPSK">
+    <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>“น้ำผึ้ง” ดีกับผู้ชายยังไง ?</b><br>
+ <div class="is-size-4">
+   <b>คนไทยจำนวนไม่น้อยรู้ว่า “น้ำผึ้ง” เป็นยาอายุวัฒนะ หรือ “อาหารเสริมบำรุงร่างกาย” และใช้คุณประโยชน์ของ<br> น้ำผึ้งส่งเสริมการเจริญเติบโต การฟื้นฟูระบบต่างๆ ของร่างกายที่สึกหรอ หรือใช้เสริมสร้างความแข็งแรงของร่างกาย</b>
+  </div>
+  </div>
+</div>
+<br>
+   <div class="is-size-4">
+  แต่น้อยคนจะรู้ว่า “น้ำผึ้งกับสุขภาพทางเพศ” มีความเกี่ยวข้องกัน และคนโบราณได้ใช้คุณประโยชน์ของน้ำผึ้งเป็นยาบำรุงสุขภาพทางเพศมาช้านาน วันนี้เรามารับรู้คุณประโยชน์ของน้ำผึ้งกับสุขภาพทางเพศกันอีกครั้ง</div>
+
+     <div class="is-size-4">
+  <br>
+   <center><img src="assets/img/News/11.2.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+   <br>
+ 
+          <div style="text-indent: 2.5em;">1. น้ำผึ้งอุดมด้วยสารกระตุ้นทางเพศมากมายหลายชนิด เพราะผึ้งจะรวบรวมน้ำหวานและสารอาหารจากมวลดอกไม้นานาพรรณ และสารเหล่านั้นสามารถใช้ปรับปรุงสุขภาพทางเพศของคนเราได้
+          </div>
+           <div style="text-indent: 2.5em;">  2. น้ำผึ้งบริสุทธิ์ที่ยังไม่ได้ผ่านความร้อน จะอุดมด้วยสารกระตุ้นทางเพศอ่อนๆ ตามธรรมชาติ มีสารอาหารและแร่ธาตุหลายอย่าง เช่น สังกะสีวิตามินบี วิตามินอี ซึ่งสารเหล่านี้จะช่วยส่งเสริมความแข็งแรงของร่ายกาย และสร้างเสริมสุขภาพทางเพศให้ดีขึ้น นอกจากนี้ยังช่วยเผาผลาญไขมันในร่างกายให้กลายเป็นน้ำตาล ช่วยลดน้ำหนักได้อีกด้วย
+
+          </div>
+           <div style="text-indent: 2.5em;">3. วิตามินที่เป็นองค์ประกอบสำคัญภายในน้ำผึ้ง จะช่วยเสริมสร้างการผลิตฮอร์โมนเพศชาย (เทสโทสเตอโรน)และ “สารโบรอน” ในน้ำผึ้งจะช่วยให้ร่างกายสร้าง “เอสโทรเจน” ซึ่งเป็นฮอร์โมนสำคัญในการเร้าอารมณ์เพศ
+          </div>
+                   <div style="text-indent: 2.5em;"> 4. หากรับประทานน้ำผึ้งและกระเทียมก่อนนอนเป็นประจำ จะช่วยให้หลับง่าย และช่วยเพิ่มสมรรถภาพทางเพศให้ดีขึ้น
+          </div>
+          <br>
+           <center><img src="assets/img/News/11.3.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+   <br>
+           <div style="text-indent: 2.5em;"> 5. สำหรับผู้ที่มีบุตรยากเนื่องจากฝ่ายชายมีจำนวนอสุจิต่ำ การรับประทานน้ำผึ้งเป็นประจำจะช่วยให้ร่างกายสามารถเพิ่มจำนวนตัวอสุจิให้สูงขึ้น และเสริมสร้างความแข็งแรงให้ตัวอสุจิ ทั้งยังช่วยกระตุ้นให้เซลล์ของร่างกายที่มีหน้าที่ผลิตอสุจิทำงานดีขึ้น
+           <div style="text-indent: 2.5em;"> 6. การรับประทานน้ำผึ้งผสมกับน้ำผลไม้วันละ 2 ช้อนโต๊ะ เช้าเย็น จะทำให้อวัยวะเพศของฝ่ายชายมีความแข็งตัวได้ดีขึ้น
+          </div>
+           <div style="text-indent: 2.5em;">  7. การรับประทานน้ำผึ้งเป็นประจำ จะช่วยเพิ่มระดับฮอร์โมนเพศชายให้สูงขึ้น
+          </div>
+        </div>
+
+</div>
+</div>
+
+
+<div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>NEWS</div>
+    <div class=is-size-5>ข่าวสารที่คุณไม่ควรพลาด</div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="news17">
+      <img src="assets/img/news/17.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>หน่อไม้ฝรั่ง สรรพคุณเหลือล้ำ ขอย้ำว่าต้องกิน !</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news18">
+      <img src="assets/img/news/18.2.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>อะโวคาโด สรรพคุณล้น ลดอ้วนลงพุง ปราบไขมันในเลือดอยู่หมัด</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news19">
+      <img src="assets/img/news/19.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>12 ผักต้านมะเร็งร้าย ป้องกันโรคมะเร็งง่าย ๆ ด้วยผัก</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news20">
+      <img src="assets/img/news/20.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>10 อาหารเช้าช่วยปลุกสมอง ลองแล้วตื่นตัว !</h4></div>
+   
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

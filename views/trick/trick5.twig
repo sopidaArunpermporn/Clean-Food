@@ -1,0 +1,397 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+{% endblock %}
+
+{% block content %}
+
+  <main>  
+<div class="row">
+    <div class="column left" style="background-color:#ffffff;">
+    
+
+   <font face="TH SarabunPSK">
+    <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>9 อาหารช่วยดีท็อกซ์ ขับสารพิษได้อย่างดีเยี่ยม</b></div>
+
+ <br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/5.0.jpg" alt="" width="450" height="auto">
+  </div>
+
+
+<br>
+<div class="is-size-4">
+&emsp;&emsp;&emsp;ประเด็นหลัก
+
+<br>&emsp;&emsp;&emsp;• ดีท็อกซ์ คือ การขับล้างสารพิษออกจากร่างกาย ช่วยให้ร่างกายรู้สึกเฟรช และไม่อึดอัดกับภาวะท้องอืด ท้องเฟ้อ เรอบ่อย ซึ่งการดีท็อกซ์นี้สามารถทำได้โดยการสวนทวาร หรือทานอาหารและผลไม้ที่มีกากใยสูง
+<br>
+
+<br>&emsp;&emsp;&emsp;การดีท็อกซ์ช่วยทำให้เรานั้นได้ขับล้างสารพิษออกจากร่างกาย และยังทำให้เราหายจากอาการท้องอืด เรอบ่อย หน้ามัน สิวขึ้น ฯลฯ มีประโยชน์มากขนาดนี้ เพื่อนๆ อยากรู้กันไหมคะว่า อาหารที่สามารถช่วยดีท็อกซ์ได้นั้นมีอะไรบ้าง เรามาจดลิสต์ไปพร้อมๆ กันเลยดีกว่าค่ะ
+
+<br>
+<br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/5.1.jpg" alt="" width="450" height="auto">
+  </div>
+
+<br>&emsp;&emsp;&emsp;1. ทับทิม
+
+<br>&emsp;&emsp;&emsp;ทับทิมเป็นผลไม้ที่อุดมไปด้วยสารที่ชื่อว่า ฟลาโวนอยด์ ซึ่งช่วยในเรื่องของการต้านอนุมูลอิสระ เมื่อเราทานเข้าไปบ่อยๆ จะช่วยขับล้างสารพิษที่ไม่ดีออกจากร่างกาย แถมยังมีวิตามินเอ ซี รวมถึงธาตุเหล็ก ที่ช่วยลำเลียงออกซิเจนไปยังเซลล์ต่างๆ ทั่วร่างกายอีกด้วย
+
+<br>
+<br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/5.2.jpg" alt="" width="450" height="auto">
+  </div>
+
+<br>&emsp;&emsp;&emsp;2. กระเทียม
+
+<br>&emsp;&emsp;&emsp;หากคุณอยากดีท็อกซ์สารพิษให้ออกไปจากร่างกาย กระเทียมนั้นสามารถช่วยคุณได้ค่ะ เพราะกระเทียมจะช่วยกระตุ้นให้ตับผลิตเอนไซม์ที่ช่วยดีท็อกซ์ร่างกาย รวมถึงป้องกันของเสีย ขับสารพิษต่างๆ ให้ออกไปจากระบบย่อยอาหาร จะทานเป็นเครื่องเคียงพร้อมกับข้าว หรือจะทานแบบสดๆ เคี้ยวเพลินๆ ก็ยังได้ แต่หลังจากทานเสร็จแล้วก็อย่าลืมบ้วนปาก หรือแปรงฟันด้วยนะคะ ไม่อย่างนั้นคนรอบข้างได้เป็นลมแน่!
+
+<br>
+<br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/5.3.jpg" alt="" width="450" height="auto">
+  </div>
+
+<br>&emsp;&emsp;&emsp;3. ผักสด
+
+<br>&emsp;&emsp;&emsp;ว่าด้วยเรื่องของผักสด เป็นที่รู้กันดีอยู่แล้วว่าผักทุกชนิดย่อมมีประโยชน์ในตัวของมันทั้งนั้น แต่ถ้าหากเรานำผักต่างๆ มาประกอบอาหารโดยผ่านความร้อน คุณค่าทางสารอาหารที่อยู่ในตัวของมันก็จะลดลง ซึ่งจะมีผักอยู่บางประเภทที่สามารถช่วยดีท๊อกซ์ และขับสารพิษออกจากตับได้ แม้ว่าจะผ่านความร้อนมาแล้วก็ตาม นั่นคือ แครอท ดอกกะหล่ำ ผักกาด และหัวหอม
+
+<br>
+<br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/5.4.jpg" alt="" width="450" height="auto">
+  </div>
+
+<br>&emsp;&emsp;&emsp;4. ถั่วและเมล็ดพืช
+
+<br>&emsp;&emsp;&emsp;ถั่วชนิดต่างๆ ล้วนแต่มีคุณสมบัติที่ดีต่อร่างกาย ไม่ว่าจะเป็นการต้านอนุมูลอิสระเอย ช่วยบำรุงสมองเอย รวมถึงมีเอนไซม์ที่ชื่อว่า โปรติเอส ซึ่งสารตัวนี้จะช่วยต้านการเกิดมะเร็งได้ และช่วยในเรื่องของการขับถ่ายได้ดี ถือว่าเหมาะมากสำหรับสาวๆ ที่กำลังจะลดน้ำหนักค่ะ
+
+<br>
+<br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/5.5.jpg" alt="" width="450" height="auto">
+  </div>
+
+<br>&emsp;&emsp;&emsp;5. ขมิ้น
+
+<br>&emsp;&emsp;&emsp;แกงกะหรี่ มัสมั่น ผัดผงกะหรี่ ในเมนูเหล่านี้ล้วนแต่มีองค์ประกอบเป็นขมิ้นด้วยกันทั้งนั้น ในขมิ้นมีสารเคอร์คิวมิน ซึ่งจะเข้าไปเร่งกระบวนการกำจัดสารพิษของร่างกายให้เร็วขึ้น ช่วยเสริมสร้างภูมิต้านทานให้กับร่างกาย มีสารต่อต้านอนุมูลอิสระ ซึ่งช่วยในการชะลอการเกิดริ้วรอยก่อนวัยอันควร รวมถึงต่อต้านเชื้อแบคทีเรียและไวรัส เช่น แบคทีเรียที่ทำให้เกิดแผลในกระเพาะอาหารได้เป็นอย่างดี
+
+<br>
+<br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/5.6.jpg" alt="" width="450" height="auto">
+  </div>
+
+<br>&emsp;&emsp;&emsp;6. กะเพรา
+
+<br>&emsp;&emsp;&emsp;เราเชื่อว่าทุกคนรู้ดีว่าสรรพคุณของกะเพรานั้นมีอะไรบ้าง หากนำรากแห้งมาชง หรือต้มกับน้ำร้อนแล้วนำมาดื่ม จะช่วยแก้โรคธาตุพิการได้ มีสารแอนตี้ออกซิแดนท์ สารยูจินนอล ที่ช่วยย่อยไขมัน ลดอาการจุกเสียด ยับยั้งการเจริญเติบโตของเชื้อโรคบางตัว ช่วยฆ่าเชื้อจุลินทรีย์บางชนิด และขับลมได้เป็นอย่างดี
+
+<br>
+<br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/5.7.jpg" alt="" width="450" height="auto">
+  </div>
+
+<br>&emsp;&emsp;&emsp;7. คะน้า
+
+<br>&emsp;&emsp;&emsp;คะน้าเป็นผักที่มีไฟเบอร์เยอะ และเป็นแหล่งของสารแอนตี้ออกซิแดนท์ ซึ่งมีส่วนช่วยในการดีท็อกซ์ อีกทั้งยังมีวิตามินเอ ซี เค บี6 โพแทสเซียม แคลเซียม และสารต่อต้านอนุมูลอิสระ จึงช่วยชะลอความเสื่อมของเซลล์ต่างๆ ในร่างกายได้ ช่วยให้คุณรักษาสมดุลในร่างกาย ป้องกันและยับยั้งการเจริญเติบโตของเนื้องอก ยับยั้งสารก่อมะเร็ง และส่งเสริมการทำงานของเอนไซม์ที่ช่วยขับพิษของสารก่อมะเร็งได้เป็นอย่างดี
+
+<br>
+<br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/5.8.jpg" alt="" width="450" height="auto">
+  </div>
+
+<br>&emsp;&emsp;&emsp;8. ชาขาว
+
+<br>&emsp;&emsp;&emsp;น้ำชามีสารต้านอนุมูลอิสระที่ช่วยกำจัดสารพิษทั่วร่างกายได้ ช่วยให้ต่อมน้ำเหลืองขจัดสารพิษออกจากผิว ทำให้ผิวไม่แห้งกร้าน เสริมสร้างความแข็งแรงของเซลล์ผิวหนัง บำรุงหลอดเลือด และป้องกันการเกิดโรคหัวใจด้วยค่ะ
+
+<br>
+<br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/5.9.jpg" alt="" width="450" height="auto">
+  </div>
+
+<br>&emsp;&emsp;&emsp;9. ข้าวกล้อง
+
+<br>&emsp;&emsp;&emsp;ข้าวกล้องเหนียวหนุบ เหมาะสำหรับกลุ่มคนที่กำลังไดเอทอยู่ เป็นข้าวที่ไม่ฟอกสี มีประโยชน์ต่อร่างกายอย่างมาก เพราะในข้าวกล้องนั้นมีทั้ง วิตามินบี แมงกานีส แมกนีเซียม รวมทั้งไฟเบอร์ ซึ่งเป็นตัวช่วยขับล้างสารพิษให้ออกไปจากร่างกายนั่นเองค่ะ
+<br><br><div class="has-text-centered"> 
+<br>หากคุณเป็นอีกคนหนึ่งที่อยากจะมีร่างกายแข็งแรง เราขอแนะนำว่าให้เลือกทานอาหารที่มี
+<br>เส้นใยอาหารตามธรรมชาติ อย่างเช่น ผักชนิดต่างๆ ที่เราเพิ่งนำเสนอไป พร้อมกับกา
+<br>รออกกำลังกายอย่างสม่ำเสมอ รวมถึงดื่มน้ำให้มากๆ เพื่อเป็นการทดแทนน้ำในร่างกาย
+<br>ที่สูญเสียไปจากการออกกำลังกาย เพียงเท่านี้คุณก็จะมีสุขภาพดีแล้วค่ะ
+
+
+
+
+
+
+</div>
+</div></div>
+
+
+</div>
+
+  <div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>TRICK</div>
+    <div class=is-size-5>เคล็บลับ แต่ไม่ลับ</div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick1">
+      <img src="assets/img/trick/1.0.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>เด็กวัยคิดส์กินอาหารคลีนได้ไหม เด็กกินอาหารคลีนอย่างไร</h4></div>
+
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick2">
+      <img src="assets/img/trick/2.0.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>10 วิธีสำหรับเตรียมตัวทานอาหารคลีน เพื่อลดความอ้วน!</h4></div>
+   
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick3">
+      <img src="assets/img/trick/3.0.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>5 ข้อหลักที่คนกิน อาหารคลีน อาจไม่รู้</h4> </div>
+    
+</div></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick4">
+      <img src="assets/img/trick/4.0.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc"><h4>เทคนิคฝึกทานอาหารคลีนแบบง่ายๆ เริ่มต้นด้วยการเปลี่ยนพฤติกรรม</h4></div>
+
+  
+</div>
+</div>
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}

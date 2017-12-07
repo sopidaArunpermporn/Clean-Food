@@ -1,0 +1,319 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+ 	
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+{% endblock %}
+
+{% block content %}
+
+  <main>
+  
+
+
+  <div class="row">
+  <div class="column left" style="background-color:#ffffff;">
+    <font face="TH SarabunPSK">
+    <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>กินคลีนแบบไหน...เหมาะกับแม่หลังคลอด </b><br>
+ <div class="is-size-4">
+   <b>   การดูแลตัวเองหลังคลอดเป็นเรื่องที่คุณแม่ให้ความสำคัญเป็นพิเศษ รวมทั้งเรื่องอาหารการกิน กินคลีน กินอย่างไรดีต่อแม่หลังคลอด <br>ความหมายที่แท้จริงคืออะไร ? วันนี้กระปุกดอทคอมจะพาไปไขข้อข้องใจเรื่องอาหารคลีนกันค่ะ แล้วอาหารคลีนแบบไหนที่กินแล้วได้ทั้งประโยชน์และสุขภาพดี เรามีข้อมูลดี ๆ จากนิตยสาร MODERNMOM มาฝากกันค่ะ</b>
+  </div>
+  </div>
+</div>
+  <br>
+   <div class="is-size-4">
+  กระแส "กินคลีน" เป็นอีกหนึ่งกระแสที่มาแรงในช่วงปีที่ผ่านมานี้ ไม่ว่าจะเป็นตาม Instagram ของเหล่าคนดัง นิตยสาร พ็อกเก็ตบุ๊ก กระทู้พันทิป ไปจนถึงร้านอาหารผุดใหม่มากมาย ต่างก็ใช้คำว่าอาหารคลีน กินคลีน คลีนฟู้ดกันอย่างเนืองแน่น แต่คุณผู้อ่านเคยสงสัยไหมคะว่าจริง ๆ แล้ว กินคลีน หมายความว่าอย่างไร ?
+</div>
+
+     <div class="is-size-4">
+  <br>
+   <center><img src="assets/img/News/13.1.jpg" alt="Trolltunga Norway" width="1000" height="auto"></center>
+   <br>
+ 
+          <div style="text-indent: 2.5em;">   บางคนอาจนึกว่า กินคลีน ก็น่าจะแปลตรงตัวว่า กินอาหารสะอาด คือ อาหารที่ไม่ปนเปื้อนเชื้อโรค ไม่มีสารก่อพิษ ถ้าคิดตามนิยามนี้ ข้าวขาหมูก็น่าจะคลีนได้ เพราะต้มผ่านความร้อนมาจนหมูเปื่อยได้ที่ ไม่น่าจะมีเชื้อโรคหลงเหลืออยู่ ในขณะที่บางคนอาจเข้าใจผิดหนักข้อไปอีกว่า กินคลีน คือ กินจนจานสะอาด กินจนหมดเกลี้ยง ถ้านับกินคลีนตามนิยามนี้ เชื่อว่าคุณผู้อ่านหลายคนอาจจะบอกว่า "อันนี้แหละผู้นำกระแสกินคลีน !!"
+          </div>
+<b>กินคลีน อย่างไหนเรียก "คลีน"</b>
+
+          <div style="text-indent: 2.5em;">ใ ในความเป็นจริงแล้ว กินคลีน หมายถึงการกินอาหารที่ใกล้เคียงตามธรรมชาติ เลี่ยงการปรุงอาหารด้วยความร้อนสูง เลี่ยงอาหารที่ปรุงแต่งด้วยสารเคมี อาหารที่ผ่านกระบวนการผลิต อาหารแปรรูป และยังรวมไปถึงการพยายามลดการบริโภคเนื้อสัตว์ โดยเฉพาะเนื้อแดง เช่น เนื้อหมู เนื้อวัว เพิ่มการบริโภคผักและผลไม้สด ๆ และธัญพืชที่ไม่ขัดสี ถ้าดูตามนิยามข้างต้นแล้ว การกินคลีนอาจเปรียบง่าย ๆ ได้ว่า เป็นการย้อนเวลากลับไปหาการกินอยู่แบบสมัยก่อนยุค อุตสาหกรรม ยุคที่ยังเด็ดผักมากินสด ๆ กับน้ำพริก จับปลาตัวเป็น ๆ มานึ่ง กินข้าวแบบที่ยังขัดเปลือกออกไม่หมด จะทำน้ำแกงก็ต้องไปเด็ดขิงข่าตะไคร้ใบแปลก ๆ มาต้ม อยากกินขนมก็เอากล้วยมาตากแห้งแล้วกิน เป็นยุคที่ยังไม่มีก้อนสี่เหลี่ยมที่โยนใส่น้ำแล้วกลายเป็นแกงรสต่าง ๆ ไม่มีกับข้าวแช่แข็งที่เก็บได้เป็นปี ไม่มีอาหารสำเร็จรูป หรือผลไม้ที่อัดมาในกระป๋อง ไม่มีก้อนแป้งที่เทน้ำเดือดใส่แล้วกลายเป็นบะหมี่น้ำ และยังไม่มีการหลั่งไหลของอาหารจานส่วนนานาชาติอย่างแฮมเบอร์เกอร์ โดนัท ฮอตดอก มิลค์เชค ซาลาเปาลาวา หรือครัวซองต์ไส้คัสตาร์ดครีม (เอ้า...เช็ดน้ำลายก่อนค่ะ)</div>
+
+<b>แม่หลังคลอดกินคลีนแบบไหน</b>
+
+          <div style="text-indent: 2.5em;"> <b> การกินคลีนนั้นทำได้ทุกเพศ ทุกวัย ถ้าไม่หลงในหลักการ สำหรับในคุณแม่หลังคลอดที่อยากกินคลีนเพื่อสุขภาพก็สามารถทำได้ เพียงแต่มีข้อที่ต้องระวังอยู่บ้างคือ</b></div>
+
+          <div style="text-indent: 2.5em;"> 1. อย่าให้ขาดอาหารประเภทโปรตีน จริงอยู่ที่การกินคลีนนั้น ควรลดการบริโภคเนื้อสัตว์ที่ไม่ดีต่อสุขภาพ เช่น เนื้อวัว เนื้อหมู ไส้กรอก แฮม เบคอน แต่อย่าให้ขาดโปรตีนคุณภาพดีอย่างปลา ไก่ไม่มีหนัง ไข่ไก่ เต้าหู้ขาว โยเกิร์ต รวมไปถึงโปรตีนจากพืชอย่างถั่ว ถั่วงอก ยอดอ่อนของผักต่าง ๆ นมถั่วเหลือง นมอัลมอนด์ เป็นต้น
+</div>
+ 
+          <div style="text-indent: 2.5em;">  2. รับประทานผักสด ๆ ที่ไม่ผ่านการฆ่าเชื้อโรคด้วยความร้อน ต้องระวังในเรื่องความสะอาด โดยเฉพาะการรับประทานผักสดนอกบ้าน ควรเลือกรับประทานเฉพาะจากร้านที่ไว้ใจได้</div>
+      
+          <div style="text-indent: 2.5em;">3. กินคลีนไม่ใช่การอดอาหาร แต่เป็นการรู้จักเลือกกินอาหารอย่างชาญฉลาด คุณแม่หลังคลอดและอยู่ในระหว่างให้นมบุตร ต้องการพลังงานจากสารอาหารต่าง ๆ โดยเฉพาะโปรตีน วิตามินดี และแคลเซียม ซึ่งการกินคลีนอย่างถูกวิธีจะช่วยให้ได้รับสารอาหารเหล่านี้อย่างเพียงพอ
+</div>
+
+          <div style="text-indent: 2.5em;"><b> สรุปแบบไม่ยุ่งยาก หลักการกินคลีน คือ เลือกกินอาหารที่ดีต่อสุขภาพ และเลี่ยงอาหารที่ไม่ดีต่อสุขภาพ กินอาหารที่เป็น "Real Food" และเลี่ยงสารเคมีที่ปลอมร่างมาเป็นอาหาร อย่ากินคลีนแบบตามกระแส แต่ต้องกินคลีนแบบตามใจท้องและตามสะดวกกระเป๋าเงินของเราด้วย จึงจะทำได้อย่างยั่งยืนที่สุดค่ะ </b></div>
+          <br>
+
+
+ </div>
+</div>
+
+
+
+<div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>NEWS</div>
+    <div class=is-size-5>ข่าวสารที่คุณไม่ควรพลาด</div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="news17">
+      <img src="assets/img/news/17.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>หน่อไม้ฝรั่ง สรรพคุณเหลือล้ำ ขอย้ำว่าต้องกิน !</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news18">
+      <img src="assets/img/news/18.2.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>อะโวคาโด สรรพคุณล้น ลดอ้วนลงพุง ปราบไขมันในเลือดอยู่หมัด</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news19">
+      <img src="assets/img/news/19.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>12 ผักต้านมะเร็งร้าย ป้องกันโรคมะเร็งง่าย ๆ ด้วยผัก</h4></div>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="news20">
+      <img src="assets/img/news/20.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>10 อาหารเช้าช่วยปลุกสมอง ลองแล้วตื่นตัว !</h4></div>
+   
+  </div>
+</div>
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+  </main>
+
+
+{% endblock %}

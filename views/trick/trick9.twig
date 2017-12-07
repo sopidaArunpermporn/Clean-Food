@@ -1,0 +1,347 @@
+{% extends 'layout/base.twig' %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+  
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"> <!--bulma web mobli-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/home.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body
+ {
+  margin: 0;
+}
+div.thick {
+    font-weight: ;
+}
+div.light {
+    font-weight: lighter;
+}
+div.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+    background-color:#F0FFF0;
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    border: 1px solid #ffffff;
+}
+
+
+
+div.gallery:hover {
+    border: 1px solid#DCDCDC;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 50px 10;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    border-bottom: 4px solid#B3EE3A;
+    background-color: lightgrey;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+body {
+    margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+.left  {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* เลื่อนขึ้นข้างบน */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#9ACD32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+#myBtn:hover {
+  background-color: #BCEE68;
+}
+
+{% endblock %}
+
+{% block content %}
+
+  <main>  
+<div class="row">
+    <div class="column left" style="background-color:#ffffff;">
+
+   <font face="TH SarabunPSK">
+    <div class="is-size-3">
+
+   <div class="has-text-centered ">
+   <b>9 อาหารสู้แดด กินแล้วป้องกันผิวคล้ำเสีย</b></div>
+
+ <br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/9.0.jpg" alt="" width="450" height="auto">
+  </div>
+
+
+<br>
+<div class="is-size-4">
+&emsp;&emsp;&emsp;เนอกจากเราจะปกป้องผิวจากการถูกแสงแดดทำร้ายด้วยการทาครีมกันแดดแล้ว รู้ไหมว่ามี อาหารสู้แดด ที่เรากินแล้วยังช่วยปกป้องและฟื้นฟูผิวจากแสงแดดได้อีกทางหนึ่งด้วย
+
+<br>&emsp;&emsp;&emsp;แนะนำ อาหารสู้แดด ที่สามารถสู้แดดได้ กินแล้วช่วยฟื้นฟูผิวไม่ให้คล้ำเสีย จะมีอะไรบ้าง ตามมาดูกันเลย
+<br>
+<br>&emsp;&emsp;&emsp;1. ชาเขียว
+<br>&emsp;&emsp;&emsp;เครื่องดื่มยอดฮิตของคนไทยอีกอย่างหนึ่ง ที่มักดื่มเพื่อดับกระหาย และผ่อนคลาย และรู้ไหมว่า ชาเขียวไม่ได้มีประโยชน์แค่นี้นะ แต่มันยังช่วยป้องกันแสงแดดให้ผิวเราได้ด้วยค่ะ เพราะในชาเขียวมีสารต้านอนุมูลอิสระที่ชื่อว่า EGCGs ที่จะช่วยป้องกันและฟื้นฟูผิวเราจากแสงแดดค่ะ
+<br>
+<br>&emsp;&emsp;&emsp;2. มะเขือเทศ
+<br>&emsp;&emsp;&emsp;แม้มะเขือเทศจะมีรสชาติที่ไม่ค่อยโอเคสำหรับใครหลายคน แต่จริงๆ แล้ว มะเขือเทศเป็นสิ่งที่มีประโยชน์ต่อผิวเราหลายอย่างเลยค่ะ ไม่ใช่แค่ทำให้ผิวเราดูกระจ่างใสขึ้นเท่านั้น แต่ยังช่วยปกป้องผิวและฟื้นฟูผิวจากแสงแดดได้ด้วย เพราะไลโคปีน และวิตามินซีที่เป็นสารต้านอนุมูลอิสระ เลยสามารถปกป้องผิวจากการถูกทำร้ายจากแสงแดดได้ และผลไม้อีกอย่างหนึ่งที่มีสารไลโคปีนเยอะเช่นกันก็คือ “แตงโม” ค่ะ ใครไม่สะดวกกินมะเขือเทศ ก็ลองเปลี่ยนไปกินแตงโมแทนก็ได้ค่ะ
+<br>
+<br>&emsp;&emsp;&emsp;3. แครอท
+
+<br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/9.1.jpg" alt="" width="450" height="auto">
+  </div>
+
+<br>&emsp;&emsp;&emsp;เราคงได้ยินกันมาว่า ถ้ากินแคร์รอตเยอะๆ จะช่วยในเรื่องบำรุงสายตา แต่รู้ไหมว่า มันยังช่วยปกป้องผิวจากแสงแดดได้อีกด้วย เพราะว่าแครอทมีเบต้าแคโรทีน วิตามินซี และวิตามินอี ที่มีความสามารถในการต่อต้านแสงแดด ชะลอผิวไม่ให้เสื่อมเร็วจากการถูกแสง UV ทำร้ายได้
+<br>
+<br>&emsp;&emsp;&emsp;4. อัลมอนด์
+<br>&emsp;&emsp;&emsp;อัลมอนด์ไม่ได้ดีต่อน้ำหนักตัวเราเท่านั้น แต่ยังช่วยให้ผิวเราสวยด้วย เพราะว่าอัลมอนด์อุดมไปด้วยกรดไขมันโอเมก้า 3 และวิตามินอี ที่มีคุณสมบัติพิเศษที่ช่วยให้ผิวเราถูกแสงแดดทำร้ายได้น้อยลง
+<br>
+<br>&emsp;&emsp;&emsp;5. แอปเปิ้ลแดง
+
+<br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/9.2.jpg" alt="" width="450" height="auto">
+  </div>
+
+<br>&emsp;&emsp;&emsp;ผลไม้ชนิดนี้ก็มีคุณสมบัติที่ดีต่อผิวเราเช่นกัน โดยเฉพาะเรื่องปกป้องและฟื้นฟูผิวเราจากแสงแดด เพราะว่ามีการค้นพบสาร phytochemicals ซึ่งเป็นสารต้านอนุมูลอิสระอย่างหนึ่ง ที่ช่วยปกป้องผิวไม่ให้เสื่อม หรือแก่เร็วจากการถูกแสงแดดทำร้าย อีกทั้งยังช่วยลดความเสี่ยงเป็นมะเร็งผิวหนังได้อีกด้วย
+<br>
+<br>&emsp;&emsp;&emsp;6. ส้ม
+<br>&emsp;&emsp;&emsp;อาหารยอดนิยมสำหรับคนรักผิว ใครอยากผิวสวย กระจ่างใส ต้องกินส้มเยอะๆ เพราะว่าส้มเป็นผลไม้ที่อุดมไปด้วยวิตามินซี ช่วยปกป้องผิวจากแสงแดดได้ และยังช่วยให้ผิวกระตุ้นคอลลาเจนออกมาได้เพิ่มขึ้นด้วย เลยทำให้ผิวมีสุขภาพดี และไม่เหี่ยวย่นได้ง่าย รวมถึงผัก ผลไม้อื่นๆ ที่มีวิตามินซี ก็ช่วยปกป้องผิวจากแสงแดดได้เช่นกันค่ะ ไม่ว่าจะเป็น ฝรั่ง สตรอว์เบอร์รี่ กีวี่ มะละกอ บร็อคโคลี่ เป็นต้น
+<br>
+<br>&emsp;&emsp;&emsp;7. เห็ด
+
+<br>
+ <div class="has-text-centered"> 
+    <img src="assets/img/trick/9.3.jpg" alt="" width="450" height="auto">
+  </div>
+
+<br>&emsp;&emsp;&emsp;เพราะในเห็ดมีแร่ธาตุซีลีเนียม ที่เป็นแร่ธาตุสำคัญในการผลิตสารกลูตาไธโอน ซึ่งเป็นสารต้านอนุมูลอิสระที่ช่วยฟื้นฟูผิวจากการโดนแสงแดดได้ นอกจากนี้ เห็ดยังมีกรด kojic ที่เป็นส่วนผสมสำคัญทำให้ผิวเรากระชับ ไม่หย่อนคล้อย เลยทำให้การกินเห็ดจะช่วยให้ผิวไม่เหี่ยวย่นง่ายๆ จากการทำร้ายของแสงแดด
+<br>
+<br>&emsp;&emsp;&emsp;8. แซลมอน
+<br>&emsp;&emsp;&emsp;แซลมอนก็ช่วยปกป้องผิวจากการถูกทำร้ายของแสงแดดได้ด้วยเช่นกัน เพราะว่าแซลมอนอุดมไปด้วยกรดไขมันโอเมก้า 3 ที่มีคุณสมบัติสู้กับแสงแดดได้
+<br>
+<br>&emsp;&emsp;&emsp;9. ดาร์ก ช็อกโกแลต
+<br>&emsp;&emsp;&emsp;ช็อกโกแลตมักจะถูกเข้าใจผิดว่า เป็นศัตรูตัวร้ายของผิว จากความเชื่อที่ว่า กินช็อกโกแลตทำให้เป็นสิว ซึ่งผู้ร้ายตัวจริงไม่ได้เป็นช็อกโกแลตอย่างที่เข้าใจหรอกค่ะ แต่เป็นน้ำตาลและนมที่อยู่ในนั้นต่างหาก ถ้าเป็นช็อกโกแลตเพียวๆ หรือดาร์ก ช็อกโกแลต ไม่ได้ทำให้เป็นสิวอย่างที่เข้าใจ แถมเป็นประโยชน์ต่อผิวด้วย ตรงที่มันสามารถปกป้องผิวเราจากแสงแดดได้ค่ะ ไม่ให้ผิวแก่เร็ว ชะลอความเยาว์ได้ด้วย
+<br><div class="has-text-centered"> 
+<br>ถ้าอยากมีผิวสวย ไม่คล้ำเสีย แนะนำอาหารเหล่านี้เลยค่ะ เพราจะช่วยปกป้องและฟื้นฟูผิวจากแสงแดดได้ 
+<br>แต่ถึงอย่างนั้น ก็ไม่ได้หมายความว่า แค่กินอาหารพวกนี้แล้วผิวเราจะรอดพ้นจากแสงแดดอย่าง 100% นะคะ 
+<br>แต่สามารถช่วยป้องกันได้ในระดับหนึ่งค่ะ ไม่ว่ายังไง ครีมกันแดดก็ยังเป็นสิ่งที่เราขาดไปไม่ได้อยู่ดีนะ
+
+
+
+
+
+</div>
+</div></div>
+
+
+</div>
+
+  <div class="column right" style="background-color:#ffffff;">
+    <div class=is-size-2>TRICK</div>
+    <div class=is-size-5>เคล็บลับ แต่ไม่ลับ</div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick13">
+      <img src="assets/img/trick/13.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>กินอาหารตามกรุ๊ปเลือด ลดน้ำหนักและความอ้วนได้</h4></div>
+ <br>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick14">
+      <img src="assets/img/trick/14.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>6 เทคนิคสู่การออกกำลังกายอย่างถูกวิธี</h4></div>
+  
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick15">
+      <img src="assets/img/trick/15.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>ปีใหม่คนใหม่กับ 10 ทริค ปรับเปลี่ยนพฤติกรรมเพื่อสุขภาพที่ดี</h4></div>
+    
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="trick16">
+      <img src="assets/img/trick/16.1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><h4>ไม่อยากสุขภาพพังต้องรู้!! กับ 9 ทริคเพื่อการนอนหลับสนิท</h4></div>
+   <br>
+  </div>
+</div>
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+  </main>
+
+
+{% endblock %}
